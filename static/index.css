@@ -28,11 +28,11 @@ ul.navbar li a:hover:not(.active) {
   ul.navbar li a {
     text-align: center;
     float: none;
-    font-size:200%;
+    font-size:300%;
   }
   #logo{
     position: relative !important;
-    font-size:400%;
+    font-size:500%;
   }
 }
 #logo{
