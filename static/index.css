@@ -55,7 +55,8 @@ ul.navbar li a:hover:not(.active) {
     z-index: -1;
 }
 #particles-js {
-  background: cornflowerblue;
+background: #86deff;
+  position:absolute;
 }
 #body{
     max-width: 960px;
@@ -66,6 +67,14 @@ ul.navbar li a:hover:not(.active) {
     min-height: 1000px;
     background-color: #fff;
     padding:20px;
+    position: absolute;
+    /* right: 50%; */
+    /* transform: translate(50%,-50%); */
+    /* top: 150%; */
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 #body-list{
     list-style: none;
