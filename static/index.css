@@ -24,7 +24,7 @@ ul.navbar li a:hover:not(.active) {
   background-color: #80dfff;
   color: white;
 }
-@media only screen and (max-device-width: 414px) or(max-width:550px) {
+@media only screen and (max-device-width: 414px), only screen and (max-width:550px) {
   ul.navbar li a {
     text-align: center;
     float: none;
