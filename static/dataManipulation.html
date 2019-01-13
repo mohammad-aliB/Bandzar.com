@@ -84,24 +84,57 @@
             "</table>";
     }
     
-    var sampleData ={}; /* Sample random data. */   
-    ["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
-    "ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
-    "MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
-    "CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
-    "WI", "MO", "AR", "OK", "KS", "LS", "VA"]
-        .forEach(function(d){ 
-            var low=Math.round(100*Math.random()), 
-                mid=Math.round(100*Math.random()), 
-                high=Math.round(100*Math.random());
-            sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
-                    avg:Math.round((low+mid+high)/3), color:d3.interpolate("#ffffcc", "#800026")(low/100)}; 
-        });
-    
+    // var sampleData ={}; /* Sample random data. */   
+    // ["HI", "AK", "FL", "SC", "GA", "AL", "NC", "TN", "RI", "CT", "MA",
+    // "ME", "NH", "VT", "NY", "NJ", "PA", "DE", "MD", "WV", "KY", "OH", 
+    // "MI", "WY", "MT", "ID", "WA", "DC", "TX", "CA", "AZ", "NV", "UT", 
+    // "CO", "NM", "OR", "ND", "SD", "NE", "IA", "MS", "IN", "IL", "MN", 
+    // "WI", "MO", "AR", "OK", "KS", "LS", "VA"]
+    //     .forEach(function(d){ 
+    //         var low=Math.round(100*Math.random()), 
+    //             mid=Math.round(100*Math.random()), 
+    //             high=Math.round(100*Math.random());
+    //         sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
+    //                 avg:Math.round((low+mid+high)/3), color:d3.interpolate("#4dff4d", "#ff0000")(low/100)}; 
+    //     });
+function csvJSON(csv){
+var highest=262885;
+var lowest=51581;
+  var lines=csv.split("\n");
+
+  var result = [];
+
+  var headers=lines[0].split(",");
+
+  for(var i=1;i<lines.length;i++){
+
+      var obj = {};
+      var currentline=lines[i].split(",");
+
+      for(var j=0;j<headers.length;j++){
+    if(headers[j]=="consumption"){
+    obj[headers[j]] =Math.round(currentline[j]*0.00029307107017*1000000)+"kwh";
+    }else{
+             obj[headers[j]] = currentline[j];
+      }
+    }
+ obj["color"]=d3.interpolate("#4dff4d", "#ff0000")(consumption-lowest)/(highest-lowest)
+      result.push(obj);
+  }
+  return JSON.stringify(result); //JSON
+}
+var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+
     /* draw states on id #statesvg */   
-    uStates.draw("#statesvg", sampleData, tooltipHtml);
+    uStates.draw("#statesvg", csvJSON(this.responseText), tooltipHtml);
     
     d3.select(self.frameElement).style("height", "600px"); 
+}
+  };
+  xhttp.open("GET", "xmlhttp_info.txt", true);
+  xhttp.send();
 </script>
 
 </div>
