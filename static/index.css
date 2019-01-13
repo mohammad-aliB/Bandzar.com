@@ -1,4 +1,7 @@
-body {margin: 0;}
+body {
+    margin: 0;
+    background-color: #fbfbfb;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -37,5 +40,23 @@ ul.navbar li a:hover:not(.active) {
 }
 #logo{
     font-family: cursive; font-size:200%; width:100%; text-align:center;    position: absolute;
+    display: block;
+}
+#body{
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #f2f2f2;
+    margin-top: 50px;
+    min-height: 1000px;
+    background-color: #fff;
+}
+#body-list{
+    list-style: none;
+}
+#body-list li a{
+    text-decoration: none;
+    color: #00ace6;
+    font-size: 150%;
     display: block;
 }
