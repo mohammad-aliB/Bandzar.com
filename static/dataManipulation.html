@@ -68,17 +68,20 @@
 <div id="tooltip"></div><!-- div to hold tooltip. -->
 
 <div id="body">
-<span class="title">US Energy Consumption per Capita By State</span>
-<p>By:Mohammad-Ali Bandzar | Jan 13 2019</p>
-<svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
-<script src="/static/usmap.js"></script> <!-- creates uStates. -->
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<span class="sub-title">Description</span> 
+    <div id="inner-body">
+    <span class="title">US Energy Consumption per Capita By State</span>
+    <p>By:Mohammad-Ali Bandzar | Jan 13 2019</p>
+    <svg width="960" height="600" id="statesvg"></svg> <!-- svg to hold the map. -->
+    <script src="/static/usmap.js"></script> <!-- creates uStates. -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <span class="sub-title">Description</span> 
 <p>The graph above is a visualization of the amount of energy used per capita(per person) in each state. Alaska is suprisingly dark red in the graph because although its energy consumption is low. When divided by the population of Alaska it ends up disproportionately high for many factors, with some of the largest being the oil industry in the state and the fact that they still use very inefficient diesal generators to power most of the states grid.</p>
 <span class="sub-title">Credits</span> 
 <p>Data from: The US Energy Information Administration <a href="https://www.eia.gov/">https://www.eia.gov/</a>
 The most recent data avalibe was used in this (2016)</p>
 </p>
+</div>
+</div>
 <script>
     function tooltipHtml(n, d){ /* function to create html content string in tooltip div. */
         return "<h4>"+n+"</h4><table>"+
@@ -147,8 +150,5 @@ var xhttp = new XMLHttpRequest();
   xhttp.open("GET", "/static/uspowerdata.csv", true);
   xhttp.send();
 </script>
-
-</div>
-
 </body>
 </html>

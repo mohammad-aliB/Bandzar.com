@@ -84,6 +84,9 @@ background: #86deff;
     right: 0;
     opacity:.7;
 }
+#inner-body{
+    padding:20px;
+}
 #body-list{
     list-style: none;
 }
