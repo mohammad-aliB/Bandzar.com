@@ -89,6 +89,8 @@ background: #86deff;
 }
 #body-list{
     list-style: none;
+        padding: 0;
+    margin: 40px;
 }
 #body-list li a{
     text-decoration: none;
