@@ -118,8 +118,8 @@ var lowest=51581;
       var currentline=lines[i].split(",");
 
       for(var j=0;j<headers.length;j++){
-    if(headers[j]=="Consumption"){
-    obj[headers[j]] =numberWithCommas(Math.round(currentline[j]*0.00029307107017*1000000))+"kwh";
+    if(headers[j]=="Consumption: "){
+    obj[headers[j]] =numberWithCommas(Math.round(currentline[j]*0.00029307107017*1000000))+" KwH";
     }else if(headers[j]=="State"){}
     else{
              obj[headers[j]] = currentline[j];
