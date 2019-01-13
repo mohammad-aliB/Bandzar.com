@@ -2,6 +2,10 @@ body {
     margin: 0;
     background-color: #fbfbfb;
 }
+a{
+      text-decoration: none;
+      color:#00ace6;
+}
 ul.navbar {
   list-style-type: none;
   margin: 0;
