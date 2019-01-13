@@ -54,6 +54,9 @@ ul.navbar li a:hover:not(.active) {
     display: block;
     z-index: -1;
 }
+#particles-js {
+  background: cornflowerblue;
+}
 #body{
     max-width: 960px;
     margin-left: auto;
