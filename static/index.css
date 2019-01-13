@@ -74,3 +74,8 @@ ul.navbar li a:hover:not(.active) {
        font-size:170%; 
        display:table;
 }
+.sub-title{
+    color: #00ace6;
+    font-size:150%; 
+    display:block;  
+}
