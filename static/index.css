@@ -31,7 +31,7 @@ ul.navbar li a:hover:not(.active) {
     font-size:200%;
   }
   #logo{
-    position: relative;
+    position: relative !important;
     font-size:400%;
   }
 }
