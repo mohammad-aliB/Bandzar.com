@@ -118,8 +118,8 @@ var lowest=51581;
              obj[headers[j]] = currentline[j];
       }
     }
- obj["color"]=d3.interpolate("#4dff4d", "#ff0000")(parseInt(obj["Consumption"])-lowest)/(highest-lowest);
-console.log(obj);
+ obj["color"]=d3.interpolate("#4dff4d", "#ff0000")((parseInt(obj["Consumption"])-lowest)/(highest-lowest));
+//console.log(obj);
       result.push(obj);
   }
   return JSON.stringify(result); //JSON
