@@ -24,13 +24,15 @@ ul.navbar li a:hover:not(.active) {
   background-color: #80dfff;
   color: white;
 }
-@media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 414px) or(max-width:550px) {
   ul.navbar li a {
     text-align: center;
     float: none;
+    font-size:200%;
   }
   #logo{
     position: relative;
+    font-size:400%;
   }
 }
 #logo{
