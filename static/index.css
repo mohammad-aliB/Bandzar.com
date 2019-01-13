@@ -56,9 +56,14 @@ ul.navbar li a:hover:not(.active) {
 }
 #particles-js {
 background: #86deff;
-  position:absolute;
+    position: fixed;
     width: 100%;
-  height: 100%;
+    height: 100%;
+    /* margin-top: -100px; */
+    /* padding-bottom: 100px; */
+    z-index: -1;
+    top: 0;
+}
 }
 #body{
     max-width: 960px;
