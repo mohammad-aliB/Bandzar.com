@@ -77,7 +77,7 @@
 <p>The Graph above is a visualization of the amount of energy used per capita(per person) in each state. Alaska is suprisingly dark red in the graph because although its energy consumption is low. When divided by the population of Alaska it ends up disproportionately high for many factors, with some of the largest being the oil industry in the state and the fact that they still use very inefficient diesal generators to power most of the states grid.</p>
 <span class="sub-title">Credits</span> 
 <p>Data from: The US Energy Information Administration <a href="https://www.eia.gov/">https://www.eia.gov/</a>
-The most recent data avalibe was used in this(2016)</p>
+The most recent data avalibe was used in this (2016)</p>
 </p>
 <script>
     function tooltipHtml(n, d){ /* function to create html content string in tooltip div. */
@@ -100,6 +100,9 @@ The most recent data avalibe was used in this(2016)</p>
     //         sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]), 
     //                 avg:Math.round((low+mid+high)/3), color:d3.interpolate("#4dff4d", "#ff0000")(low/100)}; 
     //     });
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 function csvJSON(csv){
 var highest=262885;
 var lowest=51581;
@@ -116,7 +119,7 @@ var lowest=51581;
 
       for(var j=0;j<headers.length;j++){
     if(headers[j]=="Consumption"){
-    obj[headers[j]] =Math.round(currentline[j]*0.00029307107017*1000000)+"kwh";
+    obj[headers[j]] =numberWithCommas(Math.round(currentline[j]*0.00029307107017*1000000))+"kwh";
     }else if(headers[j]=="State"){}
     else{
              obj[headers[j]] = currentline[j];
