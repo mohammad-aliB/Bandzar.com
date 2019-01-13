@@ -125,7 +125,7 @@ var lowest=51581;
              obj[headers[j]] = currentline[j];
       }
     }
- obj["color"]=d3.interpolate("#4dff4d", "#ff0000")((parseInt(obj["Consumption"])-lowest)/(highest-lowest));
+ obj["color"]=d3.interpolate("#4dff4d", "#ff0000")((parseInt(obj["Consumption"].replace(",",""))-lowest)/(highest-lowest));
 //console.log(obj);
      // result.push(obj);
      result[currentline[1]]=obj;
