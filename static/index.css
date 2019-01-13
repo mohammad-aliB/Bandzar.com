@@ -37,7 +37,12 @@ ul.navbar li a:hover:not(.active) {
     position: relative !important;
     font-size:500% !important;
   }
+    #body{
+        width:100%;
+        font-size:200%;
+    }   
 }
+
 #logo{
     font-family: cursive; font-size:200%; width:100%; text-align:center;    position: absolute;
     display: block;
