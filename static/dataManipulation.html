@@ -118,10 +118,11 @@ var lowest=51581;
              obj[headers[j]] = currentline[j];
       }
     }
- obj["color"]=d3.interpolate("#4dff4d", "#ff0000")(obj["Consumption"]-lowest)/(highest-lowest)
+ obj["color"]=d3.interpolate("#4dff4d", "#ff0000")(obj["Consumption"]-lowest)/(highest-lowest);
       result.push(obj);
   }
   return JSON.stringify(result); //JSON
+  console.log(result);
 }
 var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
