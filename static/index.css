@@ -92,6 +92,9 @@ background: #86deff;
         padding: 0;
     margin: 40px;
 }
+#body-list li{
+   margin-top:2%;
+}
 #body-list li a{
     text-decoration: none;
     color: #00ace6;
