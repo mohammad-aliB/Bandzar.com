@@ -48,120 +48,120 @@ Priviously you may have written your code proceduraly, which is where all your c
 </p>
 <p>
     To begin our OOP coding adventure we are going to create a class which can be done as follows:
-        <pre class="code-box">
-            public class ClassName(){
+    <pre class="code-box">
+        public class ClassName(){
 
-            }
-        </pre>
+        }
+    </pre>
         We are then going to name this class "Person" and inside of this class we are going to include a private variable called name which will store the name of a person:
-        <pre class="code-box">
-            public class Person(){
-                private String name;
+    <pre class="code-box">
+        public class Person(){
+            private String name;
 
-            }
-        </pre>
+        }
+    </pre>
         Now we are going to include the class constructor, which is simpily a method that has the same name as the class, it is used to initialize the class. Inside of it is where the default values of the classes variables are set(if applicible), More than one constructor can be made but they must take different parameters so that java can recognize which constructor you are refering to. This is reffered to as overloading a constructor, since all constructors must have the same name. If a constructor is not made, Java will create a default constructor. In our case, our constructor will take the persons name as a parameter and if no parameter is passed it will set a default name of our person to "Jack".
 
-        <pre class="code-box">
-            public class Person(){
-                private String name;
-                public Person(){
-                    name="Jack";
-                }
-                public Person(String n){
-                    name=n;
-                }
-
+    <pre class="code-box">
+        public class Person(){
+            private String name;
+            public Person(){
+                name="Jack";
             }
-        </pre>
+            public Person(String n){
+                name=n;
+            }
+
+        }
+    </pre>
         After that we can now think about what we want our class to do, since we have chosen to make our name variable "name" private, but we want access to it from outside of our class, we will use the two types of methods priviously discussed to allow us to set & get our "name" variable.
-        <pre class="code-box">
-            public class Person(){
-                private String name;
-                public Person(){
-                    name="Jack";
-                }
-                public Person(String n){
-                    name=n;
-                }
-                public setName(String n){
-                    name=n;
-                }
-                public getName(){
-                    return name;
-                }
-
+    <pre class="code-box">
+        public class Person(){
+            private String name;
+            public Person(){
+                name="Jack";
             }
-        </pre>
+            public Person(String n){
+                name=n;
+            }
+            public setName(String n){
+                name=n;
+            }
+            public getName(){
+                return name;
+            }
+
+        }
+    </pre>
         We can now add additional functionality to our class beyond being able to modify the "name" variable in this case i will be writing a method to return a message.
-        <pre class="code-box">
-            public class Person(){
-                private String name;
-                public Person(){
-                    name="Jack";
-                }
-                public Person(String n){
-                    name=n;
-                }
-                public setName(String n){
-                    name=n;
-                }
-                public getName(){
-                    return name;
-                }
-                public message(){
-                    return name + "is a great person!";
-                }
-
+    <pre class="code-box">
+        public class Person(){
+            private String name;
+            public Person(){
+                name="Jack";
             }
-        </pre>
+            public Person(String n){
+                name=n;
+            }
+            public setName(String n){
+                name=n;
+            }
+            public getName(){
+                return name;
+            }
+            public message(){
+                return name + "is a great person!";
+            }
+
+        }
+    </pre>
 </p>
 <p>
 Now that we are done working on our class we can save that in a file called "Person.java" and start a new file.<br>
 Our new file will have a similar class constructor as our privious file but with a difffernet name:
-        <pre class="code-box">
-            public class OOPExample{
-        
-            }
-        </pre>
+    <pre class="code-box">
+        public class OOPExample{
+    
+        }
+    </pre>
         But in this case instead of a constructor we are going to use the main method to allow this program to be run directly:
-        <pre class="code-box">
-            public class OOPExample{
-                public static void main (String[] args)
-                {
+    <pre class="code-box">
+        public class OOPExample{
+            public static void main (String[] args)
+            {
 
-                }
             }
-        </pre>
+        }
+    </pre>
         and inside of that main method we are going to create our person class with the name "Bob" in my case i am naming the object "p" but you can name it what ever you like.
-        <pre class="code-box">
-            public class OOPExample{
-                public static void main (String[] args)
-                {
-                    Person p = new Person("Bob"); 
+    <pre class="code-box">
+        public class OOPExample{
+            public static void main (String[] args)
+            {
+                Person p = new Person("Bob"); 
 
-                }
             }
-        </pre>
+        }
+    </pre>
         Now i can access the methods within Person like so:
-        <pre class="code-box">
-            public class OOPExample{
-                public static void main (String[] args)
-                {
-                    Person p = new Person("Bob"); 
-                    p.setName("Mike");
-                    System.out.println (p.message());
-                }
+    <pre class="code-box">
+        public class OOPExample{
+            public static void main (String[] args)
+            {
+                Person p = new Person("Bob"); 
+                p.setName("Mike");
+                System.out.println (p.message());
             }
-        </pre>
+        }
+    </pre>
     </p>
     <p>
         But this is a very basic example, lets hypothetically say that you wish to add additional functionality to your class, by adding an additional variable or maybe a method. This can all be done with inheritance, which allows you to extend the class, creating a subclass (The class that was extended will be called the superclass). The subclass will not have to redefine any of the variables or methods again as they are inherited from the superclass. The subclass also has the ability to override any of the methods in the superclass. allowing you to create a class similar to another class without having to rewrite all the code required for that class. As demonstrated below:
-        <pre class="code-box">
-            public class Europeans extends Persons{
-            
-            }
-        </pre>
+    <pre class="code-box">
+        public class Europeans extends Persons{
+        
+        }
+    </pre>
 
 }
     </p>
