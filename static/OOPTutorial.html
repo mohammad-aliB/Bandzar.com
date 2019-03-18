@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>OOP Tutorial</title>
+    <meta name="description" content="Don't Fear The OOP">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">OOP Tutorial</span>
+    <p>By:Mohammad-Ali Bandzar | March 17 2019</p>
+    <p>An introduction to OOP(Object Oriented Programming)
+    </p>
+<p>
+Priviously you may have written your code proceduraly, which is where all your code is written within a single file and is often made up of a single method/no apparent methods. in which code would be run top down(proceduraly). Where as in OOP classes and models are used to create representations of real world enviroments/datastore formats.
+</p>
+<p>
+    OOP key points<br>
+    <ul>
+        <li>A class is like the template for a set of data</li>
+        <li>Objects are things formed by the class</li>
+        <li>Actions that the object can preform are called methods</li>
+        <li>Attributes are fields or public variables of the object</li>
+    </ul>
+    Object variables are sometimes made private to prevent unauthorized code from modifying it and to allow for that variable name to be reused in other classes. We have two types of methods to modify private variables:
+    <ul>
+        <li>Mutator Methods, often written as "set(variable name)" it is used to set the variables contents.</li>
+        <li>Accesor Methods, often written as "get(variable name)" it is used to access the value of a variable private to that class</li>
+    </ul>
+</p>
+<p>
+    To begin our OOP coding adventure we are going to create a class which can be done as follows:
+        <pre class="code-box">
+            public class ClassName(){
+
+            }
+        </pre>
+        We are then going to name this class "Person" and inside of this class we are going to include a private variable called name which will store the name of a person:
+        <pre class="code-box">
+            public class Person(){
+                private String name;
+
+            }
+        </pre>
+        Now we are going to include the class constructor, which is simpily a method that has the same name as the class, it is used to initialize the class. Inside of it is where the default values of the classes variables are set(if applicible), More than one constructor can be made but they must take different parameters so that java can recognize which constructor you are refering to. This is reffered to as overloading a constructor, since all constructors must have the same name. If a constructor is not made, Java will create a default constructor. In our case, our constructor will take the persons name as a parameter and if no parameter is passed it will set a default name of our person to "Jack".
+
+        <pre class="code-box">
+            public class Person(){
+                private String name;
+                public Person(){
+                    name="Jack";
+                }
+                public Person(String n){
+                    name=n;
+                }
+
+            }
+        </pre>
+        After that we can now think about what we want our class to do, since we have chosen to make our name variable "name" private, but we want access to it from outside of our class, we will use the two types of methods priviously discussed to allow us to set & get our "name" variable.
+        <pre class="code-box">
+            public class Person(){
+                private String name;
+                public Person(){
+                    name="Jack";
+                }
+                public Person(String n){
+                    name=n;
+                }
+                public setName(String n){
+                    name=n;
+                }
+                public getName(){
+                    return name;
+                }
+
+            }
+        </pre>
+        We can now add additional functionality to our class beyond being able to modify the "name" variable in this case i will be writing a method to return a message.
+        <pre class="code-box">
+            public class Person(){
+                private String name;
+                public Person(){
+                    name="Jack";
+                }
+                public Person(String n){
+                    name=n;
+                }
+                public setName(String n){
+                    name=n;
+                }
+                public getName(){
+                    return name;
+                }
+                public message(){
+                    return name + "is a great person!";
+                }
+
+            }
+        </pre>
+</p>
+<p>
+Now that we are done working on our class we can save that in a file called "Person.java" and start a new file.<br>
+Our new file will have a similar class constructor as our privious file but with a difffernet name:
+        <pre class="code-box">
+            public class OOPExample{
+        
+            }
+        </pre>
+        But in this case instead of a constructor we are going to use the main method to allow this program to be run directly:
+        <pre class="code-box">
+            public class OOPExample{
+                public static void main (String[] args)
+                {
+
+                }
+            }
+        </pre>
+        and inside of that main method we are going to create our person class with the name "Bob" in my case i am naming the object "p" but you can name it what ever you like.
+        <pre class="code-box">
+            public class OOPExample{
+                public static void main (String[] args)
+                {
+                    Person p = new Person("Bob"); 
+
+                }
+            }
+        </pre>
+        Now i can access the methods within Person like so:
+        <pre class="code-box">
+            public class OOPExample{
+                public static void main (String[] args)
+                {
+                    Person p = new Person("Bob"); 
+                    p.setName("Mike");
+                    System.out.println (p.message());
+                }
+            }
+        </pre>
+    </p>
+    <p>
+        But this is a very basic example, lets hypothetically say that you wish to add additional functionality to your class, by adding an additional variable or maybe a method. This can all be done with inheritance, which allows you to extend the class, creating a subclass (The class that was extended will be called the superclass). The subclass will not have to redefine any of the variables or methods again as they are inherited from the superclass. The subclass also has the ability to override any of the methods in the superclass. allowing you to create a class similar to another class without having to rewrite all the code required for that class. As demonstrated below:
+        <pre class="code-box">
+            public class Europeans extends Persons{
+            
+            }
+        </pre>
+
+}
+    </p>
+    <p>
+        This concept can be extended by understanding class casting, UpCasting and Downcasting is a way to travel through the class hierarchy. Upcasting is going up a class level to its superclass. This operation can never fail because once an object is created, anything above it must have already been initialized. On the other hand, downcasting has the potential to fail. If an object is trying to go down the hierarchy it can fail because more than one subclass may exist.
+    </p>
+<p>
+    THANKS FOR READING
+</p>
+
+
+
+
+</body>
+</html>
