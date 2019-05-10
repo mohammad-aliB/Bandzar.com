@@ -57,7 +57,7 @@ ul.navbar li a:hover:not(.active) {
         font-size:200% !important;
         max-width:none !important;
     }  
-    #inner-body p{
+    #inner-body{
         font-size:200% !important;
     }
 }
