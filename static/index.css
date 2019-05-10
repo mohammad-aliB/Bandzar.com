@@ -52,6 +52,7 @@ ul.navbar li a:hover:not(.active) {
     font-size:500% !important;
   }
     #body{
+        background-color:red;
         width:100%;
         font-size:200% !important;
         max-width:none !important;
