@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Recursion in java</title>
+    <meta name="description" content="recursion in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Recursion for beginners</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to Recursion with java
+    </p>
+<p>
+Recursion is where some code(often a method) calls itself. This proccess allows for repititive operations to be preformed rapidly and for the simplification of code as a minimal number of lines of code would be required to run the same code/conditions again. Recursive methods have a comparable functionality to a loop but are often easier to understand and are much more capible. A recursive method must eventually come to an end, otherwise a stackoverflow will occur. generally speaking most recursive methods take a paramter. This allows the same code to be run with a different parameter passed to it and its result will often be used to determine whether or not to make a recursive call again.
+</p>
+    <pre class="code-box">
+        int index=0;
+        int private String[] toppings = {"Cheese", "Pepperoni", "Black Olives"};
+        public String loop (int index, String[] toppings){
+            if (toppings[index]!=null){
+                return loop(index+1,toppings);
+            }else{
+                return "your array has a length of: "+index;
+            }
+        }
+    </pre>
+<p>
+    In the example above 2 variables are created an integer and an array of strings. the method takes both as paramters then determines if that an item in the array with that index exists. If it does it will call the method again after incrementing index by one. If it does not then it will return a string stating that index is the length of the array.
+</p>
+<p>
+Three common types of recursion exist, Linear, Binary and Tail.<br>
+    <ul>
+    <li>Linear: A  linear recursion refers to a recursive method that only calls itself a single time.</li>
+    <li>Binary: A binary recursion refers to a recursion that calls itself more than once within a method, it is called a binary recursion because it will often rely on a boolean condition to determine what parameters it should call itself with</li>
+    <li> Tail: A Tail recursion referes to a method that has its recursive call statement located at the end of the method just before the curly braces.
+    </li>
+</ul>
+</p>
+<p>
+    Recursion is very similar to a loop in the sense that the same block of code can be run more than once, but where recursion really stands out from a loop is that in binary recursion a method may call itself twice. which is functionality that is very difficult to replicate within a loop. recursive methods are also often dependant on return statements to pass parameters back to the origional method call. Where recursion really suffers in comparason to a loop is in terms of memory usage as recursive calls in java require the bytecode to be duplicated in memory.
+</p>
+<div class="sub-title">Examples</div>
+<p>
+    Linear search or selection search is demonstrated below as a linear recursive method that will search through a set of data and return a boolean value based on if that value was found within the array.
+</p>
+    <pre class="code-box">
+        int index=0;
+        int private String[] toppings = {"Cheese", "Pepperoni", "Black Olives"};
+        public boolean loop (int index, String[] toppings,String search){
+            if(index&lt;toppings.length()){
+                if (toppings[index]==search){
+                    return true;
+                }else{
+                    return loop(index+1,String[] toppings,search);
+                }
+            }else{
+                return false;
+            }
+        }
+        search(0,toppings,"Pepperoni");
+    </pre>
+<p>
+    Our next example will be a method to calculate the fibonacci sequence which is one of the most popular pieces of code to write in a lesson about recursion. It utilizes tail recursion as it calls itself at the end of its method.
+</p>
+<pre class="code-box">
+    public int fibonacci (int n){
+        if(n == 0)
+            return 0;
+        else if(n == 1)
+            return 1;
+        else
+            return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+</pre>
+<p>
+    THANKS FOR READING<br>
+    credits:https://stackoverflow.com/questions/26874794/java-fibonacci-recursion-code
+</p>
+</div>
+</div>
+</body>
+</html>

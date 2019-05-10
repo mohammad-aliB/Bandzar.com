@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Arrays in java</title>
+    <meta name="description" content="Arrays in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Arrays for beginners</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to Arrays with java
+    </p>
+<p>
+Have you ever been in a situation where you had a large number of strings and had difficuilty managing it all. Well thats what arrays are all about, An array is like a textbook where each page is its own uniquely addressed and accessible string, but are all stored under one main name, where the textbook name would be the array name. In java arrays are only used to store a single data type such as double or string, however there are two main types of arrays in java, Arrays and array lists.
+</p>
+<p>
+Arrays: these are used to store data of a single type often a primitive type such as double or int. These kinds of arrays have a fixed size that must be declared when they are created. An array of this type can also contain arrays of any size of the same type, each array contained within an array adds a dimension to the array as explained below:</p>
+<p>
+1D Arrays: a one dimensional array allows you to store a single set of values, kind of like a list youd make before you went grocery shopping. all the items are placed back to back in a sequencial order. They effectively replace the need for you to create a series of variables the same type and allow you to group your data together into an umbrella name, the array name.
+</p>
+<p>
+    2D Arrays: this is an array that contains an array for ever element within it. it allows you to store values in a similar fashion to what a table would allow you to do. a good example use case for a 2d array would be if you wanted to make student names searchable by seat position in the class, you could create a 2d array of strings that contains the names of students in their assigned seats and then the array would be searchable by seat placement. making locating which students are seated closest to them easy.
+</p>
+<p>
+    Array Lists: This type of array is best suited for situations where you want to use an array but are unable to determine the required length of the array during initialization. an array list is an array that automatically resizes when it becomes full.
+</p>
+<div class="sub-title">Examples</div>
+<p>initializing a 1D array:</p>
+    <pre class="code-box">
+        private DataType [] arrayName = new DataType [arraySize]
+    </pre>
+<p>initializing a 2D array:</p>
+    <pre class="code-box">
+        private DataType [][] arrayName = new DataType [NumOfRows][NumOfColums]
+    </pre>
+<p>initializing an arraylist:</p>
+    <pre class="code-box">
+        ArrayList&lt;ElementType&gt; arrayListName = new ArrayList&lt;ElementType&gt;();
+    </pre>
+    <p> determining an array length:</p>
+    <pre class="code-box">
+        arrayName.length;
+    </pre>
+    <p>determining size of an arraylist</p>
+    <pre class="code-box">
+        arrayListName.size();
+    </pre>
+    <p>Adding an element to an array list</p>
+    <pre class="code-box">
+        arrayListName.add(Element);
+    </pre>
+    <p>Getting a value from an array list</p>
+    <pre class="code-box">
+        arrayListName.get(Location);
+    </pre>
+    <p>determining if an array list contains a value</p>
+    <pre class="code-box">
+        arrayListName.contains(Element);
+    </pre>
+    <p>finding the index of a value in an array list</p>
+    <pre class="code-box">
+        arrayListName.indexOf(Element);
+    </pre>
+    <div class="sub-title">Foreach loops</div>
+    <p>The Foreach loop is the same thing as a foorloop that would go through every element of the array, but instead of passing the index value to the contained code, this passes the value contained within the array. Simplifying the code and making it look more simple.
+    </p>
+    <pre class="code-box">
+        for (ElementType tempElementName: arrayListName){
+
+        }
+    </pre>
+<p>
+    THANKS FOR READING<br>
+    credits:https://en.wikipedia.org/wiki/Foreach_loop
+</p>
+</div>
+</div>
+</body>
+</html>

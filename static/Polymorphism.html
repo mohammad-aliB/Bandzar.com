@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Polymorphism in java</title>
+    <meta name="description" content="Polymorphism in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Polymorphism for beginners</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to polymorphism with java
+    </p>
+<p>
+Polymorphism is the ability of an object to take on many forms. In java this happens when we create multiple classes that refer to/depend on each other to function, since methods can be inherited from other classes, we can re use methods saving us development time and making our code more readible.
+</p>
+<pre class="code-box">
+    class Animal {
+        public void sound() {
+            System.out.println("...");
+        }
+    }
+
+class Bird extends Animal {
+
+    public void sound() {
+        System.out.println("Chirp Chirp");
+    }
+}
+
+class Cat extends Animal {
+
+    public void sound() {
+        System.out.println("Meow");
+    }
+}
+
+class Main {
+
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        Animal cat = new Cat();
+        Animal bird = new Bird();
+
+        animal.sound(); // call sound
+        bird.sound(); // call sound
+        cat.sound(); // call sound
+
+        Animal a = cat; //Up casting
+        a.sound();
+        Cat c2 = (Cat) a; //Down Casting back to its original
+        c2.sound();
+    }
+}
+</pre>
+<p>
+    THANKS FOR READING<br>
+    credits:Mrs.Krastavas pickup folder
+</p>
+</div>
+</div>
+</body>
+</html>

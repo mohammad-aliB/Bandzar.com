@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Searching in java</title>
+    <meta name="description" content="searching in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Searching for beginners</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to Searching with java
+    </p>
+<p>
+If you have ever wanted to know if an item is present in an array or know its position(index) in an array, you're in luck because java has a built in method to do just that:
+<p>
+    <pre class="code-box">
+        VariableName.indexOf(SearchingFor);
+    </pre>
+    <p>This metod will return the first position(index) of the item. something you should be aware of is that if there are multiple matches within the array it will only return the location of the first one as this method stops searching after it finds a match. The method will also return a location of -1 if no match is found. If you are instead intrested in writing your own search algorithm read on.
+    </p>
+    <div class="sub-title">Sequential search</div>
+    <p>
+        This is the simplist search to understand and operates just like the one used by the intbuilt method mentioned above, it goes through every element in the array in order and stops when a match is found and returns its position. if no match is found, -1 is returned.
+    </p>
+    <pre class="code-box">
+        public int sequentialSearch(Object [ ] arr, Object value){
+            for (int i = 0; i < arr.length ; i++){
+                if (value.equals(arr [i])){
+                    return i;
+                }
+            }
+            return -1; 
+        }
+    </pre>
+<p>
+    THANKS FOR READING<br>
+    credits:https://www.vogella.com/tutorials/JavaAlgorithmsSearch/article.html
+</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sorting in java</title>
+    <meta name="description" content="sorting in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Sorting for beginners</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to Sorting with java
+    </p>
+<p>
+In java there are many different ways one can sort an array. The main difference between sorting algorithms in java is computational time, which is often dependant on the data type and input size and the amount of memory the sorting algorithm uses. The two which i will be talking about in this tutorial include selection sort becuase i feel that that is a great introductory sorting algorithm for beginners and CockTail shakcker sort, becuase i did that for a presentation in class. 
+</p>
+<div class="sub-title">Selection Sort</div>
+<p>
+    Selection sort is probably the simpilst sorting algorithm not just in java but in general. All selection sort does is it goes through every element in the array and when its done, it swaps the arrays first value with the smallest value its found and it effectively keeps doing this untill it has gone over the whole array. This sorting algorithm has a time complexity of n^2, if you do not know big-O notation that is ok, all it means is that your program will need to go over the array n^2 times (where n is the array length) to sort the array using selection sort. An example selection sort algrithm can be found at the bottom of this page.
+    </p>
+   <div class="sub-title">CockTail Shaker Sort:</div> 
+   <p>
+   CockTail shaker sort is a sorting algorithm that goes through the array and compares each element with the next element in the array(if applicible), if the next element is smaller it will swap the two elements. When it reaches the end of the array it will preform the same operation going from the end of the array to the begining. This will continue untill the algorithem can make a complete pass over the array without swapping any 2 elements.
+</p><div class="sub-title">Examples:</div>
+<pre class="code-box">
+    public static void selectionSort(int[] arr){  
+        for (int i = 0; i < arr.length - 1; i++)  
+        {  
+            int index = i;  
+            for (int j = i + 1; j < arr.length; j++){  
+                if (arr[j] < arr[index]){  
+                    index = j;//searching for lowest index  
+                }  
+            }  
+            int smallerNumber = arr[index];   
+            arr[index] = arr[i];  
+            arr[i] = smallerNumber;  
+        }  
+    }  
+</pre>
+<pre class="code-box">
+ void cocktailSort(int a[]) 
+    { 
+        boolean swapped = true; 
+        int start = 0; 
+        int end = a.length; 
+  
+        while (swapped == true) { 
+            // reset the swapped flag on entering the 
+            // loop, because it might be true from a 
+            // previous iteration. 
+            swapped = false; 
+  
+            // loop from bottom to top same as 
+            // the bubble sort 
+            for (int i = start; i < end - 1; ++i) { 
+                if (a[i] > a[i + 1]) { 
+                    int temp = a[i]; 
+                    a[i] = a[i + 1]; 
+                    a[i + 1] = temp; 
+                    swapped = true; 
+                } 
+            } 
+  
+            // if nothing moved, then array is sorted. 
+            if (swapped == false) 
+                break; 
+  
+            // otherwise, reset the swapped flag so that it 
+            // can be used in the next stage 
+            swapped = false; 
+  
+            // move the end point back by one, because 
+            // item at the end is in its rightful spot 
+            end = end - 1; 
+  
+            // from top to bottom, doing the 
+            // same comparison as in the previous stage 
+            for (int i = end - 1; i >= start; i--) { 
+                if (a[i] > a[i + 1]) { 
+                    int temp = a[i]; 
+                    a[i] = a[i + 1]; 
+                    a[i + 1] = temp; 
+                    swapped = true; 
+                } 
+            } 
+  
+            // increase the starting point, because 
+            // the last stage would have moved the next 
+            // smallest number to its rightful spot. 
+            start = start + 1; 
+        } 
+    } 
+  
+    /* Prints the array */
+    void printArray(int a[]) 
+    { 
+        int n = a.length; 
+        for (int i = 0; i < n; i++) 
+            System.out.print(a[i] + " "); 
+        System.out.println(); 
+    } 
+</pre>
+<p>
+
+    THANKS FOR READING<br>
+    credits:https://www.javatpoint.com/selection-sort-in-java<br>
+    https://www.geeksforgeeks.org/cocktail-sort/
+</p>
+</div>
+</div>
+</body>
+</html>

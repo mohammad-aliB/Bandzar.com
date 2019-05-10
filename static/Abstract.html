@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Abstract methods & classes in java</title>
+    <meta name="description" content="Abstract methods & classes in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+    <style>
+    body{font-size: 110%;}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Abstract Methods & Classes</span>
+    <p>By:Mohammad-Ali Bandzar | May 9 2019</p>
+    <p>An introduction to Abstraction with java
+    </p>
+<p>
+Abstract classes are classes that are declared as abstract. Abstract classes can only be used in sub classes. An abstract class is created without any actual functionality, with its main purpose being to reserve the class name for later use.
+</p>
+<p>
+    Any class that uses abstract methods must also have those methods declared as an abstract class.
+</p>
+<p>Abstract classes are used when you want to share methods amoungst multiple classes. The subclass declaration must have the same name as the class declaration and will detetermine the methods functionality.
+    </p>
+    <pre class="code-box">
+        //abstract parent class
+        abstract class Animal{
+            //abstract method
+            public abstract void sound();
+        }
+
+        class Cat extends Animal{
+
+            public void sound(){
+                System.out.println("Meow");
+            }
+            public static void main(String args[]){
+                Animal cA = new Cat();
+                cA.sound();
+            }
+        }
+    </pre>
+<p>
+    THANKS FOR READING<br>
+    credits:Mrs.Krastavas pickup folder
+</p>
+</div>
+</div>
+</body>
+</html>
