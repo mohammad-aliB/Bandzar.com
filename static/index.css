@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: #fbfbfb;
+}
+#inner-body p{
     word-wrap:break-word;
 }
 a{
