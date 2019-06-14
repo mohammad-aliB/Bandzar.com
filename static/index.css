@@ -97,7 +97,7 @@ background: #86deff;
     margin-right: auto;
     left: 0;
     right: 0;
-    opacity:.7;
+    /*opacity:.7;*/
 }
 #inner-body{
     padding:20px;
