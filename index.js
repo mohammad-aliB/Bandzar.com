@@ -11,6 +11,7 @@ dispatcher.GetRequest('/',function(req,res){
             });
             res.end();
         });
+console.log("the server started successfully");
 }catch(err) {
 console.log("there was this error: "+err);
 }
