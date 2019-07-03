@@ -135,7 +135,7 @@ From the example above we can see that the factorial of any number is simply its
 <div class="sub-title">using product notation</div>
 <p>
     Product notation is just like summation notation(represented by sigma) but instead of adding we multiply(take the product of) succedding terms.<br>
-    the factorial of any integer n, can be solved using the following product notation equation<br>
+    the factorial of any integer n>0, can be solved using the following product notation equation<br>
     <span id="katex7">loading...</span><br>
 </p>
 <div class="sub-title">The zero case</div>
@@ -151,11 +151,21 @@ Which we can then rearrange to isolate 0!.
     <span id="katex13">loading...</span><br>
         <span id="katex14">loading...</span><br>
     </p>
+    <div class="sub-title">dividing factorials</div>
+    <p>
+        <span id="katex17">loading...</span><br>
+        the equation above can be expanded to the following:<br>
+        <span id="katex18">loading...</span><br>
+        Then we can cross out like terms to simplify our fraction:<br>
+        <span id="katex19">loading...</span><br>
+        Then we can solve:<br>
+        <span id="katex20">loading...</span><br>
+    </p>
 <div class="sub-title">Pro tips</div>
 <p><ol>
-    <li>cant be negative</li>
-    <li>find out how to solve for factorials on your calculator before test day</li>
-    <li>remember than 0! is a defined value</li>
+    <li>You cant take the factorial of a negative number</li>
+    <li>you should find out how to solve for factorials on your calculator before test day</li>
+    <li>remember that 0! is a defined value</li>
 </ol>
     </p>
 <div class="sub-title">Example 1</div>
@@ -223,6 +233,11 @@ katex.render("0!=\\frac{1!}{1}",katex13);
 katex.render("0!=1",katex14);
 katex.render("10!=3,628,800",katex15);
 katex.render("\\frac{10!}{5!\\cdot2!\\cdot3!}=2520",katex16);
+katex.render("\\frac{10!}{6!}",katex17);
+katex.render("\\frac{10*9*8*7*6*5*4*3*2*1}{6*5*4*3*2*1}",katex18);
+katex.render("\\frac{10*9*8*7}{1}",katex19);
+katex.render("=5,040",katex20);
+
 function findFactorial() {
     var x = document.getElementById("inputFactorial").value;
     if(x%1 != 0 || x<0){
