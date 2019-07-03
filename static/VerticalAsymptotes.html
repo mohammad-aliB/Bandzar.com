@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Introduction To Factorials(n!)</title>
+    <meta name="description" content="Polymorphism in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+    <link rel="stylesheet" href="/static/index.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Vertical Asymptotes</span>
+    <p>By:Mohammad-Ali Bandzar | July 3 2019</p>
+<p>
+Vertical asymptotes (often abreviated to V.A) are vertical lines that a function will aproach and become infinitesimally close to but will never touch. This can also be explained as the distance between the vertical asymptote and the function aproaching zero. as the function aproaches infinity from one or both sides of the asymptote.
+</p>
+<p>
+    Three general types of asymptotes exist, vertical ones, horizontal ones, and oblique ones(also commonly called slant asymptotes). in this tutorial we will be focusing only on vertical asymptotes as they are the most common and the easiest to determine. the equation for a vertical asymptote will have an undefined/"infinite" slope as they will be vertical lines.
+</p>
+<div class="sub-title">solving for asymptotes</div>
+<p>
+A vertical asymptote can be within rational functions by solving for when the denominator of a rational function equals zero. If the denominator never equals zero then your function is likely continuous for its entire domain and has no vertical asymptotes.<br>
+So for 
+    <span id="katex1">loading...</span><br>
+    Which when graphed looks like this:<br>
+    <img src="VerticalAsymptotes1.png" alt="1/x graph"><br>
+    we can see that the graph approaches but never reaches x=0 as shown with the dashed line:<br>
+    <img src="VerticalAsymptotes2.png" alt="1/x graph with v.a"><br>
+    We can then solve for the equation of this vertical asymptote by solving for when the denominator of the function is equal to zero in this case it is zero. we then want to label our asymptote at the bottom of the page next to the asymptote with its equation.<br>
+    <img src="VerticalAsymptotes3.png" alt="1/x graph with v.a and label"><br>
+</p>
+<div class="sub-title">The proof</div>
+<p>
+    Below is a table of our function f(x) approaching our vertical asymptote but never reaching it from the left side, obviously the same would apply to the right aswell
+    <table style="width:100%">
+  <tr>
+    <th>f(x)</th>
+    <th>result</th>  
+  </tr>
+  <tr>
+    <td>f(-1)</td>
+    <td>1</td>
+</tr>
+  <tr>
+    <td>f(-0.1)</td>
+    <td>-10</td>
+</tr>
+  <tr>
+    <td>f(-0.01)</td>
+    <td>-100</td>
+</tr>  
+<tr>
+    <td>f(-0.001)</td>
+    <td>-1000</td>
+</tr>  <tr>
+    <td>f(-0.0001)</td>
+    <td>-10000</td>
+</tr>  <tr>
+    <td>f(-0.00001)</td>
+    <td>-100000</td>
+</tr>  <tr>
+    <td>f(-0.000001)</td>
+    <td>-1000000</td>
+</tr>  <tr>
+    <td>f(-0.0000001)</td>
+    <td>-10000000</td>
+</tr>
+</table>
+As you can see from the table our graph aproaches infinity as we come close to our asymptote but we are never able to reach/touch/intersect with our asymptote.
+</p>
+<div class="sub-title">The special exception</div>
+<p>
+    This isnt really a special case but in general if you have the same zero in both the numerator and denominator you do not get an asymptote but instead get a hole.<br>
+    An example of this would be<br>
+    <span id="katex2">loading...</span><br>
+    if you were simpily solving for when the denominator was equal to zero you maybe mislead into beliving that that equation has a vertical asymptote but in reality it does not, this could have been determined by either graphing, plugging in numbers close to where you belive the asymptote would be and recognizing that it isnt going toward infinity as demonstrated in the table above, or by seeing that the numerator and denominator have the same zero and recognizing that as a hole.<br>
+    <img src="VerticalAsymptotes4.png" alt="graph of above function"><br>
+</p>
+<div class="sub-title">Example 1:</div>
+ <p>
+    <span id="katex3">loading...</span><br>
+    This is a sort of trick question because<br>
+    <span id="katex4">loading...</span><br>
+    has no real solutions telling us that the function will not have any vertical asymptotes.
+    <img src="VerticalAsymptotes5.png" alt="graph of above function"><br>
+</p>
+<div class="sub-title">Example 2:</div>
+<p>
+    <span id="katex5">loading...</span><br>
+    We will start by solving for when the denominator is equal to zero.<br>
+    <span id="katex6">loading...</span><br>
+    <span id="katex7">loading...</span><br>
+    We then want to verify that f(-2) is a vertical asymptote, we can do this two different ways<br>
+    The first way would be to plug in a very close number such as f(-2.000001) which is approx -3. since the number isnt incredibly large(aproaching infinity) we can confirm that -2 is not a vertical asymptote. The other method would be to solve for the zeros of the numerator as follows:<br>
+    <span id="katex8">loading...</span><br>
+    In this case you could use either a scientific calculator or the quadratic formula to find the zeros/holes to be -2 and -0.5 and since one of our numerator zeros was also one of our denominator zeros we can conclude that -2 is not a vertical asymptote but instead a hole as shown below.<br>
+    <img src="VerticalAsymptotes6.png" alt="graph of above function"><br>
+</p>
+<div class="sub-title">Example 3:</div>
+<p>
+    <span id="katex9">loading...</span><br>
+ We will start off by setting the denominator equal to zero and solving:<br>
+    <span id="katex10">loading...</span><br>
+    <span id="katex11">loading...</span><br>
+    <span id="katex12">loading...</span><br>
+    <span id="katex13">loading...</span><br>
+We can then verify these zeros are valid asymptotes either of the two ways mentioned above, my personal preference is to solve for the numerators zeros which is this case is only x=0, confirming my belief that x=3 and x=-3 are both vertical asymtotes as demonstrated below:<br>
+    <img src="VerticalAsymptotes7.png" alt="graph of above function"><br>
+</p>
+<div class="sub-title">Pro tips:</div>
+<p>
+    <ul>
+        <li>Make yourself confortable graphing</li>
+        <li> if you have difficulty graphing you can always fall back to drawing points and by using the table function on your calculator to generate points quickly.</li>
+        <li> make youself confortable solving quadratic and cubic equations</li>
+        <li> dont forget to verify that the zero in the denominator is in fact an asymptote</li>
+        <li>dont forget that some function like <span id="katex14">loading...</span> have an infinite number of vertical asymptotes</li>
+        <li>use a graphing calculator/desmos.com to verify your solutions</li>
+</p>
+<p>
+    THANKS FOR READING<br>
+</p>
+</div>
+</div>
+<script>
+katex.render("f\left(x\right)=\frac{1}{x}", katex1);
+katex.render("f\left(x\right)=(x^2+4x+3)/(x+3)", katex2);
+katex.render("f\left(x\right)=\frac{x}{x^2+1}", katex3);
+katex.render("x^2+1=0", katex4);
+katex.render("f\left(x\right)=\frac{\left(2x^2+5x+2\right)}{x+2}", katex5);
+katex.render("x+2=0", katex6);
+katex.render("x=-2", katex7);
+katex.render("2x^2+5x+2=0", katex8);
+katex.render("f\left(x\right)=\frac{x}{x^2-9}", katex9);
+katex.render("x^2-9=0", katex10);
+katex.render("x^2=9", katex11);
+katex.render("x=\pm\sqrt{9}", katex12);
+katex.render("x=3_{ }\&_{ }x=-3", katex13);
+katex.render("\frac{1}{\sin\left(x\right)}", katex14);
+
+
+</script>
+</body>
+</html>
