@@ -6,7 +6,11 @@
     <meta name="description" content="Polymorphism in java">
     <meta name="author" content="Mohammad-Ali Bandzar">
     <link rel="stylesheet" href="/static/index.css">
-    <style>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
     .code-box{
         padding: 2%;
         overflow:auto;
@@ -33,16 +37,203 @@ The factorial function in math written as n! where n can be any whole number gre
 </p>
 <div class="sub-title">Examples</div>
 <p>
-    <span id="katex1">loading...</span>
+    Shown below is how we would calculate 6!<br>
+    <span id="katex1">loading...</span><br>
+    That same example could be rewritten to the following:
+    <span id="katex2">loading...</span><br>
+</p>
+<div class="sub-title">Factorial of 1-10 </div>
+<p>
+    <table style="width:100%">
+  <tr>
+    <th>n</th>
+    <th>n!</th> 
+    <th>=</th>
+    <th>=</th>  
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>10*9*8*7*6*5*4*3*2*1</td>
+    <td>10*9!</td>
+    <td>3,628,800</td>
+</tr>
+  <tr>
+    <td>9</td>
+    <td>9*8*7*6*5*4*3*2*1</td>
+    <td>9*8!</td>
+    <td>362,880</td>
+</tr>
+  <tr>
+    <td>8</td>
+    <td>8*7*6*5*4*3*2*1</td>
+    <td>8*7!</td>
+    <td>40,320</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>7*6*5*4*3*2*1</td>
+    <td>7*6!</td>
+    <td>5,040</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>6*5*4*3*2*1</td>
+    <td>6*5!</td>
+    <td>720</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>5*4*3*2*1</td>
+    <td>5*4!</td>
+    <td>120</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>4*3*2*1</td>
+    <td>4*3!</td>
+    <td>24</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>3*2*1</td>
+    <td>3*2!</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>2*1</td>
+    <td>2*1!</td>
+    <td>2</td>
+</tr>
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1*0!</td>
+    <td>1</td>
+</tr>
+<tr>
+    <td>0</td>
+    <td>N/A</td>
+    <td>0!</td>
+    <td>1</td>
+</tr>
+</p>
+<div class="sub-title">Calculating a factorial</div>
+<p>
+generally speaking most scientific calculators will have an inbuilt factorial button often labeled n! or x! that will solve for factorials for you, but to gain a better understanding about how they work read on.<br>
+From the example above we can see that the factorial of any number is simply itself multipled by the factorial of the number 1 less than itself, which can be written as follows:<br>
+    <span id="katex3">loading...</span><br> 
+    we could then simplfy this to the following:
+    <span id="katex4">loading...</span><br> 
+    then we could apply the same rule we determined above to the 5!:
+    <span id="katex5">loading...</span><br> 
+    This methodology can be applied to any positive integer(with the special case of zero being talked about at the bottom of this page). The sort of general form equation we can develop from this is as follows:<br>
+    <span id="katex6">loading...</span><br> 
+</p>
+<div class="sub-title">using product notation</div>
+<p>
+    Product notation is just like summation notation(represented by sigma) but instead of adding we multiply(take the product of) succedding terms.<br>
+    the factorial of any integer n, can be solved using the following product notation equation<br>
+    <span id="katex7">loading...</span><br>
 </p>
 <div class="sub-title">The zero case</div>
+<p>
+    The factorial of zero is always one,so<br>
+    <span id="katex8">loading...</span><br>
+Like me, you may belive that this is a rather counter intuitive idea, but it can be justified using the following equation which is based on the one we developed above.<br>
+    <span id="katex9">loading...</span><br>
+    <span id="katex10">loading...</span><br>
+    <span id="katex11">loading...</span><br>
+Which we can then rearrange to isolate 0!.
+    <span id="katex12">loading...</span><br>
+    <span id="katex13">loading...</span><br>
+        <span id="katex14">loading...</span><br>
+    </p>
+<div class="sub-title">Pro tips</div>
+<p><ol>
+    <li>cant be negative</li>
+    <li>find out how to solve for factorials on your calculator before test day</li>
+    <li>remember than 0! is a defined value</li>
+</ol>
+    </p>
+<div class="sub-title">Example 1</div>
+<p>
+    lets say that we had 10 friends we wanted to place in line for ice cream and we wanted to know how many different ways we could arrange them. The equation would be as follows:<br>
+            <span id="katex15">loading...</span><br>
+            Explained: we would have 10 friends to choose from for the first spot in line, but only 9 for the second and only 8 for the third so  on and so forth.
+    </p>
+    <div class="sub-title">Example 2</div>
+    <p>
+        Mike has 10 marbles 5 are red, 2 are blue and 3 are green, in how many different ways can he arrange them into a row? The equation would be as follows:<br>
+         <span id="katex16">loading...</span><br>
+         Explained: we start off by taking 10! because that is the number of marbles Mike has, we then want to divide by 5!,2! and 3! because those are the sets of the same marbles he has, because swaping 2 or more marbles of the same color will have no effect on the way the row of marbles will look, we want to exclude those cases.
+</p>
+    <div class="sub-title">Calculator</div>
+    <p>
+        <input type="number" id="inputFactorial" value="6">
+
+<button onclick="findFactorial()">Find Factorial</button>
+<p id="output"></p>
+</p>
+    <div class="sub-title">Calculator code</div>
+<p>for those who are intrested i have included the calculator code below:</p>
+<pre class="code-box">
+    function findFactorial() {
+        var x = document.getElementById("inputFactorial").value;
+        if(x%1 != 0 || x<0){
+            document.getElementById("output").innerHTML = "please enter a valid input";
+        }else if(x==0){
+            document.getElementById("output").innerHTML = "0";
+        }else{
+            var n=0;
+            while(x>0){
+                n=n*x;
+                x=x-1;
+            }
+            document.getElementById("output").innerHTML = n;
+
+        }
+    }
+</pre>
 <p>
     THANKS FOR READING<br>
 </p>
 </div>
 </div>
 <script>
-katex.render("6!=6*5*4*3\\cdot2\cdot1", katex1);
+katex.render("6!=6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=720", katex1);
+katex.render("6!=\\left(6-0\\right)\\cdot\\left(6-1\\right)\\cdot\\left(6-2\\right)\\cdot\\left(6-3\\right)\\cdot\\left(6.-4\\right)\\cdot\\left(6-5\\right)=720",katex2);
+katex.render("6!=6\left(6-1\right)!",katex3);
+katex.render("6!=6\cdot5!",katex4);
+katex.render("6!=6\cdot5\cdot\left(5-1\right)!",katex5);
+katex.render("n!=n\cdot\left(n-1\right)\left(n-2\right)\left(n-3\right)...",katex6);
+katex.render("n!=\prod_{k=1}^nk",katex7);
+katex.render("0!=1",katex8);
+katex.render("n!=n\left(n-1\right)!",katex9);
+katex.render("1!=1\left(1-1\right)!",katex10);
+katex.render("1!=1\cdot0!",katex11);
+katex.render("0!=\frac{1!}{1}",katex12);
+katex.render("0!=\frac{1!}{1}",katex13);
+katex.render("0!=1",katex14);
+katex.render("10!=3,628,800",katex15);
+katex.render("\frac{10!}{5!\cdot2!\cdot3!}=2520",katex16);
+function findFactorial() {
+    var x = document.getElementById("inputFactorial").value;
+    if(x%1 != 0 || x<0){
+        document.getElementById("output").innerHTML = "please enter a valid input";
+    }else if(x==0){
+        document.getElementById("output").innerHTML = "0";
+    }else{
+        var n=0;
+        while(x>0){
+            n=n*x;
+            x=x-1;
+        }
+        document.getElementById("output").innerHTML = n;
+
+    }
+}
+
 </script>
 </body>
 </html>
