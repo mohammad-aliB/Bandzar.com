@@ -185,7 +185,7 @@ Which we can then rearrange to isolate 0!.
         }else if(x==0){
             document.getElementById("output").innerHTML = "0";
         }else{
-            var n=0;
+            var n=1;
             while(x>0){
                 n=n*x;
                 x=x-1;
@@ -222,9 +222,9 @@ function findFactorial() {
     if(x%1 != 0 || x<0){
         document.getElementById("output").innerHTML = "please enter a valid input";
     }else if(x==0){
-        document.getElementById("output").innerHTML = "0";
+        document.getElementById("output").innerHTML = "1";
     }else{
-        var n=0;
+        var n=1;
         while(x>0){
             n=n*x;
             x=x-1;
