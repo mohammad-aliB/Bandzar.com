@@ -170,30 +170,34 @@ Which we can then rearrange to isolate 0!.
 </p>
     <div class="sub-title">Calculator</div>
     <p>
-        <input type="number" id="inputFactorial" value="6">
-
+<input type="number" id="inputFactorial" value="6">
 <button onclick="findFactorial()">Find Factorial</button>
 <p id="output"></p>
 </p>
     <div class="sub-title">Calculator code</div>
 <p>for those who are intrested i have included the calculator code below:</p>
 <pre class="code-box">
-    function findFactorial() {
-        var x = document.getElementById("inputFactorial").value;
-        if(x%1 != 0 || x<0){
-            document.getElementById("output").innerHTML = "please enter a valid input";
-        }else if(x==0){
-            document.getElementById("output").innerHTML = "0";
-        }else{
-            var n=1;
-            while(x>0){
-                n=n*x;
-                x=x-1;
-            }
-            document.getElementById("output").innerHTML = n;
+    &lt;input type=&quot;number&quot; id=&quot;inputFactorial&quot; value=&quot;6&quot;&gt;
+    &lt;button onclick=&quot;findFactorial()&quot;&gt;Find Factorial&lt;/button&gt;
+    &lt;p id=&quot;output&quot;&gt;&lt;/p&gt;
+    &lt;script&gt;
+        function findFactorial() {
+            var x = document.getElementById(&quot;inputFactorial&quot;).value;
+            if(x%1 != 0 || x&lt;0){
+                document.getElementById(&quot;output&quot;).innerHTML = &quot;please enter a valid input&quot;;
+            }else if(x==0){
+                document.getElementById(&quot;output&quot;).innerHTML = &quot;0&quot;;
+            }else{
+                var n=1;
+                while(x&gt;0){
+                    n=n*x;
+                    x=x-1;
+                }
+                document.getElementById(&quot;output&quot;).innerHTML = n;
 
+            }
         }
-    }
+    &lt;/script&gt;
 </pre>
 <p>
     THANKS FOR READING<br>
