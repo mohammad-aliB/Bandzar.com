@@ -203,20 +203,20 @@ Which we can then rearrange to isolate 0!.
 <script>
 katex.render("6!=6\\cdot5\\cdot4\\cdot3\\cdot2\\cdot1=720", katex1);
 katex.render("6!=\\left(6-0\\right)\\cdot\\left(6-1\\right)\\cdot\\left(6-2\\right)\\cdot\\left(6-3\\right)\\cdot\\left(6.-4\\right)\\cdot\\left(6-5\\right)=720",katex2);
-katex.render("6!=6\left(6-1\right)!",katex3);
-katex.render("6!=6\cdot5!",katex4);
-katex.render("6!=6\cdot5\cdot\left(5-1\right)!",katex5);
-katex.render("n!=n\cdot\left(n-1\right)\left(n-2\right)\left(n-3\right)...",katex6);
-katex.render("n!=\prod_{k=1}^nk",katex7);
+katex.render("6!=6\\left(6-1\\right)!",katex3);
+katex.render("6!=6\\cdot5!",katex4);
+katex.render("6!=6\\cdot5\\cdot\\left(5-1\\right)!",katex5);
+katex.render("n!=n\\cdot\\left(n-1\\right)\\left(n-2\\right)\\left(n-3\\right)...",katex6);
+katex.render("n!=\\prod_{k=1}^nk",katex7);
 katex.render("0!=1",katex8);
-katex.render("n!=n\left(n-1\right)!",katex9);
-katex.render("1!=1\left(1-1\right)!",katex10);
-katex.render("1!=1\cdot0!",katex11);
-katex.render("0!=\frac{1!}{1}",katex12);
-katex.render("0!=\frac{1!}{1}",katex13);
+katex.render("n!=n\\left(n-1\\right)!",katex9);
+katex.render("1!=1\\left(1-1\\right)!",katex10);
+katex.render("1!=1\\cdot0!",katex11);
+katex.render("0!=\\frac{1!}{1}",katex12);
+katex.render("0!=\\frac{1!}{1}",katex13);
 katex.render("0!=1",katex14);
 katex.render("10!=3,628,800",katex15);
-katex.render("\frac{10!}{5!\cdot2!\cdot3!}=2520",katex16);
+katex.render("\\frac{10!}{5!\\cdot2!\\cdot3!}=2520",katex16);
 function findFactorial() {
     var x = document.getElementById("inputFactorial").value;
     if(x%1 != 0 || x<0){
