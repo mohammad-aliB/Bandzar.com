@@ -1,4 +1,8 @@
+html, body {
+  overflow-x: hidden;
+}
 body {
+    position: relative;
     margin: 0;
     background-color: #fbfbfb;
 }
