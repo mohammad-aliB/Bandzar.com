@@ -1,6 +1,7 @@
 
 html, body {
   overflow-x: hidden;
+  width:100%;
 }
 
 
@@ -8,9 +9,7 @@ body {
     margin: 0;
     background-color: #fbfbfb;
 }
-#inner-body{
-      position: relative
-}
+
 #inner-body p{
     word-wrap:break-word;
 }
