@@ -2,13 +2,14 @@
 html, body {
   overflow-x: hidden;
 }
-body {
-  position: relative
-}
+
 
 body {
     margin: 0;
     background-color: #fbfbfb;
+}
+#inner-body{
+      position: relative
 }
 #inner-body p{
     word-wrap:break-word;
