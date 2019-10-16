@@ -64,11 +64,11 @@ ul.navbar li a:hover:not(.active) {
   }
     #body{
         width:100%;
-        font-size:200% !important;
+    /*    font-size:200% !important;*/
         max-width:none !important;
     }  
     #inner-body{
-        font-size:200% !important;
+        /*font-size:200% !important;*/
     }
 }
 
