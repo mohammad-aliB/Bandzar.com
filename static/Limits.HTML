@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Limits</title>
+    <meta name="description" content="Limits">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+<meta name="viewport" content="width=device-width,user-scalable=0;">
+    <link rel="stylesheet" href="/static/index.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">Limits</span>
+    <p>By:Mohammad-Ali Bandzar | Nov 1 2019</p>
+<p>
+Sometimes we can’t find solutions to math problems because a solution either doesn’t exist (is indeterminate) but we can find a solution incredibly close from both sides and can see what our solution would be if it were to exist. Other times the limit of a point can exist but may not equal the function value at that point i.e <span id="katex1">loading...</span>. Another use case for limits is to determine end behavior at a function(limits at infinity) but thats beyond the scope of this article. A good example use case for limits is: <span id="katex2">loading...</span> when graphed it would look like a perfectly straight line right? But let’s say we were tasked with finding what x=0 was, if we were to plug in zero into our equation we would get <span id="katex3">loading...</span> but therein lies our problem, a solution does not exist because zero is not in the domain of our function,  <span id="katex4">loading...</span> is considered the indeterminate form. Through the use of a graph, we can kind of guess that the value is going to be zero, but that isnt good enough for us(or viable on a test).
+</p>
+<div class="sub-title">Understanding the logic behind limits</div>
+<p>
+The way that limits would approach our aforementioned problem is it would look at numbers very close to our desired one, which is zero in this case and would make the assumption that whatever our very close numbers were going toward or approaching Is the solution to our problem. So for our aforementioned question we could plug in 0.0001 to give us <span id="katex5">loading...</span> we could plug in smaller numbers closer to zero and we would see that our equation was approaching zero as x approached zero from the right, which could be written as <span id="katex6">loading...</span>(the plus means we are aproaching our limit from the right and are trying numbers greater than our desired one). We could then solve for our limit from the left by plugging in very small numbers less than our desired number such as -0.0001 and we would see that our limit as x approaches zero from the right is also zero which can be written as <span id="katex7">loading...</span>. Because the left and right limit approach the same value we can then merge these limits to conclude <span id="katex8">loading...</span>. Now although we can never claim to know the value of x=0 for this equation, we can say that as we approach zero from both sides the limit is zero. For a solution to a limit problem to exist, direct substitution must lead to the indeterminate form of <span id="katex4">loading...</span>
+</p>
+
+<div class="sub-title">one sided limits from the left</div>
+<p>
+A limit from the left is written in the general form: <span id="katex9">loading...</span> notice the "negative" exponent on the value we are aproaching, that means that we only want to aproach a from the left and that we will only test x values that are less than but very close to a.
+</p>
+<p>
+    a very popular example of this is <span id="katex12">loading</span><br>
+    our limit <span id="katex13">loading</span><br>
+    but our two sided limit does not exist, i will explain why below<br>
+    </p>
+<div class="sub-title">one sided limits from the right</div>
+<p>
+A limit from the left is written in the general form: <span id="katex10">loading...</span> notice the "positive" exponent on the value we are aproaching, that means that we only want to aproach a from the right and that we will only test x values that are greater than but very close to a.
+</p>
+<p>
+Continuing our example from above our right sided limit would be <span id="katex14">loading...</span>
+    </p>
+<div class="sub-title">two sided/normal limits</div>
+<p>
+    we can only say that the two sided limit exists if both one sided limits exist and are equal to each other, that is:<span id="katex11">loading...</span>.
+</p>
+<p>
+    continuing our example from before, we can say that <span id="katex15">loading...</span> does not exist because <span id="katex16">loading...</span> which can be visualized better with a graph<br>
+        <img src="limits-1.png" alt="|x|/x graph"><br>
+    </p>
+<div class="sub-title">Limit solving stratagies</div>
+<p>
+ Many different aproaches exist for solving limits, when i was in highschool i used a scientific calculator to plug in really close numbers from both sides to determine the limit, but that isnt a "valid" aproach according to most teachers, but is still a completely valid way of validating your solutions
+</p>
+<div class="sub-title">Direct substition</div>
+<p>
+Sometimes you can directly plug your number into the equation and get a result, beware that if this value is on the very edge of your domain there maybe no solution to your limit.<br>
+for example let <span id="katex17">loading...</span><br>
+if we were to try and solve through direct substitition we would get zero, but some may argue that the limit does not exist as we cannot solve for a limit from the left as the function is not define for any number to the left of(less than) zero. you should definately clairify with your instructor about this
+</p>
+<p>
+Anouther common issue with this method is when you plug into a function that looks like the following:        <img src="limits-2.png" alt="|x|/x graph with point"><br>
+the issue here is that the limit does not exist as x aproaches zero but f(0)=2 so if you were to just plug in without verifying your solution you can get limits that dont exist or are incorrect.
+<br>OR.<img src="limits-3.png" alt="x^2 graph with point"><br>
+Here, the limit does exist, but just pluging in would give you the wrong answer.
+</p>
+   
+<div class="sub-title">Factoring</div>
+ <p>
+    This is the most common method it involves essentially removing the hole from the equation then directly substituting the value, a simple example of this is <span id="katex18">loading...</span> if we factor the binomial we get <span id="katex19">loading...</span> we can then “cancel out” <span id="katex20">loading...</span> from both our numerator and denominator to get <span id="katex21">loading...</span> from there we can directly substitute to get the solution to our limit which is -6
+</p>
+<div class="sub-title">Multiplying by a conjugate</div>
+<p>
+   Sometimes you will get a question such as <span id="katex22">loading...</span> and and you want to solve for the limit as x approaches 9 so you can multiple by the cojgare divided by itself( which is essentially multiplying by one, to get <span id="katex23">loading...</span>) which simplifies to <span id="katex24"></span> we can then “cross out” the common factor to get <span id="katex25">loading...</span> we can then substitute in the 9 to get <span id="katex26">loading...</span> as our limit.
+</p>
+<div class="sub-title">Limits approaching infinity:</div>
+<p>
+    These limits are only tested from one side and can only have one of 3 possible values,
+<br>
+<ul>
+    <li> a fixed number for a horizontal line or asymptote. </li>
+    <li>Positive infinity for something going upward</li>
+    <li> negative infinity for something going downward. </li>
+</ul>
+    I would recommend reading my tutorial on horizontal asymptotes to better understand how to solve these
+</p>
+<div class="sub-title">Example 1:</div>
+<p>
+<span id="katex27">loading...</span>  this one is fairly easy because the bigger x we plug in we can see that x squared goes bigger, so we can say that <span id="katex28">loading...</span>
+</p>
+<div class="sub-title">Example 2:</div>
+<p>
+<span id="katex29">loading...</span>  this one is fairly easy because we can just plug in: <span id="katex30">loading...</span>
+</p>
+<div class="sub-title">Example 3:</div>
+<p>
+<span id="katex31">loading...</span>  this one does not exist because the two one sided limits are not equal. from the left its negative one, from the right its positive one.
+</p>
+<div class="sub-title">Example 4:</div>
+<p>
+   <span id="katex32">loading...</span> this limit does not exist because it is a vertical asymptote. the missing value is impossible to factor out and direct substitution gives us <span id="katex33">loading...</span> which is not the indeterminate form and will always be a vertical asymptote.
+</p>
+<div class="sub-title">Example 5:</div>
+<p>
+   <span id="katex34">loading...</span> this limit does not exist because it is a vertical asymptote. the missing value is impossible to factor out and direct substitution gives us <span id="katex35">loading...</span> which is not the indeterminate form and will always be a vertical asymptote.
+</p>
+<div class="sub-title">Example 6:</div>
+<p>
+   <span id="katex36">loading...</span> as x is going toward negative infinity we can restrict our domain to x<0 and rewrite this as <span id="katex37">loading...</span> from here it should be fairly clear to you that one divided by a constantly increasing number will be zero. another way to look at it would be <span id="katex38">loading...</span> which isnt technically mathamatically correct but should make it more clear to you about why our solution is zero.
+</p>
+<div class="sub-title">Example 7:</div>
+<p>
+   <span id="katex39">loading...</span> This one starts with us pulling the common factor out of our numerator: <span id="katex40">loading...</span> From there we can factor the numberator:    <span id="katex41">loading...</span> from there we can cross out the common factor <span id="katex42">loading...</span> to get our final solution:    <span id="katex39">loading...</span>=-12
+</p>
+<div class="sub-title">Fun use case</div>
+<p>
+    using your new found knowledge of limits you can now tell your friends you can solve <span id="katex4">loading...</span>(sort of) by defining a function <span id="katex43">loading...</span> we can then take the limit of that as x aproaches zero <span id="katex44">loading...</span> which is one.
+</p>
+<div class="sub-title">Pro tips:</div>
+<p>
+    <ul>
+        <li>limits to infinity can’t be evaluated from both sides</li>
+        <li>always remember to evaluate limits from both sides where possible</li>
+        <li>limits don’t always have to be indeterminate values of the function</li>
+        <li>limits are most commonly used to identify and solve for holes in a function</li>
+        <li>limits can only exist if they take the indeterminate form(a hole, <span id="katex4">loading...</span>) or a solution when directly plugged into</li>
+        <li>remember to test your solution from both sidesif you are directly substituting in</li>
+        <li>Use a graphing calculator/desmos.com to verify your solutions</li>
+        <li>limits of vertical asymptotes are technically undefined/D.N.E(does not exist) but some people will still write them as <span id="katex45">loading...</span></Li>
+</p>
+<p>
+    THANKS FOR READING<br>
+</p>
+</div>
+</div>
+<script>
+katex.render("f\left(a\right)\ne\lim_{x->a}f\left(x\right)", katex1);
+katex.render("\\frac{x^2}{x}", katex2);
+katex.render("\\frac{0^2}{0}", katex3);
+katex.render("\\frac{0}{0}}", katex4);
+katex.render("\\frac{0.0001^2}{0.0001}=0.000001", katex5);
+katex.render("\\lim_{x->0^+}\frac{x^2}{x}", katex6);
+katex.render("\\lim_{x->0^-}\frac{x^2}{x}", katex7);
+katex.render("\\lim_{x->0}\frac{x^2}{x}", katex8);
+katex.render("\\lim_{x->a^-}f\left(x\right)", katex9);
+katex.render("\\lim_{x->a^+}f\left(x\right)", katex10);
+katex.render("\\lim_{x->a^-}f\left(x\right)=\lim_{x->a^+}f\left(x\right)=\lim_{x->a}f\left(x\right)", katex11);
+katex.render("f\left(x\right)=\frac{\left|x\right|}{x}", katex12);
+katex.render("\\lim_{x->0^-}f\left(x\right)=-1", katex13);
+katex.render("\\lim_{x->0^+}f\left(x\right)=1", katex14);
+katex.render("\lim_{x->0}f\left(x\right)",katex15);
+katex.render("\lim_{x->0^-}f\left(x\right)\ne\lim_{x->0^+}f\left(x\right)",katex16);
+katex.render("f\left(x\right)=\sqrt{x}",katex17);
+katex.render("\\lim_{x->-3}\\\frac{\left(x^2-9\right)}{x+3})",katex18);
+katex.render("\\lim_{x->-3}\\\frac{\left(x-3\right)\left(x+3\right)}{x+3}",katex19);
+katex.render("\\lim_{x->-3}\x+3",katex20);
+katex.render("\\lim_{x->-3}\x-3",katex21);
+katex.render("\lim_{x->9}\frac{\sqrt{x}-3}{x-9}",katex22);
+katex.render("\\lim_{x->9}\left(\frac{\sqrt{x}-3}{x-9}\cdot\frac{\sqrt{x}+3}{\sqrt{x}+3}\right)",katex23);
+katex.render("\\lim_{x->9}\left(\frac{\left(x-9\right)}{\left(x-9\right)\cdot\left(\sqrt{x}+3\right)}\right)",katex24);
+katex.render("\\lim_{x->9}\left(\frac{1}{\left(\sqrt{x}+3\right)}\right)",katex25);
+katex.render("0.1\overline{6}",katex26);
+katex.render("\\lim_{x->\infty}x^2",katex27);
+katex.render("\\lim_{x->\infty}x^2=\infty",katex28);
+katex.render("\\lim_{x->10}\left(\frac{1}{x}\right)",katex29);
+katex.render("\\lim_{x->10}\left(\frac{1}{x}\right)=\frac{1}{10}=0.1",katex30);
+katex.render("\\lim_{x->0}\left(\frac{\left|x\right|}{x}\right)",katex31);
+katex.render("\\lim_{x->3}\left(\frac{x}{x^2-9}\right)",katex32);
+katex.render("\\frac{3}{0}",katex33);
+katex.render("\\lim_{x->0}\left(\frac{1}{x}\right)",katex34);
+katex.render("\\frac{1}{0}",katex35);
+katex.render("\\lim_{x->-\infty}\left(2^x\right)",katex36);
+katex.render("\\lim_{x->\infty}\left(\frac{1}{2^x}\right)",katex37);
+katex.render("\\frac{1}{\infty}",katex38);
+katex.render("\\lim_{x->-2}\left(\frac{4x^2+4x-8}{x+2}\right)",katex39);
+katex.render("\\lim_{x->-2}\left(4\cdot\frac{x^2+x-2}{x+2}\right)",katex40);
+katex.render("\\lim_{x->-2}\left(4\cdot\frac{\left(x+2\right)\left(x-1\right)}{x+2}\right)",katex41);
+katex.render("\\lim _{x->-2}\left(4\cdot \left(x-1\right)\right)",katex42);
+katex.render("f(x)=\frac{x}{x}",katex43);
+katex.render("\\lim_{x->0}\frac{x}{x}",katex44);
+katex.render("\\pm\infty",katex45);
+</script>
+</body>
+</html>
