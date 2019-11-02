@@ -35,11 +35,11 @@ table, th, td {
     <span class="title">Limits</span>
     <p>By:Mohammad-Ali Bandzar | Nov 1 2019</p>
 <p>
-Sometimes we can’t find solutions to math problems because a solution either doesn’t exist (is indeterminate) but we can find a solution incredibly close from both sides and can see what our solution would be if it were to exist. Other times the limit of a point can exist but may not equal the function value at that point i.e <span id="katex1">loading...</span>. Another use case for limits is to determine end behavior at a function(limits at infinity) but thats beyond the scope of this article. A good example use case for limits is: <span id="katex2">loading...</span> when graphed it would look like a perfectly straight line right? But let’s say we were tasked with finding what x=0 was, if we were to plug in zero into our equation we would get <span id="katex3">loading...</span> but therein lies our problem, a solution does not exist because zero is not in the domain of our function,  <span class="katex4">loading...</span> is considered the indeterminate form. Through the use of a graph, we can kind of guess that the value is going to be zero, but that isnt good enough for us(or viable on a test).
+Sometimes we can’t find solutions to math problems because a solution either doesn’t exist (is indeterminate) but we can find a solution incredibly close from both sides and can see what our solution would be if it were to exist. Other times the limit of a point can exist but may not equal the function value at that point i.e <span id="katex1">loading...</span>. Another use case for limits is to determine end behavior at a function(limits at infinity) but thats beyond the scope of this article. A good example use case for limits is: <span id="katex2">loading...</span> when graphed it would look like a perfectly straight line right? But let’s say we were tasked with finding what x=0 was, if we were to plug in zero into our equation we would get <span id="katex3">loading...</span> but therein lies our problem, a solution does not exist because zero is not in the domain of our function,  <span id="katex4">loading...</span> is considered the indeterminate form. Through the use of a graph, we can kind of guess that the value is going to be zero, but that isnt good enough for us(or viable on a test).
 </p>
 <div class="sub-title">Understanding the logic behind limits</div>
 <p>
-The way that limits would approach our aforementioned problem is it would look at numbers very close to our desired one, which is zero in this case and would make the assumption that whatever our very close numbers were going toward or approaching Is the solution to our problem. So for our aforementioned question we could plug in 0.0001 to give us <span id="katex5">loading...</span> we could plug in smaller numbers closer to zero and we would see that our equation was approaching zero as x approached zero from the right, which could be written as <span id="katex6">loading...</span>(the plus means we are aproaching our limit from the right and are trying numbers greater than our desired one). We could then solve for our limit from the left by plugging in very small numbers less than our desired number such as -0.0001 and we would see that our limit as x approaches zero from the right is also zero which can be written as <span id="katex7">loading...</span>. Because the left and right limit approach the same value we can then merge these limits to conclude <span id="katex8">loading...</span>. Now although we can never claim to know the value of x=0 for this equation, we can say that as we approach zero from both sides the limit is zero. For a solution to a limit problem to exist, direct substitution must lead to the indeterminate form of <span id="katex4">loading...</span>
+The way that limits would approach our aforementioned problem is it would look at numbers very close to our desired one, which is zero in this case and would make the assumption that whatever our very close numbers were going toward or approaching Is the solution to our problem. So for our aforementioned question we could plug in 0.0001 to give us <span id="katex5">loading...</span> we could plug in smaller numbers closer to zero and we would see that our equation was approaching zero as x approached zero from the right, which could be written as <span id="katex6">loading...</span>(the plus means we are aproaching our limit from the right and are trying numbers greater than our desired one). We could then solve for our limit from the left by plugging in very small numbers less than our desired number such as -0.0001 and we would see that our limit as x approaches zero from the right is also zero which can be written as <span id="katex7">loading...</span>. Because the left and right limit approach the same value we can then merge these limits to conclude <span id="katex8">loading...</span>. Now although we can never claim to know the value of x=0 for this equation, we can say that as we approach zero from both sides the limit is zero. For a solution to a limit problem to exist, direct substitution must lead to the indeterminate form of <span id="katex4DuplicateA">loading...</span>
 </p>
 
 <div class="sub-title">one sided limits from the left</div>
@@ -132,7 +132,7 @@ Here, the limit does exist, but just pluging in would give you the wrong answer.
 </p>
 <div class="sub-title">Fun use case</div>
 <p>
-    using your new found knowledge of limits you can now tell your friends you can solve <span class="katex4">loading...</span>(sort of) by defining a function <span class="katex43">loading...</span> we can then take the limit of that as x aproaches zero <span id="katex44">loading...</span> which is one.
+    using your new found knowledge of limits you can now tell your friends you can solve <span class="katex4DuplicateB">loading...</span>(sort of) by defining a function <span id="katex43">loading...</span> we can then take the limit of that as x aproaches zero <span id="katex44">loading...</span> which is one.
 </p>
 <div class="sub-title">Pro tips:</div>
 <p>
@@ -141,7 +141,7 @@ Here, the limit does exist, but just pluging in would give you the wrong answer.
         <li>always remember to evaluate limits from both sides where possible</li>
         <li>limits don’t always have to be indeterminate values of the function</li>
         <li>limits are most commonly used to identify and solve for holes in a function</li>
-        <li>limits can only exist if they take the indeterminate form(a hole, <span class="katex4">loading...</span>) or a solution when directly plugged into</li>
+        <li>limits can only exist if they take the indeterminate form(a hole, <span class="katex4DuplicateC">loading...</span>) or a solution when directly plugged into</li>
         <li>remember to test your solution from both sidesif you are directly substituting in</li>
         <li>Use a graphing calculator/desmos.com to verify your solutions</li>
         <li>limits of vertical asymptotes are technically undefined/D.N.E(does not exist) but some people will still write them as <span id="katex45">loading...</span></Li>
@@ -156,6 +156,9 @@ katex.render("f\\left(a\\right)\\ne\\lim_{x->a}f\\left(x\\right)", katex1);
 katex.render("\\frac{x^2}{x}", katex2);
 katex.render("\\frac{0^2}{0}", katex3);
 katex.render("\\frac{0}{0}", katex4);
+katex.render("\\frac{0}{0}", katex4DuplicateA);
+katex.render("\\frac{0}{0}", katex4DuplicateB);
+katex.render("\\frac{0}{0}", katex4DuplicateC);
 katex.render("\\frac{0.0001^2}{0.0001}=0.000001", katex5);
 katex.render("\\lim_{x->0^+}\\frac{x^2}{x}", katex6);
 katex.render("\\lim_{x->0^-}\\frac{x^2}{x}", katex7);
