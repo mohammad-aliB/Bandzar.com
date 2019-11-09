@@ -1,0 +1,138 @@
+<!doctype html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Power Rule</title>
+    <meta name="description" content="Power Rule">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+<meta name="viewport" content="width=device-width,user-scalable=0;">
+    <link rel="stylesheet" href="/static/index.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">The Power Rule</span>
+    <p>By:Mohammad-Ali Bandzar | Nov 8 2019</p>
+<p> 
+The power rule is used to find the derivative of things it tells us that the derivative of <span id="katex1">loading...</span> will be <span id="katex2">loading...</span>
+for any real n.
+</p>
+<div class="sub-title">Example</div>
+<p>
+The easiest way to visualize this is to use it to take the derivative of <span id="katex3">loading...</span>, we can let n=2 and use the rule we learnt above to find the derivative to be <span id="katex4">loading...</span>. you can verify your solution by randomly drawing tangents on <span id="katex5">loading...</span> and seeing how the slope of those tangents will always be equal to <span id="katex6">loading...</span>. take x=0 as an example. the slope of our tangent at zero would be zero(a horizontal line)
+ and 2(0)=0 this is shown on our graph below where the red line is our origional function, the blue line is our derivative and the green line is our tangent at zero</p>
+ <img src="PowerRule1.png" alt="graph">
+<div class="sub-title">Notation</div>
+<p>The derivative is commonly indicated with either a "prime"/"apostraphe"(') or with Leibniz notation we can write: <span id="katex7">loading...</span> which means the same thing</p>
+<p>
+so if <span id="katex8">loading...</span> is our origional, we could write the derivative as <span id="katex9">loading...</span> or as: <span id="katex10">loading...</span>
+</p>
+<div class="sub-title">Derivative of <span id="katex11">loading...</span></div>
+<p>
+    we can rewrite <span id="katex12">loading...</span> as <span id="katex13">loading...</span> we can then apply our power rule by letting <span id="katex14">loading...</span><br> 
+    <span id="katex15">loading...</span><br>
+    <span id="katex16">loading...</span><br>
+    <span id="katex17">loading...</span><br>
+    <span id="katex18">loading...</span><br>
+    we can now conclude that  <span id="katex19">loading...</span><br>
+</p>
+<div class="sub-title">Memorization trick:</div>
+<p>
+All you need to remember to do is to multiply by the power, then subtract 1 from the power(reduce the power by 1).
+</p>
+<div class="sub-title">A table of examples:</div>
+<p> these examples are completely random and have been chosen to help you memorize the power rule</p>
+    <table style="width:100%">
+  <tr>
+    <th>f(x)</th>
+    <th>derivative</th>  
+  </tr>
+  <tr>
+    <td><span id="katex20">loading...</span></td>
+    <td><span id="katex21">loading...</span></td>
+</tr>
+  <tr>
+    <td><span id="katex22">loading...</span></td>
+    <td><span id="katex23">loading...</span></td>
+</tr>
+  <tr>
+    <td><span id="katex24">loading...</span></td>
+    <td><span id="katex25">loading...</span></td>
+</tr>
+  <tr>
+    <td><span id="katex26">loading...</span></td>
+    <td><span id="katex27">loading...</span></td>
+</tr>
+  <tr>
+    <td><span id="katex28">loading...</span></td>
+    <td><span id="katex29">loading...</span></td>
+</tr>
+
+</table>
+<div class="sub-title">Pro tips:</div>
+<p>
+    <ul>
+        <li>works with any real number not just intagers</li>
+        <li>multiply n by the coefficient of x</li>
+        <li>the derivative will always be an order 1 less than the origional</li>
+        <li>the derivative at a local min or max will always be zero as the tangent will be horizontal</Li>
+</p>
+<p>
+    THANKS FOR READING<br>
+</p>
+</div>
+</div>
+<script>
+katex.render("x^n", katex1);
+katex.render("nx^{n-1}", katex2);
+katex.render("x^2", katex3);
+katex.render("2x", katex4);
+katex.render("x^5", katex5);
+katex.render("2x", katex6);
+katex.render("\\frac{d}{dx}", katex7);
+katex.render("f(x)=x^n", katex8);
+katex.render("f'(x)=nx^{n-1}", katex9);
+katex.render("\\frac{d}{dx} f(x)=nx^{n-1}", katex10);
+katex.render("\\sqrt{x}", katex11);
+katex.render("\\sqrt{x}", katex12);
+katex.render("x^{\frac{1}{2}}", katex13);
+katex.render("n=\frac{1}{2}", katex14);
+katex.render("\\frac{d}{dx}x^{\frac{1}{2}}", katex15);
+katex.render("=\\frac{1}{2}x^{\frac{1}{2}-1}", katex16);
+katex.render("=\\frac{1}{2}x^{-\frac{1}{2}}", katex17);
+katex.render("=\\frac{1}{2\times x^{\frac{1}{2}}}", katex18);
+katex.render("=\\frac{d}{dx}\sqrt{x}=\frac{1}{2\times x^{\frac{1}{2}}}", katex19);
+katex.render("x^3", katex20);
+katex.render("3x^2", katex21);
+katex.render("99x^0", katex22);
+katex.render("0", katex23);
+katex.render("5x^2", katex24);
+katex.render("10x", katex25);
+katex.render("x^{-1}", katex26);
+katex.render("-x^{-2}", katex27);
+katex.render("2x^{.3}", katex28);
+katex.render(".6x^{-.7}", katex29);
+</script>
+</body>
+</html>
