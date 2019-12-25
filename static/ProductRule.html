@@ -1,0 +1,147 @@
+<!doctype html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Product Rule</title>
+    <meta name="description" content="Power Rule">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+<meta name="viewport" content="width=device-width,user-scalable=0;">
+    <link rel="stylesheet" href="/static/index.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">The Product Rule</span>
+    <p>By:Mohammad-Ali Bandzar | Dec 25 2019</p>
+<p> 
+The product rule is a formal rule for differentiating problems where one function is multiplied by another. The rule follows from the limit definition of derivative and states that the derivative of <span id="katex1">loading...</span> will be <span id="katex2">loading...</span>. This rule only works if f and g are both differentiable functions. This pattern works for any number of functions as i will demonstrate below. 
+</p>
+<div class="sub-title">With A Single Function</div>
+<p>
+with just one function say <span id="katex3">loading...</span> we can arbitarly define a second function <span id="katex4">loading...</span> and multiply the two together to create a new function we will call <span id="katex5">loading...</span>can you see how <span id="katex6">loading...</span> is the same function as <span id="katex7">loading...</span>? Now if we take the derivative of <span id="katex8">loading...</span> we get <span id="katex9">loading...</span> now if we recall our constant rule, we know that the derivative of a constant in this case 1 will be zero. So if we sub in zero we get <span id="katex10">loading...</span> now if we sub in <span id="katex11">loading...</span> we get <span id="katex12">loading...</span> we have now shown that we can use our product rule for derivatives on a single function by defining a second function equal to one.
+</p>
+<div class="sub-title">With Three Functions</div>
+<p>
+    Let <span id="katex13">loading...</span> assuming that f,g,h are differentiable functions. we can arbitarily define a new function <span id="katex14">loading...</span> and we can rewrite <span id="katex15">loading...</span> as <span id="katex16">loading...</span> we can now use our two function definition of the product rule to find the derivative, <span id="katex17">loading...</span> we can now independantly find the derivitive of <span id="katex18">loading...</span> using the same method <span id="katex19">loading...</span>. we can now plug <span id="katex20">loading...</span> back into our derivative of <span id="katex21">loading...</span> to get: <span id="katex22">loading...</span> this pattern is infinitely long and if you are wondering why you can read about it in the proof below.
+</p>
+<div class="sub-title">Proof</div>
+<p>
+    To start off our proof we will write out the definition of the derivative:<br>
+    <span id="katex23">loading...</span><br>
+    <span id="katex24">loading...</span><br>
+    we can now add and subtract <span id="katex25">loading...</span> from the numerator which is allowed becuase by adding then subtracting the same thing we will not change our end result.<br>
+    <span id="katex26">loading...</span><br>
+    we will then factor <span id="katex27">loading...</span> from the first and second last terms<br>
+    <span id="katex28">loading...</span><br>
+    we will then factor <span id="katex29">loading...</span> from our remaining 2 terms in the numerator<br>
+    <span id="katex30">loading...</span><br>
+    Now if we recall the addition property of limits:<br>
+    if a is a real number and both <span id="katex31">loading...</span> and <span id="katex32">loading...</span> exist then <span id="katex33">loading...</span><br> since we have already stated that <span id="katex34">loading...</span> and <span id="katex35">loading...</span> must be differentiable functions we can apply this rule here to expand our equation:<br>
+    <span id="katex36">loading...</span><br>
+    Now if we recall the multiplicative property of limits:<br>
+    As long as both <span id="katex37">loading...</span> and <span id="katex38">loading...</span> exist then <span id="katex39">loading...</span><br> since we have already stated that <span id="katex40">loading...</span> and <span id="katex41">loading...</span> must be differentiable functions we can apply this rule here to expand our equation:<br>
+    <span id="katex42">loading...</span><br>
+    We can now simplify the left most limit, since <span id="katex43">loading...</span> is differentiable and since all differentiable functions are continuous we can conclude that <span id="katex44">loading...</span> must be continuous allowing us to sub what h is approaching directly into <span id="katex45">loading...</span> giving us <span id="katex46">loading...</span>. We can now substitute that into our equation:<br>
+    <span id="katex47">loading...</span><br>
+    we can then apply the multiplicitive property of limits again on the right limit to get:<br>
+    <span id="katex48">loading...</span><br>
+    since our limit variable h is not involved in the function in anyway we can simplify it further to:<br>
+    <span id="katex49">loading...</span><br>
+    now if we recall the definition of the derivitive:<br>
+    <span id="katex50">loading...</span><br> 
+    <span id="katex51">loading...</span><br>
+    we can substitute those in to our equaiton:<br>
+    <span id="katex52">loading...</span><br>
+    we have now completed our proof<br>
+</p>
+
+<div class="sub-title">Pro tips:</div>
+<p>
+    <ul>
+        <li>works with any real number not just intagers</li>
+        <li>multiply n by the coefficient of x then subtract 1 from the power</li>
+        <li>the derivative will always be an order 1 less than the origional</li>
+        <li>the derivative at a local min or max will always be zero as the tangent will be horizontal</Li>
+</p>
+<p>
+    THANKS FOR READING<br>
+</p>
+</div>
+</div>
+<script>
+katex.render("f(x)\\times g(x)", katex1);
+katex.render("f\\prime(x)\\times g(x) + f(x)\\times g\\prime(x)", katex2);
+katex.render("f(x)", katex3);
+katex.render("g(x)=1", katex4);
+katex.render("h(x)=f(x)\\times g(x)=f(x)\\times 1=f(x)", katex5);
+katex.render("h(x)", katex6);
+katex.render("f(x)", katex7);
+katex.render("h(x)", katex8);
+katex.render("h\\prime(x)=f\\prime(x)\\timesg(x)+f(x)\\times g\\prime(x)", katex9);
+katex.render("h\\prime(x)=f\\prime(x)\\times g(x)+f(x)\\times 0", katex10);
+katex.render("g(x)", katex11);
+katex.render("h\\prime(x)=f\\prime(x)*1=f\\prime(x)", katex12);
+katex.render("k(x)=f(x)\\times g(x)\\times h(x)", katex13);
+katex.render("j(x)=f(x)\\times g(x)", katex14);
+katex.render("k(x)", katex15);
+katex.render("k(x)=j(x)\\times h(x)", katex16);
+katex.render("k\\prime (x)=j\\prime (x) \\times h(x)+j(x)\\times h\\prime (x)", katex17);
+katex.render("j(x)", katex18);
+katex.render("j\\prime(x)=f\\prime(x)\\times g(x)+f(x)\\times g\\prime(x)", katex19);
+katex.render("j\\prime(x)", katex20);
+katex.render("k\\prime(x)", katex21);
+katex.render("k\\prime(x)= f\\prime(x)\\times g(x)\\times h(x)+f(x)\\times h\\prime(x)\\times g(x)+f(x)\\times h(x)\\times g\\prime(x)", katex22);
+katex.render("(fg)\\prime(x)=\\lim_{h \to 0} \frac{\left(fg\right)\left(x+h\right)-\left(fg\right)\left(x\right)}{h}", katex23);
+katex.render("(f(x)\\times g(x))\\prime=\\lim_{h \to 0} \frac{f\left(x+h\right)g\left(x+h\right)-f\left(x\right)g\left(x\right)}{h}", katex24);
+katex.render("f(x+h)g(x)", katex25);
+katex.render("=\\lim_{h \to 0} \frac{f\left(x+h\right)g\left(x+h\right)+f\left(x+h\right)g\left(x\right)-f\left(x+h\right)g\left(x\right)-f\left(x\right)g\left(x\right)}{h}", katex26);
+katex.render("f(x+h)", katex27);
+katex.render("=\\lim_{h \to 0} \frac{f\left(x+h\right)\left[g\left(x+h\right)-g\left(x\right)\right]+f\left(x+h\right)g\left(x\right)-f\left(x\right)g\left(x\right)}{h}", katex28);
+katex.render("g(x)", katex29);
+katex.render("=\\lim_{h \to 0} \frac{f\left(x+h\right)\left[g\left(x+h\right)-g\left(x\right)\right]+g\left(x\right)\left[f\left(x+h\right)-f\left(x\right)\right]}{h}", katex30);
+katex.render("lim_{x \to a} f(x)", katex31);
+katex.render("lim_{x \to a} g(x)", katex32);
+katex.render("lim_{x \to a} f(x)+g(x)=lim_{x \to a} f(x) + lim_{x \to a} f(x)", katex32);
+katex.render("f(x)", katex34);
+katex.render("g(x)", katex35);
+katex.render("=\\lim_{h \to 0} \frac{f\left(x+h\right)\left[g\left(x+h\right)-g\left(x\right)\right]}{h} + \\lim_{h \to 0} \frac{g\left(x\right)\left[f\left(x+h\right)-f\left(x\right)\right]}{h}", katex36);
+katex.render("lim_{x \to a} f(x)", katex37);
+katex.render("lim_{x \to a} g(x)", katex38);
+katex.render("lim_{x \to a} f(x)g(x)=lim_{x \to a} f(x)\\times lim_{x \to a} g(x)", katex39);
+katex.render("f(x)", katex40);
+katex.render("g(x)", katex41);
+katex.render("=\\lim_{h \to 0} f(x+h)\\times  \\lim_{h \to 0} \frac{g\left(x+h\right)-g\left(x\right)\right}{h} + \\lim_{h \to 0} \frac{g\left(x\right)\left[f\left(x+h\right)-f\left(x\right)\right]}{h}", katex42);
+katex.render("f(x)", katex43);
+katex.render("f(x)", katex44);
+katex.render("f(x+h)", katex45);
+katex.render("f(x+0)=f(x)", katex46);
+katex.render("=f(x)\\lim_{h \to 0} \frac{g\left(x+h\right)-g\left(x\right)\right}{h} + \\lim_{h \to 0} \frac{g\left(x\right)\left[f\left(x+h\right)-f\left(x\right)\right]}{h}", katex47);
+katex.render("=f(x)\\lim_{h \to 0} \frac{g\left(x+h\right)-g\left(x\right)\right}{h} + \\lim_{h \to 0}g(x) \\times \\lim_{h \to 0} \frac{f\left(x+h\right)-f\left(x\right)\right}{h}", katex48);
+katex.render("=f(x)\\lim_{h \to 0} \frac{g\left(x+h\right)-g\left(x\right)\right}{h} + g(x)\\lim_{h \to 0} \frac{f\left(x+h\right)-f\left(x\right)\right}{h}", katex49);
+katex.render("f\\prime(x)=lim_{x \to a} \frac{f\left(x+h\right)-f\left(x\right)}{h}", katex50);
+katex.render("g\\prime(x)=lim_{x \to a} \frac{g\left(x+h\right)-g\left(x\right)}{h}", katex51);
+katex.render("=f(x)g\\prime (x)+g(x)f\\prime (x)", katex52);
+</script>
+</body>
+</html>
