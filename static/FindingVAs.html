@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Vertical Asymptotes</title>
+    <meta name="description" content="Polymorphism in java">
+    <meta name="author" content="Mohammad-Ali Bandzar">
+<meta name="viewport" content="width=device-width,user-scalable=0;">
+    <link rel="stylesheet" href="/static/index.css">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+    .code-box{
+        padding: 2%;
+        overflow:auto;
+        border:1px solid black;
+    }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+</head>
+<body>
+<ul class="navbar">
+    <li><span id="logo">Bandzar.com</span></li>
+    <li><a href="/static/index.html">Home</a></li>
+    <li><a href="/static/about.html">About</a></li>
+    <li><a href="/static/contact.html">Contact</a></li>
+</ul>
+
+<div id="body">
+    <div id="inner-body">
+    <span class="title">FindingVertical Asymptotes</span>
+    <p>By:Mohammad-Ali Bandzar | May 2 2020</p>
+<p>
+This article assumes that you understand what a Vertical Asymptote is, which you can read about <a href="bandzar.com/static/WhatAreVAs.html">Here</a>
+</p>
+<p>
+Up until now youve probably only learnt how to solve for vertical asymptotes graphicly, that is plotting the graph either by hand or using an online graphing calculator like <a href="https://www.desmos.com/calculator">desmos.com</a> and kind of guessing where the vertical asymptotes are. Although this is a stratagey to finding vertical asymptotes it is both impractical and unreliable. For example take the function <span id="katex15">loading...</span> as shown below. this function kind of looks like it could have a vertical asymptote.
+</p>
+    <img src="FindingVAs-1.png" alt="2^x graph"><br>
+<p>
+ But in reality it does not, as no matter where you choose to place your vertical line representing your asymptote, if you zoom out on your graphing calculator <span id="katex15">loading...</span> will always intersect with your line. This is because the domain of <span id="katex15">loading...</span> is all real numbers that is domain:<span id="katex16">loading...</span> therefore it can never have a vertical asymptote as no matter where you place your vertical line the function will always intersect it.
+</p>
+<div class="sub-title">Rational Functions</div>
+<p>
+To find vertical asymptoes within rational functions you should start by solving for when the denominator equals zero. If the denominator never equals zero then your function is likely continuous for its entire domain and has no vertical asymptotes. Once you have found the "roots" of the denominator you want to plug those numbers into the numerator and if the numerator is non-zero you have a vertical asymptote, if it is zero you have whats know as the indeterminate form <span id="katex17">loading...</span> which represents a hole in the function.
+</p>
+<div class="sub-title"><span id="katex1">loading...</span></div>
+
+    Which when graphed looks like this:<br>
+    <img src="VerticalAsymptotes1.png" alt="1/x graph"><br>
+    We can see that the graph approaches but never reaches x=0 as shown with the dashed line:<br>
+    <img src="VerticalAsymptotes2.png" alt="1/x graph with v.a"><br>
+    We can then solve for the equation of this vertical asymptote by solving for when the denominator of the function is equal to zero, in this case it is zero. We then want to label our asymptote at the bottom of the page next to the asymptote with its equation.<br>
+    <img src="VerticalAsymptotes3.png" alt="1/x graph with v.a and label"><br>
+</p>
+
+<div class="sub-title"><span id="katex2">loading...</span></div>
+<p>
+    We want to start off by solving for when our denominator is equal to zero:<br>
+<span id="katex18">loading...</span><br>
+<span id="katex19">loading...</span><br>
+    We then want to plug this into our numerator and see what the result is:<br>
+<span id="katex20">loading...</span><br>
+<span id="katex21">loading...</span><br>
+<span id="katex22">loading...</span><br>
+Since the numerator is zero, we can conclude that this is not a vertical asymptote but instead a hole as shown in the image below(where the circle represents the hole in our function):
+</p>
+<img src="FindingVAs-2.png" alt="x+1 graph with hole at (-3,2)"><br>
+<p>
+      This could have also been determined by either graphing, plugging in numbers close to where you believing the asymptote would be and recognizing that it isnt going toward infinity as demonstrated in the table above, or by seeing that the numerator and denominator have the same factor and canceling those out as follows:<br>
+<span id="katex2">loading...</span><br>
+<span id="katex23">loading...</span><br>
+<span id="katex24">loading...</span><br>
+</p>
+<div class="sub-title"><span id="katex3">loading...</span></div>
+ <p>
+    This is a sort of trick question because<br>
+    <span id="katex4">loading...</span><br>
+    has no real solutions telling us that the function will not have any vertical asymptotes.
+    <img src="VerticalAsymptotes5.png" alt="graph of above function"><br>
+</p>
+<div class="sub-title"><span id="katex5">loading...</span></div>
+<p>
+    We will start by solving for when the denominator is equal to zero.<br>
+    <span id="katex6">loading...</span><br>
+    <span id="katex7">loading...</span><br>
+    We are then going to plug -2 into our numerator and see what we get:<br>
+    <span id="katex8">loading...</span><br>
+    <span id="katex25">loading...</span><br>
+    <span id="katex26">loading...</span><br>
+    <span id="katex27">loading...</span><br>
+    since the numerator is zero, we can conclude that this is not a vertical asymptote but instead a hole as shown on the graph below:
+</p>
+    <img src="VerticalAsymptotes6.png" alt="graph of above function"><br>
+
+<div class="sub-title"><span id="katex9">loading...</span></div>
+<p>
+ We will start off by setting the denominator equal to zero and solving:<br>
+    <span id="katex10">loading...</span><br>
+    <span id="katex11">loading...</span><br>
+    <span id="katex12">loading...</span><br>
+    <span id="katex13">loading...</span><br>
+We are then going to plug -3,+3 into our numerator and see what we get:<br>
+we get -3,+3 since neither of these are zero we can conclude that our function will have two vertical asymptotes one at -3 and one at +3:
+</p>
+    <img src="VerticalAsymptotes7.png" alt="graph of above function"><br>
+<div class="sub-title"><span id="katex28">loading...</span></div>
+<p>
+We will start off by setting the denominator equal to zero and solving:<br>
+<span id="katex29">loading...</span><br>
+<span id="katex30">loading...</span> <br>
+for any integer value of k. that is this function has infinite many zeros and they are all the multiples of pi.<br>
+Since we cant realiztically plug in infinite many values into our numerator, we will instead find the zeros of our numerator and compare the two<br>
+<span id="katex31">loading...</span> <br>
+<span id="katex32">loading...</span> <br>
+since both our numerator and denominator have a zero when <span id="katex32">loading...</span> we can conclude that that will be a hole in our function and that our vertical asymptotes will be all the other zeros of our denominator.<br>
+Therefore our vertical asymptotes are at the following locations:<br>
+<span id="katex33">loading...</span> where k is any integer not equal to one<br>
+and our only hole will exist at <span id="katex32">loading...</span>
+</p>
+<img src="FindingVAs-3.png" alt="function described above"><br>
+
+<div class="sub-title">Trigonometric functions</div>
+<p>
+    Some trig functions will also have their own vertical asymptotes such as <span id="katex34">loading...</span> which has infinite many vertical asymptotes <span id="katex35">loading...</span> where k can be any integer. If you ever forget you could always remember that <span id="katex36">loading...</span> and try to solve that as demonstrated above.
+</p>
+<img src="FindingVAs-4.png" alt="tan(x)"><br>
+<p>
+Many other trig functions such as all the reciporcal ones <span id="katex37">loading...</span> But these are all fairly easy to solve as long as you think of them as rationals and follow the steps shown above
+</p>
+<div class="sub-title">Pro tips:</div>
+<p>
+    <ul>
+        <li> Make youself comfortable solving quadratic and cubic equations and factoring</li>
+        <li> Don't forget to verify that the zero in the denominator is in fact an asymptote</li>
+        <li>Don't forget that some functions like <span id="katex14">loading...</span> have an infinite number of vertical asymptotes</li>
+        <li>Use a graphing calculator/desmos.com to verify your solutions</li>
+</ul>
+</p>
+<p>
+    THANKS FOR READING<br>
+</p>
+</div>
+</div>
+<script>
+
+katex.render("f\\left(x\\right)=\\frac{x}{x^2+1}", katex3);
+katex.render("x^2+1=0", katex4);
+katex.render("f\\left(x\\right)=\\frac{2x^2+5x+2}{x+2}", katex5);
+katex.render("x+2=0", katex6);
+katex.render("x=-2", katex7);
+
+katex.render("f\\left(x\\right)=\\frac{x}{x^2-9}", katex9);
+katex.render("x^2-9=0", katex10);
+katex.render("x^2=9", katex11);
+katex.render("x=\\pm\\sqrt{9}", katex12);
+katex.render("x=3_{ }\\&_{ }x=-3", katex13);
+katex.render("\\frac{1}{\\sin\\left(x\\right)}", katex14);
+
+katex.render("f(x)=2^x", katex15);
+katex.render("(-\\infty,+\\infty)", katex16);
+katex.render("\\frac{0}{0}", katex17);
+katex.render("f\\left(x\\right)=\\frac{1}{x}", katex1);
+katex.render("x+3=0", katex18);
+katex.render("x=-3", katex19);
+katex.render("(-3)^2+4(-3)+3", katex20);
+katex.render("9-12+3", katex21);
+katex.render("0", katex22);
+katex.render("f\\left(x\\right)=\\frac{x^2+4x+3}{x+3}", katex2);
+katex.render("=\\frac{(x+3)(x+1)}{x+3}", katex23);
+katex.render("=x+1", katex24);
+katex.render("2(-2)^2+5(-2)+2", katex8);
+katex.render("2(4)-10+2", katex25);
+katex.render("8-10+2", katex26);
+katex.render("0", katex27);
+katex.render("f(x)=\\frac{x-\\pi}{sin(x)}", katex28);
+katex.render("sin(x)=0", katex29);
+katex.render("x=\\pi k", katex30);
+katex.render("x-\\pi=0", katex31);
+katex.render("x=\\pi", katex32);
+katex.render("x=\\pi_ k\\neq 1", katex33);
+katex.render("tan(x)", katex34);
+katex.render("x=\\frac{\\pi}{2}+\\pi k", katex35);
+katex.render("tan(x)=\\frac{sin(x)}{cos(x)}", katex36);
+katex.render("sec(x),csc(x),cot(x)", katex37);
+
+
+
+
+</script>
+</body>
+</html>
