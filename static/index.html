@@ -1,194 +1,397 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <title>Mohammad-Ali Bandzar</title>
-  <meta name="description" content="index">
-  <meta name="author" content="Mohammad-Ali Bandzar">
-<meta name="viewport" content="width=device-width,user-scalable=0;">
-  <link rel="stylesheet" href="/static/index.css">
-<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+body, html {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+.parallax {
+    width:100%;
+     /*display: inline-flex;*/
+    margin:0;
+    padding:0;
+    /* The image used */
+    background-image: url('https://i.imgur.com/UKdbRRx.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body{
+    background-color: #fdfdfd;
+
+}
+.body{
+width:100%;
+
+    border-top:1px solid #eaebed;
+    padding-top:5%;
+    margin-bottom:5%;
+
+    height:auto;
+}
+#footer{
+    width:100%;
+    height:100px;
+    margin-bottom:30%;
+}
+.body-inner{
+        margin-left:auto;
+    margin-right:auto;
+        max-width: 1140px;
+    margin-top:5%;
+    margin-bottom:5%;
+
+font-size: 1rem;
+width:80%;
+}
+.heading{
+    font-size: 1.5rem;
+    width:100%;
+    text-align:center;
+    position: relative;
+    height:5%;
+    color: #212529;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+font-weight: 400;
+
+
+}
+.heading::after{
+    content: '';
+    bottom: -60%;
+    width: 6%;
+    height: 2px;
+    margin-bottom: 1%;
+    background: #6495ED;
+    position: absolute;
+    left: 50%;
+    margin-left: -3%;
+}
+#contact-list{
+    /*margin-top: -5%;*/
+}
+#contact-list li{
+    list-style-type: none;
+}
+/*#FAQ .FAQ-Question{
+    font-weight: bold;
+    font-size:1rem;
+    padding-bottom: 3%;
+    padding-top:3%;
+}*/
+#title{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+    font-size: 2.5rem;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+.grid-box{
+    margin-left:20%;
+}
+
+p{
+    font-size:1rem;
+}
+h5{
+        font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+.icon{
+        position: absolute;
+    border-radius: 50%;
+    min-width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(33, 37, 41, .1), 0 7px 14px rgba(33, 37, 41, .1);
+    font-size: 27px;
+}
+.col-md-6{
+    margin-bottom:5%;
+}
+#navbar-container{
+    /*max-width: 1140px;*/
+    margin:auto;
+    color:black;
+        justify-content: center;
+    background-color: rgba(255,255,255,.9);
+ 
+
+}
+#collapsibleNavbar{
+    justify-content: center;
+}
+.navbar-collapse .nav-item{
+    text-align: center;
+}
+.nav-link {
+    color: rgba(66, 134, 244,.7) !important;
+    margin-right:10px;
+    margin-left:10px;
+}
+.nav-link:hover{
+    color: rgba(66, 134, 244,1) !important;
+
+}
+.navbar{
+    justify-content: center;
+    /*background-color: white;*/
+}
+.navbar-dark .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.blog-link:hover{
+    text-decoration: none;
+}
+.container{
+    /*max-width: 90%;*/
+}
+@media (max-width: 800px) {
+    .grid-box{
+        margin-left: 0px;
+    }
+    .navbar{font-size:200%;}
+}
+</style>
 </head>
 <body>
-<ul class="navbar">
-    <li><span id="logo">Bandzar.com</span></li>
-    <li><a class="active" href="/static/index.html">Home</a></li>
-    <li><a href="/static/about.html">About</a></li>
-    <li><a href="/static/contact.html">Contact</a></li>
-</ul>
 
-<div id="particles-js"></div>
-
+<div class="parallax">
+    <div id="navbar-container">
+<nav class="navbar navbar-expand-md navbar-dark">
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#NoteworthyWriting">Noteworthy writing</a>
+      </li>    
+            <li class="nav-item">
+        <a class="nav-link" href="#Blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
+</div>
+<div id="title">Mohammad-Ali Bandzar</div>
+</div>
 <div id="body">
-<div id="inner-body">
-    <ul id="body-list">
-            <li><a href="/static/WhatAreVAs.html">What are vertical asymptotes</a>
-        <span>What a vertical asymptote is, how we can verify that we have found one and how to formally define the vertical asymptote</span>
-    </li>
-    <li><a href="/static/FindingVAs.html">How to locate vertical asymptotes within a function</a>
-        <span>This article is all about how to find vertical asymtotes in both rational and trig functions and talks about the different stratagies used to find vertical asymptotes</span>
-    </li>
+<div class="body" style="">
 
-                            <li><a href="/static/ProductRule.html">The product rule for derivatives(including proof)</a>
-        <span>learn how to use the product rule for derivatives, the proof behind the rule and how the rule can be scaled up to more that 2 functions.</span>
-    </li>
-                    <li><a href="/static/PowerRule.html">The power rule for derivatives</a>
-        <span>learn how to take derivatives of powers</span>
-    </li>
-            <li><a href="/static/Limits.html">An introduction to Mathamatical limts</a>
-        <span>ever wonder how to solve for the value of a function at a hole, well heres your chance</span>
-    </li>
-    <li><a href="/static/HorizontalAsymptotes.html">An introduction to horizontal asymptotes</a>
-        <span>the magic behind where lines go beyond the graphing calculators display</span>
-    </li>
-    <li><a href="/static/Seeker2ProReview.html">Seeker 2 pro review</a>
-        <span>a blog post detailing my review and opinions on olights seeker 2 pro</span>
-    </li>
-    <li><a href="/static/Factorials.html">An introduction to factorials(n!)</a>
-        <span>Ever wonder what that weird math exclaimation mark was, well now you can learn</span>
-    </li>
-    <li><a href="/static/dataManipulation.html">US Energy Consumption per Capita By State</a>
-        <span>A Visualization of US power consumtion per capita(per person) By state. Data from 2016</span>
-    </li>
-    <li><a href="/static/DontFearOOP.html">Don't Fear OOP</a>
-        <span>A beginners guide to OOP programming and data structures in Java. Based on a story about Spongebob</span>
-    </li>
-        <li><a href="/static/OOPTutorial.html">OOP Tutorial</a>
-        <span>A beginners guide to OOP programming and data structures in Java.</span>
-    </li>
-            <li><a href="/static/Recursion.html">Recursion</a>
-        <span>A beginners guide to Recursion in Java.</span>
-    </li>
-            <li><a href="/static/Array.html">Arrays</a>
-        <span>A beginners guide to Arrays in Java.</span>
-    </li>
-            <li><a href="/static/Sorting.html">Sorting</a>
-        <span>A beginners guide to Sorting in Java.</span>
-    </li>
-            <li><a href="/static/Searching.html">Searching</a>
-        <span>A beginners guide to Searching in Java.</span>
-    </li>
-            <li><a href="/static/Polymorphism.html">Polymorphism</a>
-        <span>A beginners guide to Polymorphism in Java.</span>
-    </li>
-            <li><a href="/static/Abstract.html">Abstration</a>
-        <span>A beginners guide to Abstraction in Java.</span>
-    </li>           
-     <li><a href="/static/FinalProject.html">Race To Litercy - ICS4U0 Final Project</a>
-        <span>A game i designed for ics for my final project</span>
-    </li>
-                <li><a href="/static/Bibliography.html">Bibliography</a>
-        <span>Wouldnt recomend reading this</span>
-    </li>
-</ul>
+    <div class="heading" id="About">About</div>
+    <div class="body-inner">
+        Hello friends,<br>
+        My name is Mohammad-Ali Bandzar im currently a second year student at the University of Toronto. In my freetime I like to read about true crime, im currently reading the Zodiac by Robert Graysmith. Below you will see some blog posts ive written for fun, at the bottom of this site will include ways of getting in touch. This site was origionally created as part of a highschool computerscience class project, but ive decided to keep the website up as it garners approx 800 unique visitors a month according to Cloudflare. Its also a great conversation starter at job interviews.
+    </div>
+    <div class="heading" id="NoteworthyWriting">Noteworthy Writing</div>
+    <div class="body-inner" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/WhatAreVAs.html" class="blog-link"><h5>Why the cia wont hire me</h5></a>
+                        <p>What a vertical asymptote is, how we can verify that we have found one and how to formally define the vertical asymptote</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="heading" id="Blog">Blog</div>
+    <div class="body-inner" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/WhatAreVAs.html" class="blog-link"><h5>What are vertical asymptotes</h5></a>
+                        <p>What a vertical asymptote is, how we can verify that we have found one and how to formally define the vertical asymptote</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/FindingVAs.html" class="blog-link"><h5>How to locate vertical asymptotes within a function</h5></a>
+                        <p>This article is all about how to find vertical asymtotes in both rational and trig functions and talks about the different stratagies used to find vertical asymptotes</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/ProductRule.html" class="blog-link"><h5>The product rule for derivatives(including proof)</h5></a>
+                        <p>Learn how to use the product rule for derivatives, the proof behind the rule and how the rule can be scaled up to more that 2 functions.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/PowerRule.html" class="blog-link"><h5>The power rule for derivatives</h5></a>
+                        <p>Learn how to take derivatives of powers</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Limits.html" class="blog-link"><h5>An introduction to Mathamatical limts</h5></a>
+                        <p>ever wonder how to solve for the value of a function at a hole, well heres your chance</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/HorizontalAsymptotes.html" class="blog-link"><h5>An introduction to horizontal asymptotes</h5></a>
+                        <p>the magic behind where lines go beyond the graphing calculators display</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Factorials.html" class="blog-link"><h5>An introduction to factorials(n!)</h5></a>
+                        <p>Ever wonder what that weird math exclaimation mark was, well now you can learn</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/dataManipulation.html" class="blog-link"><h5>US Energy Consumption per Capita By State</h5></a>
+                        <p>A Visualization of US power consumtion per capita(per person) By state. Data from 2016</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/DontFearOOP.html" class="blog-link"><h5>Don't Fear OOP</h5></a>
+                        <p>A beginners guide to OOP programming and data structures in Java. Based on a story about Spongebob</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/OOPTutorial.html" class="blog-link"><h5>OOP Tutorial</h5></a>
+                        <p>A beginners guide to OOP programming and data structures in Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Recursion.html" class="blog-link"><h5>Recursion</h5></a>
+                        <p>A beginners guide to Recursion in Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Array.html" class="blog-link"><h5>Arrays</h5></a>
+                        <p>A beginners guide to arrays with Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Sorting.html" class="blog-link"><h5>Sorting</h5></a>
+                        <p>A beginners guide to sorting with Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Searching.html" class="blog-link"><h5>Searching</h5></a>
+                        <p>A beginners guide to searching with Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Polymorphism.html" class="blog-link"><h5>Polymorphism</h5></a>
+                        <p>A beginners guide to polymorphism with Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/Abstract.html" class="blog-link"><h5>Abstraction</h5></a>
+                        <p>A beginners guide to abstraction with Java.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box">
+                        <a href="https://bandzar.com/static/FinalProject.html" class="blog-link"><h5>Race To Litercy - ICS4U0 Final Project</h5></a>
+                        <p>A game I designed for my highschool AP comp sci class final project</p>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+                <div class="col-md-10">
+                    <div class="grid-box" style="padding-top:30px">
+                        <p>All my more recent written work can be found on my Medium account <a href="https://medium.com/@mohammad_ali">HERE</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="body" style="">
+
+    <div class="heading" id="Contact">Get in Touch</div>
+    <div class="body-inner">
+        <p>Below is a list of websites im on, the best way to reach out to me would be by Email</p>
+        <ul id="contact-list">
+            <li>Email: <a href="mailto:Mohammad-Ali@Bandzar.com">Mohammad-Ali@Bandzar.com</a></li>
+            <li>StackExchange: <a href="https://raspberrypi.stackexchange.com/users/43607/mohammad-ali">here</a></li>
+            <li>Github: <a href="https://github.com/mohammad-aliB">here</a></li>
+        </ul>
+        <p>Feel free to reach out for any reason by email, I generally respond same day</p>
+    </div>
+</div>
+<div id="footer">
 </div>
 </div>
-<script>
-particlesJS("particles-js", {
-  "particles": {
-    "number": {
-      "value": 80,
-      "density": {
-        "enable": true,
-        "value_area": 700
-      }
-    },
-    "color": {
-      "value": "#ffffff"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 5
-      },
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 6,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": true,
-        "mode": "grab"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 140,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
-});
-</script>
 </body>
 </html>
