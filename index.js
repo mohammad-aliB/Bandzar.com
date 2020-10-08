@@ -11,7 +11,7 @@ function render(filename, data)
     var output = template(data);
     return output;
 }
-var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json").toString().replace("\\","\\\\"));
+var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json").toString());
 var homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A1);
 var STA256A1Articles={}
 for(x=0;x<STA256A1.articles.length;x++){
