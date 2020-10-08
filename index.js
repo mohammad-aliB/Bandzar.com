@@ -47,8 +47,8 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
             res.write(homepage);
             res.end();
         }else if(URLparamters["q"]){
-            for(x=0;x<STA256A1.articles.len();x++){
-                if(STA256A1.articles[x].URL==URLparamters[q]){
+            for(x=0;x<STA256A1.articles.length;x++){
+                if(STA256A1.articles[x].URL==URLparamters["q"]){
                     res.writeHead(302, {
                         'Cache-Control':'no-cache, no-store, must-revalidate',
                         'Pragma':'no-cache',
