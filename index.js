@@ -11,7 +11,7 @@ function render(filename, data)
     return output;
 }
 var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json"));
-var homepage=render("/templates/questionAnswer.hbs");
+var homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs");
 
 var dispatcher=require("/MEME/Dispatcher/index.js");//should be changed in later revision
 dispatcher.setUP(80,'172.104.29.98');
