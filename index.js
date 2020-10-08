@@ -16,14 +16,14 @@ var STA256A3=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A3.json
 var STA256A1homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A1);
 var STA256A3homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A3);
 var STA256A1Articles={}
-var STA256A3Articles={}
+var articles={}
 for(x=0;x<STA256A1.articles.length;x++){
     var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A1.articles[x]);
-    STA256A1Articles[STA256A1.articles[x].URL]=article;
+    articles[STA256A1.articles[x].URL]=article;
 }
 for(x=0;x<STA256A3.articles.length;x++){
     var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A3.articles[x]);
-    STA256A3Articles[STA256A3.articles[x].URL]=article;
+    articles[STA256A3.articles[x].URL]=article;
 }
 // console.log(STA256A1Articles)
 
@@ -49,6 +49,30 @@ dispatcher.GetRequest('/',function(req,res){
             });
             res.end();
         });
+dispatcher.GetRequest('/Article',function(req,res){
+error=1
+    if(URLparamters["q"]){
+        if(articles[URLparamters["q"]]){
+            error=0
+            res.writeHead(302, {
+                'Cache-Control':'no-cache, no-store, must-revalidate',
+                'Pragma':'no-cache',
+                'Expires':'0',
+            });
+            res.write(articles[URLparamters["q"]]);
+            res.end();
+        }
+    }
+    if(error==1){
+        res.writeHead(404, {
+            'Cache-Control':'no-cache, no-store, must-revalidate',
+            'Pragma':'no-cache',
+            'Expires':'0',
+        });
+        res.write("not found");
+        res.end();
+    }
+});
 dispatcher.GetRequest('/STA256-A1',function(req,res){
     error=1
     var URLparamters=url.parse(req.url,true).query
@@ -84,10 +108,6 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
     }
 });
 dispatcher.GetRequest('/STA256-A3',function(req,res){
-    error=1
-    var URLparamters=url.parse(req.url,true).query
-    if(Object.keys(URLparamters).length==0){
-        error=0
         res.writeHead(302, {
             'Cache-Control':'no-cache, no-store, must-revalidate',
             'Pragma':'no-cache',
@@ -95,27 +115,7 @@ dispatcher.GetRequest('/STA256-A3',function(req,res){
         });
         res.write(STA256A3homepage);
         res.end();
-    }else if(URLparamters["q"]){
-        if(STA256A3Articles[URLparamters["q"]]){
-            error=0
-            res.writeHead(302, {
-                'Cache-Control':'no-cache, no-store, must-revalidate',
-                'Pragma':'no-cache',
-                'Expires':'0',
-            });
-            res.write(STA256A3Articles[URLparamters["q"]]);
-            res.end();
-        }
-    }
-    if(error==1){
-        res.writeHead(404, {
-            'Cache-Control':'no-cache, no-store, must-revalidate',
-            'Pragma':'no-cache',
-            'Expires':'0',
-        });
-        res.write("not found");
-        res.end();
-    }
+
 });
 console.log("the server started successfully");
 }catch(err) {
