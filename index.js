@@ -15,7 +15,7 @@ var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json
 var homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A1);
 var STA256A1Articles={}
 for(x=0;x<STA256A1.articles.length;x++){
-    var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A1.articles[x]);
+    var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A1.articles[x],{noEscape: true});
     STA256A1Articles[STA256A1.articles[x].URL]=article;
 }
 // console.log(STA256A1Articles)
