@@ -16,7 +16,7 @@ var homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA2
 var STA256A1Articles={}
 for(x=0;x<STA256A1.articles.length;x++){
     var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A1.articles[x]);
-    STA256Articles[STA256A1.articles[x].url]=article;
+    STA256A1Articles[STA256A1.articles[x].url]=article;
 }
 
 
