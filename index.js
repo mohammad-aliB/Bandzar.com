@@ -4,13 +4,14 @@ var Handlebars = require('handlebars');
 
 function render(filename, data)
 {
-  // var source   = fs.readFileSync(filename,'utf8').toString();
-  source=filename
-  var template = Handlebars.compile(source);
-  var output = template(data);
-  return output;
+    var source   = fs.readFileSync(filename,'utf8').toString();
+  //source=filename
+    var template = Handlebars.compile(source);
+    var output = template(data);
+    return output;
 }
-
+var STA256A1=JSON.parse(fs.readFileSync("STA256-A1"));
+var homepage=render("/templates/questionAnswer.hbs");
 
 var dispatcher=require("/MEME/Dispatcher/index.js");//should be changed in later revision
 dispatcher.setUP(80,'172.104.29.98');
