@@ -10,7 +10,7 @@ function render(filename, data)
     var output = template(data);
     return output;
 }
-var STA256A1=JSON.parse(fs.readFileSync("STA256-A1"));
+var STA256A1=JSON.parse(fs.readFileSync("STA256-A1.json"));
 var homepage=render("/templates/questionAnswer.hbs");
 
 var dispatcher=require("/MEME/Dispatcher/index.js");//should be changed in later revision
