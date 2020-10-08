@@ -37,6 +37,7 @@ dispatcher.GetRequest('/',function(req,res){
         });
 dispatcher.GetRequest('/STA256-A1',function(req,res){
         var URLparamters=url.parse(req.url,true).query
+        console.log(URLparamters)
         if(URLparamters.length==0){
             res.writeHead(302, {
                 'Cache-Control':'no-cache, no-store, must-revalidate',
