@@ -39,7 +39,7 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
                 'Pragma':'no-cache',
                 'Expires':'0',
             });
-            res.write(Handlebars.render("Handlebars <b>{{doesWhat}}</b>",{ doesWhat: "rocks!" }));
+            res.write(render("Handlebars <b>{{doesWhat}}</b>",{ doesWhat: "rocks!" }));
             res.end();
         });
 console.log("the server started successfully");
