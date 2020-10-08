@@ -65,7 +65,8 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
                         'Pragma':'no-cache',
                         'Expires':'0',
                     });
-                    res.write("hello world");
+                    res.write(STA256A1Articles[URLparamters["q"]]);
+                    // res.write("hello world");
                     res.end();
                 //}
             }
