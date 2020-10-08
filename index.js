@@ -1,6 +1,7 @@
 try{
 var fs = require('fs');
 var Handlebars = require('handlebars');
+var url=require('url');
 
 function render(filename, data)
 {
@@ -35,6 +36,8 @@ dispatcher.GetRequest('/',function(req,res){
             res.end();
         });
 dispatcher.GetRequest('/STA256-A1',function(req,res){
+        var URLparamters=url.parse(req.url,true).query
+        if(URLparamters.len()==0){
             res.writeHead(302, {
                 'Cache-Control':'no-cache, no-store, must-revalidate',
                 'Pragma':'no-cache',
@@ -42,6 +45,19 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
             });
             res.write(homepage);
             res.end();
+        }else if(URLparamters["q"].len()>0){
+            for(x=0;x<STA256A1.articles.len();x++){
+                if(STA256A1.articles[x].URL==URLparamters[q]){
+                    res.writeHead(302, {
+                        'Cache-Control':'no-cache, no-store, must-revalidate',
+                        'Pragma':'no-cache',
+                        'Expires':'0',
+                    });
+                    res.write("hello world");
+                    res.end();
+                }
+            }
+        }
         });
 console.log("the server started successfully");
 }catch(err) {
