@@ -19,8 +19,8 @@
         "question":"Two balls are drawn in succession and without replacement, from a jar containing eight red balls and four white balls. What is the probability that the first ball was white given that the second ball was red? Use Bayes' theorem",
         "answer":"
         Lets let:<br>
-        $W_1$ represent the probability that the first ball drawn is white<br>
-        $R_1$ represent the probability that the first ball drawn is Blue\<br>
+        a$W_1$ represent the probability that the first ball drawn is white<br>
+        $R_1$ represent the probability that the first ball drawn is Blue<br>
         $W_2$ represent the probability that the Second ball drawn is White<br>
         $R_2$ represent the probability that the Second ball drawn is Blue<br>
         $$P(R_2\cap W_1)=\frac{4}{12}\times\frac{8}{11}$$
