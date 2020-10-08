@@ -50,7 +50,8 @@ dispatcher.GetRequest('/',function(req,res){
             res.end();
         });
 dispatcher.GetRequest('/Article',function(req,res){
-error=1
+    var URLparamters=url.parse(req.url,true).query
+    error=1
     if(URLparamters["q"]){
         if(articles[URLparamters["q"]]){
             error=0
@@ -74,10 +75,6 @@ error=1
     }
 });
 dispatcher.GetRequest('/STA256-A1',function(req,res){
-    error=1
-    var URLparamters=url.parse(req.url,true).query
-    if(Object.keys(URLparamters).length==0){
-        error=0
         res.writeHead(302, {
             'Cache-Control':'no-cache, no-store, must-revalidate',
             'Pragma':'no-cache',
@@ -85,27 +82,6 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
         });
         res.write(STA256A1homepage);
         res.end();
-    }else if(URLparamters["q"]){
-        if(STA256A1Articles[URLparamters["q"]]){
-            error=0
-            res.writeHead(302, {
-                'Cache-Control':'no-cache, no-store, must-revalidate',
-                'Pragma':'no-cache',
-                'Expires':'0',
-            });
-            res.write(STA256A1Articles[URLparamters["q"]]);
-            res.end();
-        }
-    }
-    if(error==1){
-        res.writeHead(404, {
-            'Cache-Control':'no-cache, no-store, must-revalidate',
-            'Pragma':'no-cache',
-            'Expires':'0',
-        });
-        res.write("not found");
-        res.end();
-    }
 });
 dispatcher.GetRequest('/STA256-A3',function(req,res){
         res.writeHead(302, {
