@@ -1,4 +1,17 @@
 try{
+var fs = require('fs');
+var Handlebars = require('handlebars');
+
+function render(filename, data)
+{
+  // var source   = fs.readFileSync(filename,'utf8').toString();
+  source=filename
+  var template = Handlebars.compile(source);
+  var output = template(data);
+  return output;
+}
+
+
 var dispatcher=require("/MEME/Dispatcher/index.js");//should be changed in later revision
 dispatcher.setUP(80,'172.104.29.98');
 dispatcher.staticDirectory('/static','/bandzar.com/bandzar.com/static');
@@ -26,7 +39,7 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
                 'Pragma':'no-cache',
                 'Expires':'0',
             });
-            res.write("hello world");
+            res.write(Handlebars.render("Handlebars <b>{{doesWhat}}</b>",{ doesWhat: "rocks!" }));
             res.end();
         });
 console.log("the server started successfully");
