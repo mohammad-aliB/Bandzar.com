@@ -13,6 +13,12 @@ function render(filename, data)
 }
 var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json"));
 var homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A1);
+var STA256A1Articles={}
+for(x=0;x<STA256A1.articles.length;x++){
+    var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A1.articles[x]);
+    STA256Articles[STA256A1.articles[x].url]=article;
+}
+
 
 var dispatcher=require("/MEME/Dispatcher/index.js");//should be changed in later revision
 dispatcher.setUP(80,'172.104.29.98');
@@ -47,8 +53,9 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
             res.write(homepage);
             res.end();
         }else if(URLparamters["q"]){
-            for(x=0;x<STA256A1.articles.length;x++){
-                if(STA256A1.articles[x].URL==URLparamters["q"]){
+            // for(x=0;x<STA256A1.articles.length;x++){
+            //     if(STA256A1.articles[x].URL==URLparamters["q"]){
+            if(STA256A1Articles[URLparamters["q"]]){
                     res.writeHead(302, {
                         'Cache-Control':'no-cache, no-store, must-revalidate',
                         'Pragma':'no-cache',
@@ -56,7 +63,7 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
                     });
                     res.write("hello world");
                     res.end();
-                }
+                //}
             }
         }
         res.writeHead(404, {
