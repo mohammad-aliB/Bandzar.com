@@ -29,6 +29,7 @@
         $$P(R_2\cap W_1)=\frac{8}{33}$$
         $$P(R_2\cap R_1)=\frac{8}{12}\times\frac{7}{11}$$
         $$P(R_2\cap R_1)=\frac{14}{33}$$
+        $$P(R_2)=(R_2\cap W_1)+(R_2\cap R_1)$$
         $$P(R_2)=\frac{8}{33} + \frac{14}{33}$$
         $$P(R_2)=\frac{22}{33}$$
         Now we want to apply the conditional probabilty function:<br>
