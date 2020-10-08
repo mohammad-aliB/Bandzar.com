@@ -17,7 +17,8 @@
         "author":"Mohammad-Ali Bandzar",
         "URL":"A1Q2",
         "question":"Two balls are drawn in succession and without replacement, from a jar containing eight red balls and four white balls. What is the probability that the first ball was white given that the second ball was red? Use Bayes' theorem",
-        "answer":"$$P(R_2\cap W_1)=\frac{4}{12}\times\frac{8}{11}$$$$P(R_2\cap W_1)=\frac{8}{33}$$"
+        "answer":"$$P(R_2\cap W_1)=\frac{4}{12}\times\fra
+        c{8}{11}$$$$P(R_2\cap W_1)=\frac{8}{33}$$"
     }
     ]
 }
