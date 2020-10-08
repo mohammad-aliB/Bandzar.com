@@ -18,26 +18,7 @@
         "URL":"A1Q2",
         "question":"Two balls are drawn in succession and without replacement, from a jar containing eight red balls and four white balls. What is the probability that the first ball was white given that the second ball was red? Use Bayes' theorem",
         "answer":"
-        Lets let:<br>
-        $W_1$ represent the probability that the first ball drawn is white<br>
-        $R_1$ represent the probability that the first ball drawn is Blue<br>
-        $W_2$ represent the probability that the Second ball drawn is White<br>
-        $R_2$ represent the probability that the Second ball drawn is Blue<br>
-        We will start off by finding the probability that the second ball drawn is red<br>
-        $$P(R_2)=(R_2\cap W_1)+(R_2\cap R_1)$$
-        $$P(R_2\cap W_1)=\frac{4}{12}\times\frac{8}{11}$$
-        $$P(R_2\cap W_1)=\frac{8}{33}$$
-        $$P(R_2\cap R_1)=\frac{8}{12}\times\frac{7}{11}$$
-        $$P(R_2\cap R_1)=\frac{14}{33}$$
-        $$P(R_2)=(R_2\cap W_1)+(R_2\cap R_1)$$
-        $$P(R_2)=\frac{8}{33} + \frac{14}{33}$$
-        $$P(R_2)=\frac{22}{33}$$
-        Now we want to apply the conditional probabilty function:<br>
-        $$P(W_1|R_2)=\frac{P(W_1\cap R_2)}{P(R_2)}$$
-        $$P(W_1|R_2)=\frac{\frac{8}{33}}{\frac{22}{33}}$$
-        $$P(W_1|R_2)=\frac{8}{22}$$
-        $$P(W_1|R_2)=\frac{4}{11}$$
-        Therefore the probability that the first ball was white given that the second ball was red is $P(W_1|R_2)=\frac{4}{11}$
+        This question isnt even from this assignment its just a placeholder
         "
     }
     ]
