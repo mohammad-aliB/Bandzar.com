@@ -7,15 +7,15 @@
         "title":"Assignment 1 question 1",
         "date":"OCT 8 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"A1Q1",
+        "URL":"STA256_Assignment_3_Question_1",
         "question":"Given $\pi$ many dollars how long till i starve?",
         "answer":"very soon"
     },    
     {
-        "title":"Assignment 3 Question 14",
+        "title":"Assignment 1 Question 15",
         "date":"Oct 9 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"A1Q2",
+        "URL":"STA256_Assignment_1_Question_15",
         "question":"Two balls are drawn in succession and without replacement, from a jar containing eight red balls and four white balls. What is the probability that the first ball was white given that the second ball was red? Use Bayes' theorem",
         "answer":"
         This question isnt even from this assignment its just a placeholder
