@@ -58,15 +58,15 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
                     res.end();
                 }
             }
-        }else{
-            res.writeHead(404, {
-                        'Cache-Control':'no-cache, no-store, must-revalidate',
-                        'Pragma':'no-cache',
-                        'Expires':'0',
-                    });
-                res.write("not found");
-                res.end();
         }
+        res.writeHead(404, {
+            'Cache-Control':'no-cache, no-store, must-revalidate',
+            'Pragma':'no-cache',
+            'Expires':'0',
+        });
+        res.write("not found");
+        res.end();
+        
         });
 console.log("the server started successfully");
 }catch(err) {
