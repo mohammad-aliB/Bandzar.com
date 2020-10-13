@@ -17,7 +17,7 @@
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_1",
         "question":"Let $S=1,2,3...$ and let $X(s)=s^2$ and $Y(s)=\frac{1}{s}$ for $s\in S$. For each of the following quantities, determine (with explaination) whether or not it exists. If it does exist, then give its value.",
-        "
+        "answer":"
         <dl>
           <dt>(a)$min_{s\in S}X(S)$</dt>
           <dd>Since $s^2$ is strictly increasing as $s \rightarrow \inf$ we know that X(1) will be our minimum value, therefore $min_{s\in S}X(S)=1^2=1$</dd>
