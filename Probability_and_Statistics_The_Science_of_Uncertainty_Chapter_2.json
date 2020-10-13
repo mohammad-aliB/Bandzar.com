@@ -20,9 +20,9 @@
         "answer":"
         <dl>
           <dt>(a)$min_{s\in S}X(S)$</dt>
-          <dd>Since $s^2$ is strictly increasing as $s \rightarrow \inf$ we know that X(1) will be our minimum value, therefore $min_{s\in S}X(S)=1^2=1$</dd>
+          <dd>Since $s^2$ is strictly increasing as $s \rightarrow \infty$ we know that X(1) will be our minimum value, therefore $min_{s\in S}X(S)=1^2=1$</dd>
           <dt>(a)$max_{s\in S}X(S)$</dt>
-          <dd>Since $s^2$ is strictly increasing without bound as $s \rightarrow \inf$ and since our sample space goes to positive infinity, we can conclude that X(s) is an unbounded random variable. Similar to example 2.1.10 from the textbook</dd>
+          <dd>Since $s^2$ is strictly increasing without bound as $s \rightarrow \infty$ and since our sample space goes to positive infinity, we can conclude that X(s) is an unbounded random variable. Similar to Example 2.1.10 from the textbook</dd>
         </dl>
         "
     }
