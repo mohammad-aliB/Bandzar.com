@@ -338,7 +338,7 @@
         <dl>
         <dt>(a) Compute $Y(1)$</dt>
         <dd>
-        $$Y(1)=1^2\timesX(1)$$
+        $$Y(1)=1^2\times X(1)$$
         $$Y(1)=1\times 1$$
         $$Y(1)=1$$
         </dd>
