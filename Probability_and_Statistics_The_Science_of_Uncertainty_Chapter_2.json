@@ -355,6 +355,73 @@
         $$W(4)=0$$
         </dd>
         "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 10",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_10",
+        "question":"LetX be a random varriable
+        <ol type='a'>
+        <li>It is necessarily true that $X\geq 0$?</li>
+        <li>Is it necessarily true that there is some real number c such that $X+c \geq 0$?</li>
+        <li>Suppose the sample space S is finite. Then is it necessarily true that there is some real number c such that $X+c\geq 0$?</li>
+        <li>Compute $Y(4)$</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) It is necessarily true that $X\geq 0$?</dt>
+        <dd>No, X can be any real number</dd>
+        <dt>(b) Is it necessarily true that there is some real number c such that $X+c \geq 0$?</dt>
+        <dd>
+        No, for example let $S=\{1,2,3,4...\}$ and let $X(s)=-s$. No c will exist such that $X+c\geq 0$ as an s can always be chose to make $X+c\leq 0$
+        </dd>
+        <dt>(c) Suppose the sample space S is finite. Then is it necessarily true that there is some real number c such that $X+c\geq 0$?</dt>
+        <dd>
+        Yes, in a finite sample space, if we set $c=min_{s\in S}X(s)$ then we would have $X+c\geq 0$
+        </dd>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 11",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_11",
+        "question":"Suppose the sample space S is finite. Is it possible to define an unbounded random variiable on S? Why or why not?
+        ",
+        "answer":"
+        we can find the definition of unbounded from Example 2.1.10: if X(s) increases or decreases without bound as $s\rightarrow\infty$ X can be called an unbounded random variable.<br>
+        If our sample space is finite we can not have an unbounded random variable on S. This is because we must have an upper bound defined by $max_{s\in S}X(s)$ and a lower one defined by: $min_{s\in S}X(s)$.
+        "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 12",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_12",
+        "question":"SUppose X is a random variable that takes only the vales 0 or 1. Must X be an indicator function? Exaplain.
+        ",
+        "answer":"
+        No, X does not have to be an indicator function. The definition of an indicator function is as follows:An indicator function is any function that take only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \mathbb{R}$ is defined by
+begin{equation*}
+\textit{I}_A(x)=\begin{cases}
+          x \quad &\text{if} \, x \in \mathbb{Q} \\
+          -x \quad &\text{if} \, x \notin \mathbb{Q} \\
+     \end{cases}
+\end{equation*}
+        "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 13",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_13",
+        "question":"SUppose the sample space S is finite, of size m. How many different indicator functions can be defined on S?
+        ",
+        "answer":"
+        No, X does not have to be an indicator function
+        "
     }
     ]
 }
