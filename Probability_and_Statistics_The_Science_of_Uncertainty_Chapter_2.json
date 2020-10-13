@@ -403,11 +403,11 @@
         "question":"Suppose X is a random variable that takes only the vales 0 or 1. Must X be an indicator function? Explain.
         ",
         "answer":"
-        Yes, X does have to be an indicator function. The definition of an indicator function is as follows: An indicator function is any function that take outputs only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \mathbb{R}$ is defined by
+        Yes, X does have to be an indicator function. The definition of an indicator function from Example 2.1.6: An indicator function is any function that can output only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \{0,1\}$ is defined by
 $$
 \textit{I}_A(x)=\begin{cases}1&x\in\textbf{A}\\ 0&x\notin\textbf{A}\end{cases} 
 $$
-Therefore no matter how we define our function $X$ we can always rewrite it to fit the definition of the indicator function as given to us from Example 2.1.6
+Therefore no matter how we define our function $X$ we can always determine a set $\textbf{A}$ where $X(a)=1$ which fits our definition of the indicator function given above
         "
     },
     {
@@ -420,7 +420,7 @@ Therefore no matter how we define our function $X$ we can always rewrite it to f
         "answer":"
         The number of unique indicator functions we can define on s will be equal to the number of possible subsets of S that we can create.
         The formula to find the maximum number of subsets including the empty set is $2^n$ where n represents the number of elements in your set.<br>
-        In this case, we could define $2^m$ mmany different indicator functions on S.
+        In this case, we could define $2^m$ many different indicator functions on S.
         "
     },
     {
@@ -428,7 +428,7 @@ Therefore no matter how we define our function $X$ we can always rewrite it to f
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_14",
-        "question":"Suppose X is a random variable. Let $Y=\sqrt(X)$. Must Y be a radom variable? Explain.
+        "question":"Suppose X is a random variable. Let $Y=\sqrt{X}$. Must Y be a radom variable? Explain.
         ",
         "answer":"
         Yes, Y must be a random variable as its value is dependant on the value of another random variable X.
