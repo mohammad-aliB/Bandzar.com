@@ -400,13 +400,14 @@
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_12",
-        "question":"SUppose X is a random variable that takes only the vales 0 or 1. Must X be an indicator function? Exaplain.
+        "question":"Suppose X is a random variable that takes only the vales 0 or 1. Must X be an indicator function? Explain.
         ",
         "answer":"
-        No, X does not have to be an indicator function. The definition of an indicator function is as follows:An indicator function is any function that take only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \mathbb{R}$ is defined by
+        Yes, X does have to be an indicator function. The definition of an indicator function is as follows:An indicator function is any function that take only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \mathbb{R}$ is defined by
 $$
-f(x)=\begin{cases}x^2&x<0\\ -x^3&x\geq 0\end{cases} 
+\textit{I}_A(x)=\begin{cases}1&x\in\mathbb{A}\\ 0&x\notin\mathbb{A}\end{cases} 
 $$
+Therefore no matter how we define our function $X$ we can always rewrite it to fit the definition of the indicator function as given to us from Example 2.1.6
         "
     },
     {
