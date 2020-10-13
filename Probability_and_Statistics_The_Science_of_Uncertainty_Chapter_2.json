@@ -168,10 +168,10 @@
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_5",
-        "question":"Let A and B be events, and let $X=\textit{I}_A*\textit{I}_B$. Is X an indicator function? If yes, then of what event?$
+        "question":"Let A and B be events, and let $X=\textit{I}_A*\textit{I}_B$. Is X an indicator function? If yes, then of what event?
         ",
         "answer":"
-        Yes, X is an indicator function as its only possible outcomes are 0,1. X will output 1 when both \textit{I{_a and \textit{I}_b are one. Therefore $X=A\cap B$
+        Yes, X is an indicator function as its only possible outcomes are 0,1. X will output 1 when both $\textit{I}_a$ and $\textit{I}_b$ are one. Therefore $X=A\cap B$
         "
     }
     ]
