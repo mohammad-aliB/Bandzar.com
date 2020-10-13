@@ -16,6 +16,34 @@
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_1",
+        "question":"Let $S=\{1,2,3...\}$ and let $X(s)=s^2$ and $Y(s)=\frac{1}{s}$ for $s\in S$. For each of the following quantities, determine (with explaination) whether or not it exists. If it does exist, then give its value.<br>
+        <ol type='a'>
+        <li>$min_{s\in S}X(s)$</li>
+        <li>$max_{s\in S}X(s)$</li>
+        <li>$min_{s\in S}Y(s)$</li>
+        <li>$max_{s\in S}Y(s)$</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+            <dt>(a)$min_{s\in S}X(s)$</dt>
+            <dd>Since $s^2$ is strictly increasing as $s \rightarrow \infty$ we know that X(1) will be our minimum value, Therefore $min_{s\in S}X(s)=1^2=1$</dd>
+            <dt>(b)$max_{s\in S}X(s)$</dt>
+            <dd>Since $s^2$ is strictly increasing without bound as $s \rightarrow \infty$ and since our sample space goes to positive infinity, we can conclude that X(s) is an unbounded random variable. Similar to Example 2.1.10 from the textbook. Therefore,$max_{s\in S}X(s)=DNE(Does Not Exist)$</dd>
+            <dt>(c)$min_{s\in S}Y(s)$</dt>
+            <dd>Does not exist, since our sample space S goes from $1\rightarrow\infty$<br>
+            we should look at the function $f(x)=\frac{1}{x}$ where $x\in \mathbb{W}$ since our function is strictly decreasing on this domain naturally the largest number in our sample space S would produce our minimum value. Since we cannot plug $s=\infty$ into $Y(s)$ we know that there is no minimum.<br>
+            In other words: since $\lim_{x\rightarrow\infty}f(x)=0$ our minimum value should be zero, but since there is no $s\in S$ such that $Y(s)=0$ the minimum does not exist.</dd>
+            <dt>(d)$max_{s\in S}Y(s)$</dt>
+            <dd>Since our function is strictly decreasing on its domain(the sample space). We know that $Y(s)=max_{s\in S}Y(s)$ when s is the lowest possible number, in this case that means that $s=1$ therefore, $max_{s\in S}Y(s)=Y(1)=1$</dd>
+        </dl>
+        "
+    },    
+    {
+        "title":"Chapter 2 Question 2",
+        "date":"Oct 13 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_2",
         "question":"Let $S=1,2,3...$ and let $X(s)=s^2$ and $Y(s)=\frac{1}{s}$ for $s\in S$. For each of the following quantities, determine (with explaination) whether or not it exists. If it does exist, then give its value.<br>
         <ol type='a'>
         <li>$min_{s\in S}X(s)$</li>
