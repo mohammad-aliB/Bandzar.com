@@ -179,7 +179,7 @@
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_6",
-        "question":"Let $S=\{1,2,3,4\}$, $X=\textit{I}_\{1,2\}$, $Y=\textit{I}_\{2,3\}$, $Z=\textit{I}_\{3,4\}$. Let $W=X+Y+Z$
+        "question":"Let $S={\{1,2,3,4\}}$, $X=\textit{I}_{\{1,2\}}$, $Y=\textit{I}_{\{2,3\}}$, $Z=\textit{I}_{\{3,4\}}$. Let $W=X+Y+Z$
         <ol type='a'>
         <li>Compute $W(1)$</li>
         <li>Compute $W(2)$</li>
