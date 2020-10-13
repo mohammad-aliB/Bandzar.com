@@ -46,7 +46,7 @@
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_2",
         "question":"Let $S=\{high,middle,low\}$. Define random variables X,Y, and Z by X(high)=-12, X(middle)=-2, X(low)=3, Y(high)=0, Y(middle)=0, Y(low)=1, Z(high)=6, Z(middle)=0, Z(low)=4, Determine whether each of the following relations is true or fasle.
         <ol type='a'>
-        <li>$X<Y$</li>
+        <li>$X < Y$</li>
         <li>$X\leq Y$</li>
         <li>$Y<Z$</li>
         <li>$Y\leq Z$</li>
