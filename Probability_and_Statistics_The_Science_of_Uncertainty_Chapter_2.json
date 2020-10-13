@@ -48,21 +48,21 @@
         <ol type='a'>
         <li>$X < Y$</li>
         <li>$X\leq Y$</li>
-        <li>$Y<Z$</li>
+        <li>$Y < Z$</li>
         <li>$Y\leq Z$</li>
-        <li>$XY<Z$</li>
+        <li>$XY < Z$</li>
         <li>$XY\leq Z$</li>
         </ol>
         ",
         "answer":"
         Example 2.1.7 from the textbook tells us the following: we write X<Y to mean that $X(s)<Y(s)$ for all $s\in S$<br>
         <dl>
-            <dt>(a)$X<Y$</dt>
+            <dt>(a)$X < Y$</dt>
             <dd>
             since our sample space is so small we can manually try every item in the sample space:<br>
-            $X(high)<Y(high)\rightarrow -12<0$ this is True<br>
-            $X(middle)<Y(middle)\rightarrow -2<0$ this is True<br>
-            $X(low)<Y(low)\rightarrow 3<1$ this is FALSE<br>    
+            $X(high) < Y(high)\rightarrow -12 < 0$ this is True<br>
+            $X(middle) < Y(middle)\rightarrow -2 < 0$ this is True<br>
+            $X(low) < Y(low)\rightarrow 3 < 1$ this is FALSE<br>    
             since we have shown that the relation does not hold for atleast one element of our sample space, we can conclude that the relation is False
             </dd>
             <dt>(b)$X\leq Y$</dt>
@@ -73,11 +73,11 @@
             $X(low)\leq Y(low)\rightarrow 3\leq 1$ this is FALSE<br>    
             since we have shown that the relation does not hold for atleast one element of our sample space, we can conclude that the relation is False
             </dd>
-            <dt>(c)$Y<Z$</dt>
+            <dt>(c)$Y < Z$</dt>
             <dd>
             like above, since our sample space is so small we can manually try every item in the sample space:<br>
-            $Y(high)ZY(high)\rightarrow 0<6$ this is True<br>
-            $Y(middle)<Z(middle)\rightarrow 0<0$ this is FALSE<br>    
+            $Y(high)Z < Y(high)\rightarrow 0 < 6$ this is True<br>
+            $Y(middle) < Z(middle)\rightarrow 0 < 0$ this is FALSE<br>    
             There is no point in testing other elements in our sample space, since we have shown that the relation does not hold for atleast one element of our sample space, we can conclude that the relation is False
             </dd>
             <dt>(d)$Y\leq Z$</dt>
@@ -88,11 +88,11 @@
             $Y(low)\leq Z(low)\rightarrow 1\leq 4$ this is True<br>    
             since our relation holds true for all elements of our sample space we can conclude that the relation is True
             </dd>
-            <dt>(e)$XY<Z$</dt>
+            <dt>(e)$XY < Z$</dt>
             <dd>
             since our sample space is so small we can manually try every item in the sample space:<br>
-            $X(high)\times Y(high)<Z(high)\rightarrow -12*0<6=0<6$ this is True<br>
-            $X(middle)\times Y(middle)<Z(middle)\rightarrow -2*0<0=0<0$ this is FALSE<br>
+            $X(high)\times Y(high) < Z(high)\rightarrow -12*0 < 6=0 < 6$ this is True<br>
+            $X(middle)\times Y(middle) < Z(middle)\rightarrow -2*0 < 0=0 < 0$ this is FALSE<br>
             There is no point in testing other elements in our sample space, since we have shown that the relation does not hold for atleast one element of our sample space, we can conclude that the relation is False
             </dd>
             <dt>(f)$XY\leq Z$</dt>
