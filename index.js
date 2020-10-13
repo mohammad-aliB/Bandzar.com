@@ -61,7 +61,7 @@ dispatcher.GetRequest('/Article',function(req,res){
     if(URLparamters["q"]){
         if(articles[URLparamters["q"]]){
             error=0
-            res.writeHead(302, {
+            res.writeHead(200, {
                 'Cache-Control':'no-cache, no-store, must-revalidate',
                 'Pragma':'no-cache',
                 'Expires':'0',
@@ -81,7 +81,7 @@ dispatcher.GetRequest('/Article',function(req,res){
     }
 });
 dispatcher.GetRequest('/STA256-A1',function(req,res){
-        res.writeHead(302, {
+        res.writeHead(200, {
             'Cache-Control':'no-cache, no-store, must-revalidate',
             'Pragma':'no-cache',
             'Expires':'0',
@@ -90,7 +90,7 @@ dispatcher.GetRequest('/STA256-A1',function(req,res){
         res.end();
 });
 dispatcher.GetRequest('/STA256-A3',function(req,res){
-        res.writeHead(302, {
+        res.writeHead(200, {
             'Cache-Control':'no-cache, no-store, must-revalidate',
             'Pragma':'no-cache',
             'Expires':'0',
@@ -99,7 +99,7 @@ dispatcher.GetRequest('/STA256-A3',function(req,res){
         res.end();
 });
 dispatcher.GetRequest('/Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2',function(req,res){
-        res.writeHead(302, {
+        res.writeHead(200, {
             'Cache-Control':'no-cache, no-store, must-revalidate',
             'Pragma':'no-cache',
             'Expires':'0',
