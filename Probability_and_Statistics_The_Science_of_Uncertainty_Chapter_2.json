@@ -112,9 +112,9 @@
         "answer":"
         There are infinite many possible solutions below is just one i came up with,<br>
         <dl>
-            <dt>(a)Define two different(i.e., nonequal) nonconstant random variablesm X and Y, on S.</dt>
+            <dt>(a) Define two different(i.e., nonequal) nonconstant random variables X and Y, on S.</dt>
             <dd>Let $X(s)=s+1$ and Y(s)=s+2</dd>
-            <dt>(b)let $Z=X+Y^2$. Compute Z(s) for all $s\in S$</dt>
+            <dt>(b) Let $Z=X+Y^2$. Compute Z(s) for all $s\in S$</dt>
             <dd>
             $$Z(1)=(s+1)+(s+2)^2$$
             $$Z(1)=2+(3)^2$$
