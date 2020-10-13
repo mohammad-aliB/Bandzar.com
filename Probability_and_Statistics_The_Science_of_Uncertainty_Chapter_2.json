@@ -4,10 +4,10 @@
     "description":"These are solutions i have come up with for the this textbook, I offer no gaurentee of accuracy",
     "articles":[  
     {
-        "title":"Chapter 2 Question 1",
+        "title":"Chapter 2 Section 2.1 Question 1",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_1",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_1",
         "question":"Let $S=\{1,2,3...\}$ and let $X(s)=s^2$ and $Y(s)=\frac{1}{s}$ for $s\in S$. For each of the following quantities, determine (with explaination) whether or not it exists. If it does exist, then give its value.<br>
         <ol type='a'>
         <li>$min_{s\in S}X(s)$</li>
@@ -32,10 +32,10 @@
         "
     },    
     {
-        "title":"Chapter 2 Question 2",
+        "title":"Chapter 2 Section 2.1 Question 2",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_2",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_2",
         "question":"Let $S=\{high,middle,low\}$. Define random variables X,Y, and Z by X(high)=-12, X(middle)=-2, X(low)=3, Y(high)=0, Y(middle)=0, Y(low)=1, Z(high)=6, Z(middle)=0, Z(low)=4, Determine whether each of the following relations is true or fasle.
         <ol type='a'>
         <li>$X < Y$</li>
@@ -99,10 +99,10 @@
         "
     },
     {
-        "title":"Chapter 2 Question 3",
+        "title":"Chapter 2 Section 2.1 Question 3",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_3",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_3",
         "question":"Let $S=\{1,2,3,4,5\}.$<br>
         <ol type='a'>
         <li>Define two different(i.e., nonequal) nonconstant random variablesm X and Y, on S.</li>
@@ -136,10 +136,10 @@
         "
     },
     {
-        "title":"Chapter 2 Question 4",
+        "title":"Chapter 2 Section 2.1 Question 4",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
-        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_4",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_4",
         "question":"Consider rolling a fair six-sided die, so that $S=\{1,2,3,4,5,6\}$. Let $X(s)=s$, and $Y(s)=s^3+2$. Let $Z=XY$. Compute $Z(s)$ for all $s\in S$.
         ",
         "answer":"
@@ -162,6 +162,16 @@
         $$Z(6)=6\times (6^3+2)$$
         $$Z(6)=1308$$
         "
-    }
+    },
+    {
+        "title":"Chapter 2 Section 2.1 Question 5",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_5",
+        "question":"Let A and B be events, and let $X=\textit{I}_A*\textit{I}_B. Is X an indicator function? If yes, then of what event?$
+        ",
+        "answer":"
+        Yes, X is an indicator function as its only possible outcomes are 0,1. X will output 1 when both \textit{I{_a and \textit{I}_b are one. Therefore $X=A\cap B$
+        "
     ]
 }
