@@ -17,7 +17,7 @@
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_1",
         "question":"Let $S=1,2,3...$ and let $X(s)=s^2$ and $Y(s)=\frac{1}{s}$ for $s\in S$. For each of the following quantities, determine (with explaination) whether or not it exists. If it does exist, then give its value.<br>
-        <ol type=\"a\">
+        <ol type='a'>
         <li>$min_{s\in S}X(S)$</li>
         <li>$max_{s\in S}X(S)$</li>
         <li>$min_{s\in S}Y(S)$</li>
