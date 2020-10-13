@@ -13,8 +13,10 @@ function render(filename, data)
 }
 var STA256A1=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A1.json").toString().replace(/\\/g,"\\\\").replace(/\n/g,""));
 var STA256A3=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/STA256-A3.json").toString().replace(/\\/g,"\\\\").replace(/\n/g,""));
+var Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2=JSON.parse(fs.readFileSync("/bandzar.com/bandzar.com/Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2.json").toString().replace(/\\/g,"\\\\").replace(/\n/g,""));
 var STA256A1homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A1);
 var STA256A3homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",STA256A3);
+var Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2homepage=render("/bandzar.com/bandzar.com/templates/questionAnswer.hbs",Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2);
 var STA256A1Articles={}
 var articles={}
 for(x=0;x<STA256A1.articles.length;x++){
@@ -24,6 +26,10 @@ for(x=0;x<STA256A1.articles.length;x++){
 for(x=0;x<STA256A3.articles.length;x++){
     var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",STA256A3.articles[x]);
     articles[STA256A3.articles[x].URL]=article;
+}
+for(x=0;x<Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2.articles.length;x++){
+    var article=render("/bandzar.com/bandzar.com/templates/questionAnswerArticle.hbs",Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2.articles[x]);
+    articles[Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2.articles[x].URL]=article;
 }
 // console.log(STA256A1Articles)
 
@@ -91,7 +97,15 @@ dispatcher.GetRequest('/STA256-A3',function(req,res){
         });
         res.write(STA256A3homepage);
         res.end();
-
+});
+dispatcher.GetRequest('/Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2',function(req,res){
+        res.writeHead(302, {
+            'Cache-Control':'no-cache, no-store, must-revalidate',
+            'Pragma':'no-cache',
+            'Expires':'0',
+        });
+        res.write(Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2homepage);
+        res.end();
 });
 console.log("the server started successfully");
 }catch(err) {
