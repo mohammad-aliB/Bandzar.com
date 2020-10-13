@@ -209,8 +209,8 @@
         </dd>
         <dt>(d) Determine whether or not $W\geq Z$</dt>
         <dd>
-        We will start by computing W for $W(3) so we can know its value for our entire sample space
-        $$W(3)=X(1)+Y(1)+Z(1)$$
+        We will start by computing W for $W(3)$ so we can know its value for our entire sample space
+        $$W(3)=X(3)+Y(3)+Z(3)$$
         $$W(3)=0+1+1$$
         $$W(3)=2$$
         Now we will compare W to Z for every element in our sample space<br>
@@ -267,6 +267,93 @@
         alternatively we could have concluded that the range of W is $[-1,2]$ and the range of Z is [0,1] therefore $W\ngeq Z$.
         </dd>
         </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 8",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_8",
+        "question":"Let $S={\{1,2,3,4,5\}}$, $X=\textit{I}_{\{1,2,3\}}$, $Y=\textit{I}_{\{2,3\}}$, $Z=\textit{I}_{\{3,4,5\}}$. Let $W=X+Y+Z$
+        <ol type='a'>
+        <li>Compute $W(1)$</li>
+        <li>Compute $W(2)$</li>
+        <li>Compute $W(5)$</li>
+        <li>Determine whether or not $W \geq Z$</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) Compute $W(1)$</dt>
+        <dd>
+        $$W(1)=X(1)-Y(1)+Z(1)$$
+        $$W(1)=1+0+0$$
+        $$W(1)=1$$
+        </dd>
+        <dt>(b) Compute $W(2)$</dt>
+        <dd>
+        $$W(2)=X(2)-Y(2)+Z(2)$$
+        $$W(2)=1-1+0$$
+        $$W(2)=0$$
+        </dd>
+        <dt>(c) Compute $W(5)$</dt>
+        <dd>
+        $$W(5)=X(5)-Y(5)+Z(5)$$
+        $$W(5)=0-0+1$$
+        $$W(5)=1$$
+        </dd>
+        <dt>(d) Determine whether or not $W\geq Z$</dt>
+        <dd>
+        We will start by computing W for $W(3)$, $W(4)$ so we can know its value for our entire sample space
+        $$W(3)=X(3)-Y(3)+Z(3)$$
+        $$W(3)=1-1+1$$
+        $$W(3)=1$$        
+        $$W(4)=X(4)-Y(4)+Z(4)$$
+        $$W(4)=0-0+1$$
+        $$W(4)=1$$
+        Now we will compare W to Z for every element in our sample space<br>
+        $W(1)\geq Z(1)\rightarrow 1 \geq 0$ True<br>
+        $W(2)\geq Z(2) \rightarrow 0 \geq 0$ True<br>
+        $W(3)\geq Z(3) \rightarrow 1 \geq 1$ True<br>
+        $W(4)\geq Z(4) \rightarrow 1 \geq 1$ True<br>        
+        $W(5)\geq Z(5) \rightarrow 1 \geq 1$ True<br>
+        since our relation holds true for all elements of our sample space we can conclude that the relation is True
+        </dd>
+        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 1 Question 9",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_9",
+        "question":"Let $S={\{1,2,3,4\}}$, $X=\textit{I}_{\{1,2\}}$, $Y(s)=s^2X(s)$
+        <ol type='a'>
+        <li>Compute $Y(1)$</li>
+        <li>Compute $Y(2)$</li>
+        <li>Compute $Y(4)$</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) Compute $Y(1)$</dt>
+        <dd>
+        $$Y(1)=1^2\timesX(1)$$
+        $$Y(1)=1\times 1$$
+        $$Y(1)=1$$
+        </dd>
+        <dt>(b) Compute $Y(2)$</dt>
+        <dd>
+        $$Y(2)=2^2\times X(2)$$
+        $$Y(2)=4\times 1$$
+        $$Y(2)=4$$
+        </dd>
+        <dt>(c) Compute $Y(4)$</dt>
+        <dd>
+        $$Y(4)=4^2\times X(4)$$
+        $$W(4)=16\times 0$$
+        $$W(4)=0$$
+        </dd>
         "
     }
     ]
