@@ -404,12 +404,14 @@
         ",
         "answer":"
         No, X does not have to be an indicator function. The definition of an indicator function is as follows:An indicator function is any function that take only the values 0 and 1. If A is a subset of X for any set X, then the indicator function $\textit{I}_A: X \rightarrow \mathbb{R}$ is defined by
-begin{equation*}
+$$
+\begin{equation*}
 \textit{I}_A(x)=\begin{cases}
           x \quad &\text{if} \, x \in \mathbb{Q} \\
           -x \quad &\text{if} \, x \notin \mathbb{Q} \\
      \end{cases}
 \end{equation*}
+$$
         "
     },
     {
