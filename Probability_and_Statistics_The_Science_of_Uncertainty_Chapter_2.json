@@ -91,16 +91,16 @@
             <dt>(e)$XY < Z$</dt>
             <dd>
             since our sample space is so small we can manually try every item in the sample space:<br>
-            $X(high)\times Y(high) < Z(high)\rightarrow -12*0 < 6=0 < 6$ this is True<br>
-            $X(middle)\times Y(middle) < Z(middle)\rightarrow -2*0 < 0=0 < 0$ this is FALSE<br>
+            $X(high)\times Y(high) < Z(high)\rightarrow (-12*0) < 6=0 < 6$ this is True<br>
+            $X(middle)\times Y(middle) < Z(middle)\rightarrow (-2*0) < 0=0 < 0$ this is FALSE<br>
             There is no point in testing other elements in our sample space, since we have shown that the relation does not hold for atleast one element of our sample space, we can conclude that the relation is False
             </dd>
             <dt>(f)$XY\leq Z$</dt>
             <dd>
             since our sample space is so small we can manually try every item in the sample space:<br>
-            $X(high)\times Y(high)\leq Z(high)\rightarrow -12*0\leq 6=0\leq 6$ this is True<br>
-            $X(middle)\times Y(middle)\leq Z(middle)\rightarrow -2*0\leq 0=0\leq 0$ this is True<br>
-            $X(low)\times Y(low)\leq Z(low)\rightarrow 3*1\leq 4=3\leq 4$ this is True<br>
+            $X(high)\times Y(high)\leq Z(high)\rightarrow (-12*0)\leq 6=0\leq 6$ this is True<br>
+            $X(middle)\times Y(middle)\leq Z(middle)\rightarrow (-2*0)\leq 0=0\leq 0$ this is True<br>
+            $X(low)\times Y(low)\leq Z(low)\rightarrow (3*1)\leq 4=3\leq 4$ this is True<br>
             since our relation holds true for all elements of our sample space we can conclude that the relation is True
             </dd>
         </dl>
