@@ -214,10 +214,10 @@
         $$W(3)=0+1+1$$
         $$W(3)=2$$
         Now we will compare W to Z for every element in our sample space<br>
-        $$W(1)\geq Z(1) True$$
-        $$W(2)\geq Z(2) True$$
-        $$W(3)\geq Z(3) True$$
-        $$W(4)\geq Z(4) True$$
+        $W(1)\geq Z(1)\rightarrow 1 \geq 0$ True<br>
+        $W(2)\geq Z(2) \rightarrow 2 \geq 0$ True<br>
+        $W(3)\geq Z(3) \rightarrow 2 \geq 1$ True<br>
+        $W(4)\geq Z(4) \rightarrow 1 \geq 1$ True<br>
         since our relation holds true for all elements of our sample space we can conclude that the relation is True<br>
         alternatively we could have concluded that the range of W is $[1,3]$ and the range of X is [0,1] therefore $W\geq Z$.
         </dd>
