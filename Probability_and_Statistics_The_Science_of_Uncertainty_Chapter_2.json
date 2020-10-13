@@ -189,25 +189,25 @@
         ",
         "answer":"
         <dl>
-        <dd>Compute $W(1)$</dd>
+        <dd>(a) Compute $W(1)$</dd>
         <dt>
         $$W(1)=X(1)+Y(1)+Z(1)$$
         $$W(1)=1+0+0$$
         $$W(1)=1$$
         </dt>
-        <dd>Compute $W(2)$</dd>
+        <dd>(b) Compute $W(2)$</dd>
         <dt>
         $$W(2)=X(2)+Y(2)+Z(2)$$
         $$W(2)=1+1+0$$
         $$W(2)=2$$
         </dt>
-        <dd>Compute $W(4)$</dd>
+        <dd>(c) Compute $W(4)$</dd>
         <dt>
         $$W(4)=X(4)+Y(4)+Z(4)$$
         $$W(4)=0+0+1$$
         $$W(4)=1$$
         </dt>
-        <dd>Determine whether or not $W\geq Z$</dd>
+        <dd>(d) Determine whether or not $W\geq Z$</dd>
         <dt>
         We will start by computing W for $W(3) so we can know its value for our entire sample space
         $$W(3)=X(1)+Y(1)+Z(1)$$
