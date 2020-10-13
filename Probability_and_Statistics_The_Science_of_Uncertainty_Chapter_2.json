@@ -32,7 +32,7 @@
             <dd>Since $s^2$ is strictly increasing without bound as $s \rightarrow \infty$ and since our sample space goes to positive infinity, we can conclude that X(s) is an unbounded random variable. Similar to Example 2.1.10 from the textbook. Therefore,$max_{s\in S}X(S)=DNE(Does Not Exist)$</dd>
             <dt>(c)$min_{s\in S}Y(S)$</dt>
             <dd>Does not exist, since our sample space S goes from $1\rightarrow\infty$<br>
-            we should look at the function $f(x)=\frac{1}{x}$ where $x\in \mathBB{W}$ since our function is strictly decreasing on this domain naturally the largest number in our sample space S would produce our minimum value. Since we cannot plug $s=\infty$ into $Y(s)$ we know that there is no minimum.<br>
+            we should look at the function $f(x)=\frac{1}{x}$ where $x\in \mathbb{W}$ since our function is strictly decreasing on this domain naturally the largest number in our sample space S would produce our minimum value. Since we cannot plug $s=\infty$ into $Y(s)$ we know that there is no minimum.<br>
             In other words: since$\lim_{x\rightarrow\infty}f(x)=0$ our minimum value should be zero, but since there is no $s\in S$ such that $Y(s)=0$ the minimum does not exist.</dd>
             <dt>(d)$max_{s\in S}Y(S)$</dt>
             <dd>Since our function is strictly decreasing on its domain(the sample space). We know that $Y(s)=max_{s\in S}Y(S)$ when s is the lowest possible number, in this case that means that $s=1$ therefore, $max_{s\in S}Y(S)=Y(1)=1$</dd>
