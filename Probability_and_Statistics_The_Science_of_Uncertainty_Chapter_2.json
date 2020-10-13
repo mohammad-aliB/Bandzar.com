@@ -418,9 +418,9 @@ Therefore no matter how we define our function $X$ we can always rewrite it to f
         "question":"Suppose the sample space S is finite, of size m. How many different indicator functions can be defined on S?
         ",
         "answer":"
-        The number of unique indicator functions we can define on s will be equal to the number of possible subsets of S that we can create.<br>
+        The number of unique indicator functions we can define on s will be equal to the number of possible subsets of S that we can create.
         The formula to find the maximum number of subsets including the empty set is $2^n$ where n represents the number of elements in your set.<br>
-        in this case, we could define $2^m$ mmany different indicator functions on S.
+        In this case, we could define $2^m$ mmany different indicator functions on S.
         "
     },
     {
@@ -431,7 +431,7 @@ Therefore no matter how we define our function $X$ we can always rewrite it to f
         "question":"Suppose X is a random variable. Let $Y=\sqrt(X)$. Must Y be a radom variable? Explain.
         ",
         "answer":"
-        yes, Y must be a random variable as its value is dependant on the value of another random variable X.
+        Yes, Y must be a random variable as its value is dependant on the value of another random variable X.
        "
     }
     ]
