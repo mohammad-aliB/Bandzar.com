@@ -1,10 +1,10 @@
 {
     "title":"Probability and Statistics - The Science of Uncertainty, Second Edition CHAPTER 2 Solutions",
     "URL":"not currently in use feature",
-    "description":"These are solutions i have come up with for the this textbook, I offer no gaurentee of accuracy",
+    "description":"These are solutions I have come up with for the this textbook, I offer no gaurentee of accuracy",
     "articles":[  
     {
-        "title":"Chapter 2 Section 2.1 Question 1",
+        "title":"Chapter 2 Section 1 Question 1",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_1",
@@ -32,7 +32,7 @@
         "
     },    
     {
-        "title":"Chapter 2 Section 2.1 Question 2",
+        "title":"Chapter 2 Section 1 Question 2",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_2",
@@ -99,7 +99,7 @@
         "
     },
     {
-        "title":"Chapter 2 Section 2.1 Question 3",
+        "title":"Chapter 2 Section 1 Question 3",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_3",
@@ -136,7 +136,7 @@
         "
     },
     {
-        "title":"Chapter 2 Section 2.1 Question 4",
+        "title":"Chapter 2 Section 1 Question 4",
         "date":"Oct 13 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_4",
@@ -164,11 +164,11 @@
         "
     },
     {
-        "title":"Chapter 2 Section 2.1 Question 5",
+        "title":"Chapter 2 Section 1 Question 5",
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_5",
-        "question":"Let A and B be events, and let $X=\textit{I}_A*\textit{I}_B. Is X an indicator function? If yes, then of what event?$
+        "question":"Let A and B be events, and let $X=\textit{I}_A*\textit{I}_B$. Is X an indicator function? If yes, then of what event?$
         ",
         "answer":"
         Yes, X is an indicator function as its only possible outcomes are 0,1. X will output 1 when both \textit{I{_a and \textit{I}_b are one. Therefore $X=A\cap B$
