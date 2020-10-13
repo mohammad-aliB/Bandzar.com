@@ -55,7 +55,7 @@
         </ol>
         ",
         "answer":"
-        Example 2.1.7 from the textbook tells us the following: we write X<Y to mean that $X(s)<Y(s)$ for all $s\in S$<br>
+        Example 2.1.7 from the textbook tells us the following: we write $X < Y$ to mean that $X(s)<Y(s)$ for all $s\in S$<br>
         <dl>
             <dt>(a)$X < Y$</dt>
             <dd>
