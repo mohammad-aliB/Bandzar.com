@@ -97,6 +97,43 @@
             </dd>
         </dl>
         "
-    }
+    },
+    {
+        "title":"Chapter 2 Question 3",
+        "date":"Oct 13 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Question_3",
+        "question":"Let $S=\{1,2,3,4,5\}.$<br>
+        <ol type='a'>
+        <li>Define two different(i.e., nonequal) nonconstant random variablesm X and Y, on S.</li>
+        <li>For the random variables X and Y that you have chosen, let $Z=X+Y^2$. Compute Z(s) for all $s\in S$.
+        </ol>
+        ",
+        "answer":"
+        There are infinite many possible solutions below is just one i came up with,<br>
+        <dl>
+            <dt>(a)Define two different(i.e., nonequal) nonconstant random variablesm X and Y, on S.</dt>
+            <dd>Let $X(s)=s+1$ and Y(s)=s+2</dd>
+            <dt>(b)let $Z=X+Y^2$. Compute Z(s) for all $s\in S$</dt>
+            <dd>
+            $$Z(1)=(s+1)+(s+2)^2$$
+            $$Z(1)=2+(3)^2$$
+            $$Z(1)=11$$            
+            $$Z(2)=(s+1)+(s+2)^2$$
+            $$Z(2)=3+(4)^2$$
+            $$Z(2)=19$$            
+            $$Z(3)=(s+1)+(s+2)^2$$
+            $$Z(3)=4+(5)^2$$
+            $$Z(3)=29$$            
+            $$Z(4)=(s+1)+(s+2)^2$$
+            $$Z(4)=5+(6)^2$$
+            $$Z(4)=41$$            
+            $$Z(5)=(s+1)+(s+2)^2$$
+            $$Z(5)=6+(7)^2$$
+            $$Z(5)=55$$
+            </dd>
+        </dl>
+        "
+    },  
     ]
 }
