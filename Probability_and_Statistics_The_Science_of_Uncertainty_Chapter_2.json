@@ -769,7 +769,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(X=11)=\frac{4}{52}\approx 0.077$$
         $$P(X=12)=\frac{4}{52}\approx 0.077$$
         $$P(X=13)=\frac{4}{52}\approx 0.077$$
-        $$P(X=x)=0$ for all $x\notin\{1,11,12,13\}$<br>
+        $P(X=x)=0$ for all $x\notin\{1,11,12,13\}$<br>
         </dd>
         <dt>(b) Suppose that Y = 1, 2, 3, or 4 when a diamond, heart, club, or spade is drawn. Compute P(Y = y) for every real number y.</dt>
         <dd>
