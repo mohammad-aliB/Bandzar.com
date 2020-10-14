@@ -711,14 +711,14 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(X=1)=\frac{30}{100}=0.3$$
         $$P(X=2)=\frac{20}{100}=0.2$$
         $$P(X=3)=\frac{50}{100}=0.5$$
-        $$P(x=x)=0 \forall x\notin\{1,2,3\}$$
+        $P(x=x)=0$ for all $x\notin\{1,2,3\}$<br>
         </dd>
         <dt>(b) Suppose the first chip is replaced, a second chip is drawn, and the number Y on the chip noted. Compute $P(Y = y)$ for every real number y.</dt>
         <dd>
         $$P(Y=1)=\frac{30}{100}=0.3$$
         $$P(Y=2)=\frac{20}{100}=0.2$$
         $$P(Y=3)=\frac{50}{100}=0.5$$
-        $$P(Y=y)=0 \forall y\notin\{1,2,3\}$$
+        $P(Y=y)=0$ for all$y\notin\{1,2,3\}$<br>
         Note: this answer is exactly the same as question a
         </dd>
         <dt>(c) Compute $P(W = w$) for every real number w when $W = X + Y$.</dt>
@@ -738,12 +738,12 @@ Therefore no matter how we define our function $X$ we can always determine a set
         Probability that  X,Y chips add to five:
         $$P(W=5)=P(X=2)*P(Y=3)+P(X=3)*P(Y=2)$$
         $$P(W=5)=0.2*0.5+0.5*0.2$$
-        $$P(W=5)=0.2$
+        $$P(W=5)=0.2$$
         Probability that  X,Y chips add to six:
         $$P(W=6)=P(X=3)*P(Y=3)$$
         $$P(W=5)=0.5*0.5$$
-        $$P(W=5)=0.25$
-        $$P(W=w)=0 \forall w\notin\{2,3,4,5,6\}$$
+        $$P(W=5)=0.25$$
+        $P(W=w)=0$ for all $w\notin\{2,3,4,5,6\}$<br>
         </dd>
         </dl>
        "
