@@ -447,9 +447,9 @@ Therefore no matter how we define our function $X$ we can always determine a set
         Heads,Tails<br>
         Tails,Heads<br>
         Tails,Tails<br>
-        The probability of two heads is $\frac{1}{4}$ therefore $P(X=2)=\frac{1}{4}$<br>
         The probability of no heads is $\frac{1}{4}$ therefore $P(X=0)=\frac{1}{4}$<br>
         The probability of one head is $\frac{1}{2}$ therefore $P(X=1)=\frac{1}{2}$<br>
+        The probability of two heads is $\frac{1}{4}$ therefore $P(X=2)=\frac{1}{4}$<br>
         the probability of any other number of heads is zero $P(X=x)=0$ for $x\notin \{0,1,2\}$
        "
     },   
@@ -489,7 +489,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         assuming n many coin tosses, we have $2^n$ many possible outcomes, of those outcomes we have $n \choose x$ many ideal outcomes where x represents the desired number of coins showing heads.<br>
         $$\frac{n\choose x}{2^n}$$
         This equation represents the probability of having x many heads in n many coin tosses. 
-        $$P(X\in \textbf{B}=\frac{3\choose 0}{2^3}\textit{I}_B(0)+\frac{3\choose 1}{2^3}\textit{I}_B(1)+\frac{3\choose 2}{2^3}\textit{I}_B(2)+\frac{3\choose 3}{2^3}\textit{I}_B(3)$$
+        $$P(X\in \textbf{B})=\frac{3\choose 0}{2^3}\textit{I}_B(0)+\frac{3\choose 1}{2^3}\textit{I}_B(1)+\frac{3\choose 2}{2^3}\textit{I}_B(2)+\frac{3\choose 3}{2^3}\textit{I}_B(3)$$
 
         </dd>
         </dl>
