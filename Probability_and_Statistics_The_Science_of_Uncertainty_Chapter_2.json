@@ -486,7 +486,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         </dd>
         <dt>(b) Write a formula for $P(X \in \textbf{B})$, for any subset B of the real numbers.</dt>
         <dd>
-        We can simply write the probabilities we calculated above multiplied by the indicator function for that outcome, the sum of them all will represent the probability of $\textbf{B$}.
+        We can simply write the probabilities we calculated above multiplied by the indicator function for that outcome, the sum of them all will represent the probability of $\textbf{B}$.
         $$P(X\in \textbf{B})=\frac{1}{8}\textit{I}_B(0)+\frac{3}{8}\textit{I}_B(1)+\frac{2}{8}\textit{I}_B(2)+\frac{1}{8}\textit{I}_B(3)$$
         Alternatively, assuming n many coin tosses, we have $2^n$ many possible outcomes, of those outcomes we have $n \choose x$ many ideal outcomes where x represents the desired number of coins showing heads.<br>
         $$\frac{n\choose x}{2^n}$$
