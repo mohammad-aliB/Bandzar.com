@@ -708,20 +708,20 @@ Therefore no matter how we define our function $X$ we can always determine a set
         <dl>
         <dt>(a) Compute $P(X = x)$ for every real number x</dt>
         <dd>
-        $$P(X=1)=\frac{30}{100}}=0.3$$
-        $$P(X=2)=\frac{20}{100}}=0.2$$
-        $$P(X=3)=\frac{50}{100}}=0.5$$
+        $$P(X=1)=\frac{30}{100}=0.3$$
+        $$P(X=2)=\frac{20}{100}=0.2$$
+        $$P(X=3)=\frac{50}{100}=0.5$$
         $$P(x=x)=0 \forall x\notin\{1,2,3\}$$
         </dd>
-        <dt>Suppose the first chip is replaced, a second chip is drawn, and the number Y on the chip noted. Compute $P(Y = y)$ for every real number y.</dt>
+        <dt>(b) Suppose the first chip is replaced, a second chip is drawn, and the number Y on the chip noted. Compute $P(Y = y)$ for every real number y.</dt>
         <dd>
-        $$P(Y=1)=\frac{30}{100}}=0.3$$
-        $$P(Y=2)=\frac{20}{100}}=0.2$$
-        $$P(Y=3)=\frac{50}{100}}=0.5$$
+        $$P(Y=1)=\frac{30}{100}=0.3$$
+        $$P(Y=2)=\frac{20}{100}=0.2$$
+        $$P(Y=3)=\frac{50}{100}=0.5$$
         $$P(Y=y)=0 \forall y\notin\{1,2,3\}$$
         Note: this answer is exactly the same as question a
         </dd>
-        <dt>Compute $P(W = w$) for every real number w when $W = X + Y$.</dt>
+        <dt>(c) Compute $P(W = w$) for every real number w when $W = X + Y$.</dt>
         <dd>
         Probability that X,Y chips add to two:
         $$P(W=2)=P(X=1)*P(Y=1)$$
