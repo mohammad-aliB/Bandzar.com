@@ -765,19 +765,19 @@ Therefore no matter how we define our function $X$ we can always determine a set
         <dl>
         <dt>(a) Compute $P(X = x)$ for every real number x, when X is the value of the card drawn.</dt>
         <dd>
-        $$P(X=1)=\frac{4}{52}}\approx 0.077$$
-        $$P(X=11)=\frac{4}{52}}\approx 0.077$$
-        $$P(X=12)=\frac{4}{52}}\approx 0.077$$
-        $$P(X=13)=\frac{4}{52}}\approx 0.077$$
-        $$P(X=x)=0 \forall x\notin\{1,11,12,13\}$$
+        $$P(X=1)=\frac{4}{52}\approx 0.077$$
+        $$P(X=11)=\frac{4}{52}\approx 0.077$$
+        $$P(X=12)=\frac{4}{52}\approx 0.077$$
+        $$P(X=13)=\frac{4}{52}\approx 0.077$$
+        $$P(X=x)=0$ for all $x\notin\{1,11,12,13\}$<br>
         </dd>
         <dt>(b) Suppose that Y = 1, 2, 3, or 4 when a diamond, heart, club, or spade is drawn. Compute P(Y = y) for every real number y.</dt>
         <dd>
-        $$P(Y=1)=\frac{13}{52}}=0.25$$
-        $$P(Y=2)=\frac{13}{52}}=0.25$$
-        $$P(Y=3)=\frac{13}{52}}=0.25$$
-        $$P(Y=4)=\frac{13}{52}}=0.25$$
-        $$P(Y=y)=0 \forall y\notin\{1,2,3,4\}$$
+        $$P(Y=1)=\frac{13}{52}=0.25$$
+        $$P(Y=2)=\frac{13}{52}=0.25$$
+        $$P(Y=3)=\frac{13}{52}=0.25$$
+        $$P(Y=4)=\frac{13}{52}=0.25$$
+        $P(Y=y)=0$ for all $y\notin\{1,2,3,4\}$<br>
         </dd>
         <dt>(c) Compute $P(W = w)$ for every real number w when $W = X + Y$.</dt>
         <dd>
@@ -821,6 +821,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(W=17)=P(X=13)*P(Y=4)$$
         $$P(W=17)=0.077$$
         $$P(W=17)\approx 0.019$$
+        $P(W=w)=0$ for all $w\notin\{2,3,4,5,12,13,14,15,16,17\}$<br>
         </dd>
         </dl>
        "
