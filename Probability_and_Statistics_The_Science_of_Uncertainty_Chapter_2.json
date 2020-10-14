@@ -459,6 +459,13 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_2",
         "question":"
+        Suppose we flip three fair coins, and let X be the number of heads showing.
+        <ol type='a'>
+        <li>Compute $P(X = x)$ for every real number x.</li>
+        <li>Write a formula for $P(X \in \textbf{B})$, for any subset B of the real numbers.</li>
+        </ol>
+        ",
+        "answer":"
         <dl>
         <dt>(a) Compute $P(X = x)$ for every real number x.</dt>
         <dd>
