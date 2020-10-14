@@ -407,7 +407,7 @@
 $$
 \textit{I}_A(x)=\begin{cases}1&x\in\textbf{A}\\ 0&x\notin\textbf{A}\end{cases} 
 $$
-Therefore no matter how we define our function $X$ we can always determine a set $\textbf{A}$ where $X(a)=1$ which fits our definition of the indicator function given above
+Therefore no matter how we define our function $X$ we can always determine a set where for all $a\in A$ $\textbf{A}$ where $X(a)=1$ which fits our definition of the indicator function given above
         "
     },
     {
@@ -432,6 +432,25 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         Yes, Y must be a random variable as its value is dependant on the value of another random variable X.
+       "
+    },   
+    {
+        "title":"Chapter 2 Section 2 Question 1",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_1",
+        "question":"Consider flipping two independent fair coins. Let X be the number of heads that appear. Compute $P(X=x)$ for all real numbers x.
+        ",
+        "answer":"
+        The possible outcomes from flipping two coins are as follows:<br>
+Heads,Heads<br>
+Heads,Tails<br>
+Tails,Heads<br>
+Tails,Tails<br>
+The probability of two heads is $\frac{1}{4}$ therefore $P(X=2)=\frac{1}{4}$<br>
+The probability of no heads is $\frac{1}{4}$ therefore $P(X=0)=\frac{1}{4}$<br>
+The probability of one head is $\frac{1}{2}$ therefore $P(X=1)=\frac{1}{2}$<br>
+the probability of any other number of heads is zero $P(X=x)=0$ for $x\notin \{0,1,2\}$
        "
     }
     ]
