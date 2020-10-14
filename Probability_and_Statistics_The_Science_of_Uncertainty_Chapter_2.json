@@ -825,6 +825,23 @@ Therefore no matter how we define our function $X$ we can always determine a set
         </dd>
         </dl>
        "
+    },
+    {
+        "title":"Chapter 2 Section 2 Question 7",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_7",
+        "question":"
+        Suppose a university is composed of 55% female students and 45% male students. A student is selected to complete a questionnaire. There are 25 questions on the questionnaire administered to a male student and 30 questions on the questionnaire administered to a female student. If X denotes the number of questions answered by a randomly selected student, then compute $P(X = x)$ for every real number x.
+        ",
+        "answer":"
+        Probability that 25 questions are answered:
+        $$P(X=25)=P(male)=0.45$$
+        Probability that 30 questions are answered:
+        $$P(X=30)=P(female)=0.55$$
+
+        $P(X=x)=0$ for all $w\notin\{25,35\}$<br>
+       "
     }
     ]
 }
