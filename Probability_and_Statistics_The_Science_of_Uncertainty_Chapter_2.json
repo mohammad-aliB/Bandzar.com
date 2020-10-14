@@ -361,7 +361,7 @@
         "date":"Oct 14 2020",
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_1_Question_10",
-        "question":"LetX be a random varriable
+        "question":"Let X be a random varriable
         <ol type='a'>
         <li>It is necessarily true that $X\geq 0$?</li>
         <li>Is it necessarily true that there is some real number c such that $X+c \geq 0$?</li>
@@ -443,14 +443,49 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         The possible outcomes from flipping two coins are as follows:<br>
-Heads,Heads<br>
-Heads,Tails<br>
-Tails,Heads<br>
-Tails,Tails<br>
-The probability of two heads is $\frac{1}{4}$ therefore $P(X=2)=\frac{1}{4}$<br>
-The probability of no heads is $\frac{1}{4}$ therefore $P(X=0)=\frac{1}{4}$<br>
-The probability of one head is $\frac{1}{2}$ therefore $P(X=1)=\frac{1}{2}$<br>
-the probability of any other number of heads is zero $P(X=x)=0$ for $x\notin \{0,1,2\}$
+        Heads,Heads<br>
+        Heads,Tails<br>
+        Tails,Heads<br>
+        Tails,Tails<br>
+        The probability of two heads is $\frac{1}{4}$ therefore $P(X=2)=\frac{1}{4}$<br>
+        The probability of no heads is $\frac{1}{4}$ therefore $P(X=0)=\frac{1}{4}$<br>
+        The probability of one head is $\frac{1}{2}$ therefore $P(X=1)=\frac{1}{2}$<br>
+        the probability of any other number of heads is zero $P(X=x)=0$ for $x\notin \{0,1,2\}$
+       "
+    },   
+    {
+        "title":"Chapter 2 Section 2 Question 2",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_2",
+        "question":"
+        <dl>
+        <dt>(a) Compute $P(X = x)$ for every real number x.</dt>
+        <dd>
+        All possible outcomes from flipping three coins:<br>
+        Heads,Heads,Heads<br>
+        Heads,Heads,Tails<br>
+        Heads,Tails,Heads<br>
+        Heads,Tails,Tails<br>
+        Tails,Heads,Heads<br>
+        Tails,Heads,Tails<br>
+        Tails,Tails,Heads<br>
+        Tails,Tails,Tails<br>
+        The probability of no heads is $\frac{1}{0}$ therefore $P(X=0)=\frac{1}{8}$<br>
+        The probability of one head is $\frac{3}{8}$ therefore $P(X=1)=\frac{3}{8}$<br>
+        The probability of two heads is $\frac{3}{8}$ therefore $P(X=2)=\frac{2}{8}$<br>
+        The probability of three heads is $\frac{1}{8}$ therefore $P(X=3)=\frac{1}{8}$<br>
+        the probability of any other number of heads is zero $P(X=x)=0$ for $x\notin \{0,1,2,3\}$
+        </dd>
+        <dt>(b) Write a formula for $P(X \in \textbf{B})$, for any subset B of the real numbers.</dt>
+        <dd>
+        assuming n many coin tosses, we have $2^n$ many possible outcomes, of those outcomes we have $n \choose x$ many ideal outcomes where x represents the desired number of coins showing heads.<br>
+        $$\frac{n\choose x}{2^n}$$
+        This equation represents the probability of having x many heads in n many coin tosses. 
+        $$P(X\in \textbf{B}=\frac{3\choose 0}{2^3}\textit{I}_B(0)+\frac{3\choose 1}{2^3}\textit{I}_B(1)+\frac{3\choose 2}{2^3}\textit{I}_B(2)+\frac{3\choose 3}{2^3}\textit{I}_B(3)$$
+
+        </dd>
+        </dl>
        "
     }
     ]
