@@ -462,7 +462,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         Suppose we flip three fair coins, and let X be the number of heads showing.
         <ol type='a'>
         <li>Compute $P(X = x)$ for every real number x.</li>
-        <li>Write a formula for $P(X \in \textbf{B})$, for any subset B of the real numbers.</li>
+        <li>Write a formula for $P(X \in \textbf{B})$, for any subset $\textbf{B}$ of the real numbers.</li>
         </ol>
         ",
         "answer":"
@@ -486,10 +486,57 @@ Therefore no matter how we define our function $X$ we can always determine a set
         </dd>
         <dt>(b) Write a formula for $P(X \in \textbf{B})$, for any subset B of the real numbers.</dt>
         <dd>
-        assuming n many coin tosses, we have $2^n$ many possible outcomes, of those outcomes we have $n \choose x$ many ideal outcomes where x represents the desired number of coins showing heads.<br>
+        We can simply write the probabilities we calculated above multiplied by the indicator function for that outcome, the sum of them all will represent the probability of $\textbf{B$}.
+        $$P(X\in \textbf{B})=\frac{1}{8}\textit{I}_B(0)+\frac{3}{8}\textit{I}_B(1)+\frac{2}{8}\textit{I}_B(2)+\frac{1}{8}\textit{I}_B(3)$$
+        Alternatively, assuming n many coin tosses, we have $2^n$ many possible outcomes, of those outcomes we have $n \choose x$ many ideal outcomes where x represents the desired number of coins showing heads.<br>
         $$\frac{n\choose x}{2^n}$$
         This equation represents the probability of having x many heads in n many coin tosses. 
         $$P(X\in \textbf{B})=\frac{3\choose 0}{2^3}\textit{I}_B(0)+\frac{3\choose 1}{2^3}\textit{I}_B(1)+\frac{3\choose 2}{2^3}\textit{I}_B(2)+\frac{3\choose 3}{2^3}\textit{I}_B(3)$$
+        Note that this equation simplifies to exactly the same one as above.
+        </dd>
+        </dl>
+       "
+    },   
+    {
+        "title":"Chapter 2 Section 2 Question 3",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_3",
+        "question":"
+        Suppose we roll two fair six-sided dice, and let Y be the sum of the two numbers showing.
+        <ol type='a'>
+        <li>Compute $P(Y = y)$ for every real number y.</li>
+        <li>Write a formula for$ P(Y \in\textbf{B} )$, for any subset $\textbf{B}$ of the real numbers.</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) Compute $P(Y = y)$ for every real number y.</dt>
+        <dd>
+        All possible outcomes from rolling 2 dice:<br>
+        <img src='/static/two-dice.png'>
+        <br>
+        please note that diagonals starting from any number in the left most column and going right one then up one will all have the same sum. So if we look at (5,1) it will have the same sum as (4,2),(3,3),(2,4),(1,5).<br>
+
+        The probability of a sum of 2 is $P(Y=2)=\frac{1}{36}$<br>
+        The probability of a sum of 3 is $P(Y=3)=\frac{2}{36}$<br>
+        The probability of a sum of 4 is $P(Y=4)=\frac{3}{36}$<br>
+        The probability of a sum of 5 is $P(Y=5)=\frac{4}{36}$<br>
+        The probability of a sum of 6 is $P(Y=6)=\frac{5}{36}$<br>
+        The probability of a sum of 7 is $P(Y=7)=\frac{6}{36}$<br>
+        The probability of a sum of 8 is $P(Y=8)=\frac{5}{36}$<br>
+        The probability of a sum of 9 is $P(Y=9)=\frac{4}{36}$<br>
+        The probability of a sum of 10 is $P(Y=10)=\frac{3}{36}$<br>
+        The probability of a sum of 11 is $P(Y=11)=\frac{2}{36}$<br>
+        The probability of a sum of 12 is $P(Y=12)=\frac{1}{36}$<br>
+        the probability of any other number is zero $P(Y=y)=0$ for $x\notin \{2,3,4,5,6,7,8,9,10,11,12\}$
+        </dd>
+        <dt>(b) Write a formula for$ P(Y \in\textbf{B} )$, for any subset $\textbf{B}$ of the real numbers.</dt>
+        <dd>
+        This question just like the last one just wants us to sum up all probabilities multiplied by the indicator function to check if that outcome is in $\textbf{B}$
+        $$P(Y\in \textbf{B})=\frac{1}{36}\textit{I}_B(2)+\frac{2}{36}\textit{I}_B(3)+\frac{3}{36}\textit{I}_B(4)+\frac{4}{36}\textit{I}_B(5)+\frac{5}{36}\textit{I}_B(6)+\frac{6}{36}\textit{I}_B(7)+\frac{5}{36}\textit{I}_B(8)+\frac{4}{36}\textit{I}_B(9)+\frac{3}{36}\textit{I}_B(10)+\frac{2}{36}\textit{I}_B(11)+\frac{1}{36}\textit{I}_B(12)$$
+        We can factor to simplify this to the following:
+        $$P(Y\in \textbf{B})=\frac{1}{36}(\textit{I}_B(2)+\textit{I}_B(12))+\frac{2}{36}(\textit{I}_B(3)+\textit{I}_B(11))+\frac{3}{36}(\textit{I}_B(4)+\textit{I}_B(10))+\frac{4}{36}(\textit{I}_B(5)+\textit{I}_B(9))+\frac{5}{36}(\textit{I}_B(6)+\textit{I}_B(8))+\frac{6}{36}\textit{I}_B(7)$$
 
         </dd>
         </dl>
