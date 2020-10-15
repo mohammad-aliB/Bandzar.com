@@ -1108,7 +1108,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_6",
         "question":"
-        Let $Z \texttildelow Geometric(\theta )$. Compute $P(5 \leq Z \leq 9)$.
+        Let $Z \textasciitilde{} Geometric(\theta )$. Compute $P(5 \leq Z \leq 9)$.
         ",
         "answer":"
         From Example 2.3.4 in the book we know:
