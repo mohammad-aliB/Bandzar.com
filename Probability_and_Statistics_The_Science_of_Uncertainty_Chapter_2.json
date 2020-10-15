@@ -968,7 +968,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$p\scriptsize{Z}\normalsize{(0) = \frac{1}{2}}$$
         $$p\scriptsize{Z}\normalsize{(1) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}}$$
         $$p\scriptsize{Z}\normalsize{(5) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}}$$
-        $p\scriptsize{Z}\normalsize{(z)=0$ for all $z\notin\{0,1,5\}}$<br>
+        $p\scriptsize{Z}\normalsize{(z)=0}$ for all $z\notin\{0,1,5\}$<br>
        "
     }
     ]
