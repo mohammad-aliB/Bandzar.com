@@ -1117,6 +1117,38 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(5 \leq Z \leq 9)=(1-\theta )^5\theta+(1-\theta )^6\theta+(1-\theta )^7\theta+(1-\theta )^8\theta+(1-\theta )^9\theta$$
         That is the probability that Z will be between 5 and 9 inclusively, please note how Z can only be a positive integer as it represents the number of successful trials before a failure
        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 7",
+        "date":"Oct 15 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_7",
+        "question":"
+        Let $X$ ∼ $Binomial(12, \theta )$. For what value of $\theta$ is $P(X = 11)$ maximized?
+        ",
+        "answer":"
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)={n\choose x}\theta ^x(1-\theta)^{n-x}}$$
+        <br>
+        we shall now plug in X=11 and n=12
+        $$P(X=11)={12\choose 11}\theta ^11(1-\theta)^{12-11}$$
+        $$P(X=11)=12\theta ^11(1-\theta)$$
+        we can now differentiate the function to try and locate our peak
+        $$P'(X=11)=12*\theta ^11(1-\theta)$$
+        expand out:
+        $$P'(X=11)=12*(\theta ^11-\theta ^12)$$
+        power rule:
+        $$P'(X=11)=12*(11\theta ^10-12\theta ^11)$$
+        we will now factor and set this equal to zero
+        $$0=12\theta^10*(11-12\theta)$$
+        Therefore:<br>
+        $$12\theta^10=0$$
+        and 
+        $$11-12\theta=0$$
+        $$\theta=\frac{11}{12}$$
+        since $\theta=0$ is not a valid solution as it would make it impossible to have any of the 11 desired successes<br>
+        therefore $\theta=\frac{11}{12}$ is the correct solution
+    "
     }
     ]
 }
