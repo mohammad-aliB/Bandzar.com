@@ -966,9 +966,9 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         $$p\footnotesize{Z}(0) = \frac{1}{2}$$
-        $$p\footnotesize{Z}(1) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}$$
+        $$p\tiny{Z}(1) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}$$
         $$p\footnotesize{Z}(5) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}$$
-        $p\footnotesize{Z}(z)=0$ for all $z\notin\{0,1,5\}$<br>
+        $p\tiny{Z}(z)=0$ for all $z\notin\{0,1,5\}$<br>
        "
     }
     ]
