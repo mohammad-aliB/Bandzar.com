@@ -839,8 +839,136 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(X=25)=P(male)=0.45$$
         Probability that 30 questions are answered:
         $$P(X=30)=P(female)=0.55$$
-
+        Otherwise:<br>
         $P(X=x)=0$ for all $w\notin\{25,35\}$<br>
+       "
+    },
+    {
+        "title":"Chapter 2 Section 2 Question 8",
+        "date":"Oct 14 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_2_Question_8",
+        "question":"
+        Suppose that a bowl contains 10 chips, each uniquely numbered 0 through 9. The chips are thoroughly mixed, one is drawn and the number on it, $X_1$, is noted. This chip is then replaced in the bowl. A second chip is drawn and the number on it, $X_2$, is noted. Compute $P(W = w)$ for every real number w when $W = X_1 + 10X_2$.
+        ",
+        "answer":"
+        The probability of drawing any single chip is $\frac{1}{10}$<br>
+        There are 100 elements in W, it contains all integers 0-100 inclusive. $X_2$ represents the first digit and $X_1$ the second(left to right). Since all possible outcomes are equally probable. We can generalize this and write:<br>
+        $P(W=w)=0.1*0.1=0.01$ for all $w\in[0,99]\cap \mathbb{Z}$<br>
+        Otherwise:<br>
+        $P(W=w)=0$ for all $w\notin[0,99]\cap \mathbb{Z}$<br>
+        Below I have listed out the first ten probability's for fun.<br>
+        Probability that $X_1 + 10X_2=0$:
+        $$P(W=0)=P(X_1=0)*P(X_2=0)$$
+        $$P(W=0)=0.1*0.1$$
+        $$P(W=0)=0.01$$
+        Probability that $X_1 + 10X_2=1$:
+        $$P(W=1)=P(X_1=1)*P(X_2=0)$$
+        $$P(W=1)=0.1*0.1$$
+        $$P(W=1)=0.01$$
+        Probability that $X_1 + 10X_2=2$:
+        $$P(W=2)=P(X_1=2)*P(X_2=0)$$
+        $$P(W=2)=0.1*0.1$$
+        $$P(W=2)=0.01$$
+        Probability that $X_1 + 10X_2=3$:
+        $$P(W=3)=P(X_1=3)*P(X_2=0)$$
+        $$P(W=3)=0.1*0.1$$
+        $$P(W=3)=0.01$$
+        Probability that $X_1 + 10X_2=4$:
+        $$P(W=4)=P(X_1=4)*P(X_2=0)$$
+        $$P(W=4)=0.1*0.1$$
+        $$P(W=4)=0.01$$
+        Probability that $X_1 + 10X_2=5$:
+        $$P(W=5)=P(X_1=5)*P(X_2=0)$$
+        $$P(W=5)=0.1*0.1$$
+        $$P(W=5)=0.01$$
+        Probability that $X_1 + 10X_2=6$:
+        $$P(W=6)=P(X_1=6)*P(X_2=0)$$
+        $$P(W=6)=0.1*0.1$$
+        $$P(W=6)=0.01$$
+        Probability that $X_1 + 10X_2=7$:
+        $$P(W=7)=P(X_1=7)*P(X_2=0)$$
+        $$P(W=7)=0.1*0.1$$
+        $$P(W=7)=0.01$$
+        Probability that $X_1 + 10X_2=8$:
+        $$P(W=8)=P(X_1=8)*P(X_2=0)$$
+        $$P(W=8)=0.1*0.1$$
+        $$P(W=8)=0.01$$
+        Probability that $X_1 + 10X_2=9$:
+        $$P(W=9)=P(X_1=9)*P(X_2=0)$$
+        $$P(W=9)=0.1*0.1$$
+        $$P(W=9)=0.01$$
+       "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 1",
+        "date":"Oct 15 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_1",
+        "question":"
+        Consider rolling two fair six-sided dice. Let Y be the sum of the numbers showing. What is the probability function of Y?
+        ",
+        "answer":"
+        All possible outcomes from rolling 2 dice:<br>
+        <img src='/static/two-dice.png'>
+        <br>
+        Please note that diagonals starting from any number in the left most column and going right one then up one will all have the same sum. So if we look at (5,1) it will have the same sum as (4,2),(3,3),(2,4),(1,5).<br>
+
+        $$p\small{Y}(2) = 1/36$$
+        $$p\small{Y}(3) = 2/36$$
+        $$p\small{Y}(4) = 3/36$$
+        $$p\small{Y}(5) = 4/36$$
+        $$p\small{Y}(6) = 5/36$$
+        $$p\small{Y}(7) = 6/36$$
+        $$p\small{Y}(8) = 5/36$$
+        $$p\small{Y}(9) = 4/36$$
+        $$p\small{Y}(10) = 3/36$$
+        $$p\small{Y}(11) = 2/36$$
+        $$p\small{Y}(12) = 1/36$$
+        $p\small{Y}(y)=0$ for all $y\notin\{1,2,3,4,5,6,7,8,9,10,11,12\}$<br>
+       "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 2",
+        "date":"Oct 15 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_2",
+        "question":"
+        Consider flipping a fair coin. Let Z = 1 if the coin is heads, and Z = 3 if the
+        coin is tails. Let $W = Z^2 + Z$.
+        <ol type='a'>
+        <li>What is the probability function of Z?</li>
+        <li>What is the probability function of W?</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the probability function of Z?</dt>
+        <dd>
+        $$p\small{Z}(1) = \frac{1}{2}$$
+        $$p\small{Z}(2) = \frac{1}{2}$$
+        $p\small{Z}(z)=0$ for all $z\notin\{1,2\}$<br>
+        </dd>
+        <dt>(b) What is the probability function of W?</dt>
+        <dd>
+        Not yet solved by me
+        </dd>
+        </dl>
+       "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 3",
+        "date":"Oct 15 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_3",
+        "question":"
+        Consider flipping two fair coins. Let X = 1 if the first coin is heads, and X = 0 if the first coin is tails. Let Y = 1 if the second coin is heads, and Y = 5 if the second coin is tails. Let $Z = XY$. What is the probability function of Z?
+        ",
+        "answer":"
+        $$p\small{Z}(0) = \frac{1}{2}$$
+        $$p\small{Z}(1) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}$$
+        $$p\small{Z}(5) = \frac{1}{2}*\frac{1}{2}=\frac{1}{4}$$
+        $p\small{Z}(z)=0$ for all $z\notin\{0,1,5\}$<br>
        "
     }
     ]
