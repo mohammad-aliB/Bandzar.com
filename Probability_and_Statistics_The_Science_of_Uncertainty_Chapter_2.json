@@ -1339,7 +1339,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         <dt>(b) Calculate the probability that the event occurs five times</dt>
         <dd>
         From part a above, we know:
-        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}$$
         we will plug in: $n=20$, $\theta=2/3$, $y=5$
         $$P(Y=5)={20\choose 5}(\frac{2}{3}) ^5(1-\frac{2}{3})^{20-5}$$
         $$P(Y=5)=15504*(\frac{32}{243})(\frac{1}{14348907})$$
