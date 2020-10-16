@@ -1157,7 +1157,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_8",
         "question":"
-        Let $W$ ∼ $Poisson(\lambda )$. For what value of $\lambda$ is $P(W = 11)$ maximized?
+        Let $W$ ~ $Poisson(\lambda )$. For what value of $\lambda$ is $P(W = 11)$ maximized?
         ",
         "answer":"
         From Example 2.3.6 in the book we know:
@@ -1191,7 +1191,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_9",
         "question":"
-        Let $Z$ ∼ $Negative-Binomial(3, 1/4)$. Compute $P(Z \leq 2)$.
+        Let $Z$ ~ $Negative-Binomial(3, 1/4)$. Compute $P(Z \leq 2)$.
         ",
         "answer":"
         From Example 2.3.5 in the book we know:
@@ -1209,6 +1209,38 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(Z\leq 2)=(\frac{1}{4})^3+3*\frac{1}{64}(\frac{3}{4} )+6*\frac{1}{64}(\frac{9}{16} )$$
         $$P(Z\leq 2)=\frac{1}{64}+3*\frac{3}{256}+6*\frac{9}{1024}$$
         $$P(Z\leq 2)=\frac{53}{512}$$
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 10",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_10",
+        "question":"
+        Let $X$ ~ $Geometric(1/5)$. Compute $P(X^2 \leq 15)$.
+        ",
+        "answer":"
+        From Example 2.3.4 in the book we know:
+        $$p\scriptsize{X}\normalsize{(k)=P(X=k)=(1-\theta)^k\theta$$
+
+        In this equation k represents the number of failures before a successful trial, $\theta$ represents the probability of a success. (k+1) would represent the total number of trials<br>
+        we shall now plug in $\theta=\frac{1}{5}$
+        $$P(X=k)=(1-\frac{1}{5})^k\frac{1}{5}$$
+        $$P(X=k)=(\frac{4}{5})^k\frac{1}{5}$$
+        We know that we want $P(X^2 \leq 15)$ 
+        $$X^2 \leq 15$$
+        $$X \leq\pm\sqrt{15}$$
+        since X must be greater than zero  we can ignore the negative root
+        $$X \leq\sqrt{15}$$
+        $$X \leq\approx 3.8729$$
+        we now want to round down to the nearest whole number as we must have an integer number of failures.(you cant fail .87 trials haha)<br>
+        $$X \leq 3$$
+        We will now add up the probability for k=0,1,2,3 failures together
+        $$P(X\leq 3)=(\frac{4}{5})^0\frac{1}{5}+(\frac{4}{5})^1\frac{1}{5}+(\frac{4}{5})^2\frac{1}{5}$$
+        $$P(X\leq 3)=\frac{1}{5}+(\frac{4}{5})\frac{1}{5}+(\frac{16}{25})\frac{1}{5}$$
+        $$P(X\leq 3)=\frac{1}{5}+(\frac{4}{25})+(\frac{16}{125})$$
+        $$P(X\leq 3)=\frac{1}{5}+(\frac{4}{25})+(\frac{16}{125})$$
+        $$P(X\leq 3)=\frac{61}{125}$$
         "
     }
     ]
