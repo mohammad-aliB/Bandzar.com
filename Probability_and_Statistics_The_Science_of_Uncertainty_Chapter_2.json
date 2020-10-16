@@ -1344,7 +1344,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(Y=5)={20\choose 5}(\frac{2}{3}) ^5(1-\frac{2}{3})^{20-5}$$
         $$P(Y=5)=15504*(\frac{32}{243})(\frac{1}{14348907})$$
         $$P(Y=5)=\frac{165376}{1162261467}$$
-        $$P(Y=5)=\approx 0.000$$
+        $$P(Y=5)\approx 0.000$$
 
         </dd>
 
