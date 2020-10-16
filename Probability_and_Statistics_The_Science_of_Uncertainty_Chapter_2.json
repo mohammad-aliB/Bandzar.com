@@ -1332,8 +1332,8 @@ Therefore no matter how we define our function $X$ we can always determine a set
          
          A die has 6 possible outcomes all of equal probability, we have 4 desired outcomes in this question. Therefore $\theta=\frac{4}{6}=\frac{2}{3}$<br>
          We have 20 independant trials. Therefore $n=20$<br>
-         $$Y ~ Binomial(n, \theta )$$
-         $$Y ~ Binomial(20, 2/3)$$
+         $Y$ ~ $Binomial(n, \theta )$<br>
+         $Y$ ~ $Binomial(20, 2/3)$
 
         </dd>
         <dt>(b) Calculate the probability that the event occurs five times</dt>
