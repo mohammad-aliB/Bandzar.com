@@ -1195,14 +1195,14 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         From Example 2.3.5 in the book we know:
-        $$p\scriptsize{Y}\normalsize{(k)=P(Y=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k}$$
+        $$p\scriptsize{Z}\normalsize{(z)=P(Z=z)={{r-1+z}\choose z}\theta^r(1-\theta )^z}$$
         <br>
-        $$P(Z=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
-        In this equation r represents the desired number of successes, k represents the number of failures, $\theta$ represents the probability of a success.<br>
+        $$P(Z=z)={{r-1+z}\choose z}\theta^r(1-\theta )^z$$
+        In this equation r represents the desired number of successes, z represents the number of failures, $\theta$ represents the probability of a success.<br>
         we shall now plug in $\theta=\frac{1}{4}$, $r=3$
-        $$P(Z=k)={{3-1+k}\choose k}(\frac{1}{4})^3(1-\frac{1}{4} )^k$$
-        $$P(Z=k)={{2+k}\choose k}(\frac{1}{4})^3(\frac{3}{4} )^k$$
-        To solve for $Z\leq 2$ we will add up k=0,1,2 together
+        $$P(Z=z)={{3-1+z}\choose z}(\frac{1}{4})^3(1-\frac{1}{4} )^z$$
+        $$P(Z=z)={{2+z}\choose z}(\frac{1}{4})^3(\frac{3}{4} )^z$$
+        To solve for $Z\leq 2$ we will add up z=0,1,2 together
         $$P(Z\leq 2)={{2+0}\choose 0}(\frac{1}{4})^3(\frac{3}{4} )^0+{{2+1}\choose 1}(\frac{1}{4)}^3(\frac{3}{4} )^1+{{2+2}\choose 2}\frac{1}{4}^3(\frac{3}{4} )^2$$
         $$P(Z\leq 2)={{2}\choose 0}(\frac{1}{4})^3(\frac{3}{4} )^0+{{3}\choose 1}(\frac{1}{4})^3(\frac{3}{4} )^1+{{4}\choose 2}(\frac{1}{4})^3(\frac{3}{4} )^2$$
         $$P(Z\leq 2)=(\frac{1}{4})^3(\frac{3}{4} )^0+3*(\frac{1}{4})^3(\frac{3}{4} )^1+6*(\frac{1}{4})^3(\frac{3}{4} )^2$$
@@ -1221,12 +1221,12 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         From Example 2.3.4 in the book we know:
-        $$p\scriptsize{X}\normalsize{(k)=P(X=k)=(1-\theta)^k\theta$$
-
-        In this equation k represents the number of failures before a successful trial, $\theta$ represents the probability of a success. (k+1) would represent the total number of trials<br>
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)=(1-\theta)^x\theta$$
+        In this equation x represents the number of failures before a successful trial, $\theta$ represents the probability of a success. (x+1) would represent the total number of trials<br>
+        <br>
         we shall now plug in $\theta=\frac{1}{5}$
-        $$P(X=k)=(1-\frac{1}{5})^k\frac{1}{5}$$
-        $$P(X=k)=(\frac{4}{5})^k\frac{1}{5}$$
+        $$P(X=x)=(1-\frac{1}{5})^x\frac{1}{5}$$
+        $$P(X=x)=(\frac{4}{5})^x\frac{1}{5}$$
         We know that we want $P(X^2 \leq 15)$ 
         $$X^2 \leq 15$$
         $$X \leq\pm\sqrt{15}$$
