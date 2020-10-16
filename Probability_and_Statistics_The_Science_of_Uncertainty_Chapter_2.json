@@ -1240,6 +1240,27 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(X\leq 3)=\frac{1}{5}+(\frac{4}{25})+(\frac{16}{125})$$
         $$P(X\leq 3)=\frac{61}{125}$$
         "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 11",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_11",
+        "question":"
+        Let $Y$ ~ $Binomial(10,\theta)$. Compute $P(Y = 10)$.
+        ",
+        "answer":"
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+
+        In this equation n represents the number of trials, $\theta$ represents the probability of a success and y represents the desired number of successful outcomes<br>
+        <br>
+        we shall now plug in $n=10$, $Y=10$
+        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+        $$P(Y=10)={10\choose 10}\theta ^10(1-\theta)^{10-10}}$$
+        $$P(Y=10)=\theta ^10(1-\theta)^{0}}$$
+        $$P(Y=10)=\theta ^10$$
+        "
     }
     ]
 }
