@@ -1261,6 +1261,52 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(Y=10)=\theta ^{10}(1-\theta)^{0}$$
         $$P(Y=10)=\theta ^{10}$$
         "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 12",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_12",
+        "question":"
+        Let $X$ ~ $Poisson(\lambda)$. Let $Y = X − 7$. What is the probability function of Y?
+        ",
+        "answer":"
+        From Example 2.3.6 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
+        <br>
+        We know that we want the probability of X for $y+7$ therefore:
+        $$p_{Y}(y))=P(X=y+7)$$
+
+        $$p_{Y}(y))=\frac{\lambda^{y+7}}{(y+7)!}*e^{-\lambda}$$
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 13",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_13",
+        "question":"
+        Let $X$ ~ $Hypergeometric(20, 7, 8)$. What is the probability that $X = 3$? What is the probability that $X = 8$?
+        ",
+        "answer":"
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}}$$
+        N represents the total number of 'elements'<br>
+        M represents the number of 'elements' of one type<br>
+        $N-M$ represent the number of elements of the other type.<br>
+        $n$ represents the length of the subset of elements that we are selecting<br>
+        $x$ represents the number of elements of the type $M$ that we have in this subset
+        <br>
+        We are going to start by plugging in $N=20$, $M=7$, $n=8$, $x=3$ into the equation
+        $$P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}$$
+        $$P(X=3)=\frac{{7\choose 3}{{20-7}\choose{8-3}}}{20 \choose 8}$$
+        $$P(X=3)=\frac{{7\choose 3}{13\choose{5}}{125970}$$
+        $$P(X=3)=\frac{35*1287}{125970}$$
+        $$P(X=3)=\frac{231}{646}$$
+
+
+        $$p_{Y}(y))=\frac{\lambda^{y+7}}{(y+7)!}*e^{-\lambda}$$
+        "
     }
     ]
 }
