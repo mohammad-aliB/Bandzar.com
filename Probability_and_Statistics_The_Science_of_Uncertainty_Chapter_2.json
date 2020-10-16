@@ -1345,7 +1345,73 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(Y=5)=15504*(\frac{32}{243})(\frac{1}{14348907})$$
         $$P(Y=5)=\frac{165376}{1162261467}$$
         $$P(Y=5)\approx 0.000$$
+        </dd>
+        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 15",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_15",
+        "question":"
+        Suppose that a basketball player sinks a basket from a certain position on the court with probability 0.35.
+        <ol type='a'>
+        <li>What is the probability that the player sinks three baskets in 10 independent throws?</li>
+        <li>What is the probability that the player throws 10 times before obtaining the first basket?</li>
+        <li>What is the probability that the player throws 10 times before obtaining two baskets?</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the probability that the player sinks three baskets in 10 independent throws?</dt>
+        <dd>
+        This question is asking for the binomial probability as all our trials are independent.<br>
 
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+
+        n represents the number of trials<br>
+         $\theta$ represents the probability of a success<br>
+         y represents the desired number of successful outcomes<br><br>
+         
+         In this question the probability of success is given to us, therefore: $\theta=0.35$<br>
+         We have 10 independent trials. Therefore $n=10$<br>
+         $$Y ~ Binomial(10, 0.35)$$
+        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}$$
+        $$P(Y=3)={10\choose 3}(0.35) ^3(1-0.35)^{10-3}$$
+        $$P(Y=3)=120(0.35) ^3(0.65)^{7}$$
+        $$P(Y=3)\approx 0.2522$$
+        </dd>
+        <dt>(b) What is the probability that the player throws 10 times before obtaining the first basket?</dt>
+        <dd>
+        Since we are trying to calculate number of failures before the first success we have a geometric distribution<br>
+        From Example 2.3.4 in the book we know:
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)=(1-\theta )^x\theta}$$
+        $\theta$ is the probability of success per event<br>
+        x represents the number of failed events before a success.<br><br>
+        in this case we want 9 failures before a success so $x=9$<br>
+         In this question the probability of success is given to us, therefore: $\theta=0.35$<br>
+         $$P(X=9)=(1-0.35 )^9(0.35)$$
+        $$P(X=9)=(0.65 )^9(0.35)$$
+        $$P(X=9)\approx 0.072$$
+        </dd>
+        <dt>(c) What is the probability that the player throws 10 times before obtaining two baskets?</dt>
+        <dd>
+        This is negative binomial distribution as our trials stop after a certain number of successful events. Since the desired number of successful events is greater than one this is negative-Binomial distribution instead of geometric.<br>
+        From Example 2.3.5 in the book we know:
+        $$p\scriptsize{K}\normalsize{(k)=P(K=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k}$$
+        r represents the desired number of successes<br>
+        k represents the number of failures<br>
+        $\theta$ represents the probability of a success.<br><br>
+         since we want two successes $r=2$<br>
+         since we want 10 total trials, trials-successes=failures: $k=10-2=8$
+          In this question the probability of success is given to us, therefore: $\theta=0.35$<br>
+          $$P(K=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
+          $$P(K=8)={{2-1+8}\choose 8}(0.35)^2(1-0.35 )^8$$
+          $$P(K=8)={9\choose 8}(0.35)^2(0.65 )^8$$
+          $$P(K=8)=9*(0.35)^2(0.65 )^8$$
+          $$P(k=8)\approx 0.0351$$
         </dd>
 
         </dl>
