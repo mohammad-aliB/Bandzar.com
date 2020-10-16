@@ -1300,12 +1300,9 @@ Therefore no matter how we define our function $X$ we can always determine a set
         We are going to start by plugging in $N=20$, $M=7$, $n=8$, $x=3$ into the equation
         $$P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}$$
         $$P(X=3)=\frac{{7\choose 3}{{20-7}\choose{8-3}}}{20 \choose 8}$$
-        $$P(X=3)=\frac{{7\choose 3}{13\choose{5}}{125970}$$
+        $$P(X=3)=\frac{{7\choose 3}{13\choose 5}{125970}$$
         $$P(X=3)=\frac{35*1287}{125970}$$
         $$P(X=3)=\frac{231}{646}$$
-
-
-        $$p_{Y}(y))=\frac{\lambda^{y+7}}{(y+7)!}*e^{-\lambda}$$
         "
     }
     ]
