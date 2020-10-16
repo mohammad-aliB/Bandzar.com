@@ -1268,7 +1268,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_12",
         "question":"
-        Let $X$ ~ $Poisson(\lambda)$. Let $Y = X − 7$. What is the probability function of Y?
+        Let $X$ ~ $Poisson(\lambda)$. Let $Y = X - 7$. What is the probability function of Y?
         ",
         "answer":"
         From Example 2.3.6 in the book we know:
