@@ -1196,8 +1196,6 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "answer":"
         From Example 2.3.5 in the book we know:
         $$p\scriptsize{Z}\normalsize{(z)=P(Z=z)={{r-1+z}\choose z}\theta^r(1-\theta )^z}$$
-        <br>
-        $$P(Z=z)={{r-1+z}\choose z}\theta^r(1-\theta )^z$$
         In this equation r represents the desired number of successes, z represents the number of failures, $\theta$ represents the probability of a success.<br>
         we shall now plug in $\theta=\frac{1}{4}$, $r=3$
         $$P(Z=z)={{3-1+z}\choose z}(\frac{1}{4})^3(1-\frac{1}{4} )^z$$
