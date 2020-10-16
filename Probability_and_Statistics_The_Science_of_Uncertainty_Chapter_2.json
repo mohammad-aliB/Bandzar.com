@@ -1164,21 +1164,21 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
         <br>
         we shall now plug in w=11
-        $$P(W=11)=\frac{\lambda^11}{11!}e^{-\lambda}$$
+        $$P(W=11)=\frac{\lambda^{11}}{11!}e^{-\lambda}$$
         we can now differentiate the function to try and locate our peak<br>
         start by factoring constant
-        $$P'(W=11)=\frac{1}{11!}\lambda^11*e^{-\lambda}$$
+        $$P'(W=11)=\frac{1}{11!}\lambda^{11}*e^{-\lambda}$$
         Apply the product rule and differentiate
-        $$P'(W=11)=\frac{1}{11!}(11\lambda^10*e^{-\lambda}+\lambda^11*(-e^{-\lambda}))$$
+        $$P'(W=11)=\frac{1}{11!}(11\lambda^{10}*e^{-\lambda}+\lambda^{11}*(-e^{-\lambda}))$$
         we can now factor out $e^{-\lambda}$
-        $$P'(W=11)=\frac{e^{-\lambda}}{11!}(11\lambda^10-\lambda^11)$$
-        we can now factor out $\lambda^10$
-        $$P'(W=11)=\frac{e^{-\lambda}}{11!}(\lambda^10(11-\lambda))$$
+        $$P'(W=11)=\frac{e^{-\lambda}}{11!}(11\lambda^{10}-\lambda^{11})$$
+        we can now factor out $\lambda^{10}$
+        $$P'(W=11)=\frac{e^{-\lambda}}{11!}(\lambda^{10}(11-\lambda))$$
         we can now set out factors equal to zero
-        $$e^{-lambda}=0$$
+        $$e^{-\lambda}=0$$
         this has no real solutions
-        $$lambda^10=0$$
-        $$lambda=0$$
+        $$\lambda^{10}=0$$
+        $$\lambda=0$$
         or:
         $$11-\lambda=0$$
         $$\lambda=11$$
