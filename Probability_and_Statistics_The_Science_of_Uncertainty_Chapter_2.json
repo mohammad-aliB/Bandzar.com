@@ -951,7 +951,8 @@ Therefore no matter how we define our function $X$ we can always determine a set
         </dd>
         <dt>(b) What is the probability function of W?</dt>
         <dd>
-        Not yet solved by me
+        $$p\small{W}(2) = p\small{Z}(1)=\frac{1}{2}$$
+        $$p\small{W}(12) = p\small{Z}(3)=\frac{1}{2}$$
         </dd>
         </dl>
        "
@@ -1149,6 +1150,66 @@ Therefore no matter how we define our function $X$ we can always determine a set
         since $\theta=0$ is not a valid solution as it would make it impossible to have any of the 11 desired successes<br>
         therefore $\theta=\frac{11}{12}$ is the correct solution
     "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 8",
+        "date":"Oct 15 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_8",
+        "question":"
+        Let $W$ ∼ $Poisson(\lambda )$. For what value of $\lambda$ is $P(W = 11)$ maximized?
+        ",
+        "answer":"
+        From Example 2.3.6 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
+        <br>
+        we shall now plug in w=11
+        $$P(W=11)=\frac{\lambda^11}{11!}e^{-\lambda}$$
+        we can now differentiate the function to try and locate our peak<br>
+        start by factoring constant
+        $$P'(W=11)=\frac{1}{11!}\lambda^11*e^{-\lambda}$$
+        Apply the product rule and differentiate
+        $$P'(W=11)=\frac{1}{11!}(11\lambda^10*e^{-\lambda}+\lambda^11*(-e^{-lambda}))$$
+        we can now factor out $e^{-lambda}$
+        $$P'(W=11)=\frac{e^{-lambda}}{11!}(11\lambda^10-\lambda^11)$$
+        we can now factor out $\lambda^10$
+        $$P'(W=11)=\frac{e^{-lambda}}{11!}(\lambda^10(11-\lambda))$$
+        we can now set out factors equal to zero
+        $$e^{-lambda}=0$$
+        this has no real solutions
+        $$lambda^10=0$$
+        $$lambda=0$$
+        or:
+        $$11-\lambda=0$$
+        $$\lambda=11$$
+        By the definition of Poisson distribution given to us in page 46 of the textbook, Example 2.3.6 $\lambda > 0$ therefore we only have one solution $\lambda=11$.
+    "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 9",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_9",
+        "question":"
+        Let $Z$ ∼ $Negative-Binomial(3, 1/4)$. Compute $P(Z \leq 2)$.
+        ",
+        "answer":"
+        From Example 2.3.5 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(k)=P(Y=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
+        <br>
+        $$P(Z=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
+        In this equation r represents the desired number of successes, k represents the number of failures, $\theta$ represents the probability of a success.<br>
+        we shall now plug in $\theta=\frac{1}{4}$, $r=3$
+        $$P(Z=k)={{3-1+k}\choose k}(\frac{1}{4})^3(1-\frac{1}{4} )^k$$
+        $$P(Z=k)={{2+k}\choose k}(\frac{1}{4})^3(\frac{3}{4} )^k$$
+        To solve for $Z\leq 2$ we will add up k=0,1,2 together
+        $$P(Z\leq 2)={{2+0}\choose 0}(\frac{1}{4})^3(\frac{3}{4} )^0+{{2+1}\choose 1}(\frac{1}{4)}^3(\frac{3}{4} )^1+{{2+2}\choose 2}\frac{1}{4}^3(\frac{3}{4} )^2$$
+        $$P(Z\leq 2)={{2}\choose 0}(\frac{1}{4})^3(\frac{3}{4} )^0+{{3}\choose 1}(\frac{1}{4})^3(\frac{3}{4} )^1+{{4}\choose 2}(\frac{1}{4})^3(\frac{3}{4} )^2$$
+        $$P(Z\leq 2)=(\frac{1}{4})^3(\frac{3}{4} )^0+3*(\frac{1}{4})^3(\frac{3}{4} )^1+6*(\frac{1}{4})^3(\frac{3}{4} )^2$$
+        $$P(Z\leq 2)=(\frac{1}{4})^3+3*\frac{1}{64}(\frac{3}{4} )+6*\frac{1}{64}(\frac{9}{16} )$$
+        $$P(Z\leq 2)=\frac{1}{64}+3*\frac{3}{256}+6*\frac{9}{1024}$$
+        $$P(Z\leq 2)=\frac{53}{512}$$
+        "
     }
     ]
 }
