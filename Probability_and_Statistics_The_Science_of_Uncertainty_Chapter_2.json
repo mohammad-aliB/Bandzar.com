@@ -1296,13 +1296,59 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $N-M$ represent the number of elements of the other type.<br>
         $n$ represents the length of the subset of elements that we are selecting<br>
         $x$ represents the number of elements of the type $M$ that we have in this subset
-        <br>
+        <br><br>
         We are going to start by plugging in $N=20$, $M=7$, $n=8$, $x=3$ into the equation
         $$P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}$$
         $$P(X=3)=\frac{{7\choose 3}{{20-7}\choose{8-3}}}{20 \choose 8}$$
         $$P(X=3)=\frac{{7\choose 3}{13\choose 5}}{125970}$$
         $$P(X=3)=\frac{35*1287}{125970}$$
         $$P(X=3)=\frac{231}{646}$$
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 14",
+        "date":"Oct 16 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_14",
+        "question":"
+        Suppose that a symmetrical die is rolled 20 independent times, and each time we record whether or not the event $\{2, 3, 5, 6\}$ has occurred
+        <ol type='a'>
+        <li>What is the distribution of the number of times this event occurs in 20 rolls?</li>
+        <li>Calculate the probability that the event occurs five times.</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the distribution of the number of times this event occurs in 20 rolls?</dt>
+        <dd>
+        This question is asking for the binomial probability as all our trials are independent.<br>
+
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+
+        n represents the number of trials<br>
+         $\theta$ represents the probability of a success<br>
+         y represents the desired number of successful outcomes<br><br>
+         
+         A die has 6 possible outcomes all of equal probability, we have 4 desired outcomes in this question. Therefore $\theta=\frac{4}{6}=\frac{2}{3}$<br>
+         We have 20 independant trials. Therefore $n=20$<br>
+         $$Y ~ Binomial(n, \theta )$$
+         $$Y ~ Binomial(20, 2/3)$$
+
+        </dd>
+        <dt>(b) Calculate the probability that the event occurs five times</dt>
+        <dd>
+        From part a above, we know:
+        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+        we will plug in: $n=20$, $\theta=2/3$, $y=5$
+        $$P(Y=5)={20\choose 5}(\frac{2}{3}) ^5(1-\frac{2}{3})^{20-5}$$
+        $$P(Y=5)=15504*(\frac{32}{243})(\frac{1}{14348907})$$
+        $$P(Y=5)=\frac{165376}{1162261467}$$
+        $$P(Y=5)=\approx 0.000$$
+
+        </dd>
+
+        </dl>
         "
     }
     ]
