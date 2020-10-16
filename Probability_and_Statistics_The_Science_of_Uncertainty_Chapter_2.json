@@ -1195,7 +1195,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         ",
         "answer":"
         From Example 2.3.5 in the book we know:
-        $$p\scriptsize{Y}\normalsize{(k)=P(Y=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
+        $$p\scriptsize{Y}\normalsize{(k)=P(Y=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k}$$
         <br>
         $$P(Z=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
         In this equation r represents the desired number of successes, k represents the number of failures, $\theta$ represents the probability of a success.<br>
