@@ -1289,7 +1289,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         Let $X$ ~ $Hypergeometric(20, 7, 8)$. What is the probability that $X = 3$? What is the probability that $X = 8$?
         ",
         "answer":"
-        From Example 2.3.3 in the book we know:
+        From Example 2.3.7 in the book we know:
         $$p\scriptsize{X}\normalsize{(x)=P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}}$$
         N represents the total number of 'elements'<br>
         M represents the number of 'elements' of one type<br>
@@ -1485,6 +1485,57 @@ Therefore no matter how we define our function $X$ we can always determine a set
           $$P(k=10)\approx 0.0486179$$
         </dd>
 
+        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 17",
+        "date":"Oct 19 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_17",
+        "question":"
+        An urn contains 4 black balls and 5 white balls. After a thorough mixing, a ball is drawn from the urn, its color is noted, and the ball is set aside. The remaining balls are then mixed and a second ball is drawn.
+        <ol type='a'>
+        <li>What is the probability distribution of the number of black balls observed?</li>
+        <li>What is the probability distribution of the number of white balls observed?</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the probability distribution of the number of black balls observed?</dt>
+        <dd>
+        Since all our trials are dependant on each other (except for the first). For example if a white ball is drawn first, then the next draw is less likely to be a white ball.<br>
+
+        From Example 2.3.7 in the book we know:
+                $$p\scriptsize{X}\normalsize{(x)=P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}}$$
+                N represents the total number of balls $N=9$<br>
+                M represents the number of desired balls (black) $M=4$<br>
+                $N-M$ represent the number of undesirable balls(white) $N-M=5$<br>
+                $n$ represents the length of the subset of elements that we are selecting. In this case we are drawing 2 balls so $n=2$<br>
+                $x$ represents the number of elements of the type $M$ that we have in this subset. In this case it represents the number of black balls we have drawn.
+                <br><br>
+        $$Hypergeometric(N,M,n)$$
+        $$Hypergeometric(9,4,2)$$
+        $$P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}$$
+        $$P(X=x)=\frac{{4\choose x}{{5}\choose{2-x}}}{9 \choose 2}$$
+        </dd>
+        <dt>(b) What is the probability distribution of the number of white balls observed?</dt>
+        <dd>
+        This answer is the same as above with $M$ and $N-M$ swapped<br><br>
+
+        From Example 2.3.7 in the book we know:
+                $$p\scriptsize{X}\normalsize{(x)=P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}}$$
+                N represents the total number of balls $N=9$<br>
+                M represents the number of desired balls (white) $M=5$<br>
+                $N-M$ represent the number of undesirable balls(white) $N-M=4$<br>
+                $n$ represents the length of the subset of elements that we are selecting. In this case we are drawing 2 balls so $n=2$<br>
+                $x$ represents the number of elements of the type $M$ that we have in this subset. In this case it represents the number of black balls we have drawn.
+                <br><br>
+         $$Hypergeometric(N,M,n)$$
+        $$Hypergeometric(9,5,2)$$
+        $$P(X=x)=\frac{{M\choose x}{{N-M}\choose{n-x}}}{N \choose n}$$
+        $$P(X=x)=\frac{{5\choose x}{{3}\choose{2-x}}}{9 \choose 2}$$
+        </dd>
         </dl>
         "
     }
