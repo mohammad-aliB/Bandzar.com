@@ -1302,7 +1302,8 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $$P(X=3)=\frac{{7\choose 3}{{20-7}\choose{8-3}}}{20 \choose 8}$$
         $$P(X=3)=\frac{{7\choose 3}{13\choose 5}}{125970}$$
         $$P(X=3)=\frac{35*1287}{125970}$$
-        $$P(X=3)=\frac{231}{646}$$
+        $$P(X=3)=\frac{231}{646}$$<br><br>
+        P(X=0) is impossible to solve as you cant have 8 of your prefered type of element in a subset of 7 elements.
         "
     },
     {
@@ -1412,6 +1413,76 @@ Therefore no matter how we define our function $X$ we can always determine a set
           $$P(K=8)={9\choose 8}(0.35)^2(0.65 )^8$$
           $$P(K=8)=9*(0.35)^2(0.65 )^8$$
           $$P(k=8)\approx 0.0351$$
+        </dd>
+
+        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 16",
+        "date":"Oct 19 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_16",
+        "question":"
+        An urn contains 4 black balls and 5 white balls. After a thorough mixing, a ball is drawn from the urn, its color is noted, and the ball is returned to the urn.
+        <ol type='a'>
+        <li>What is the probability that 5 black balls are observed in 15 such draws?</li>
+        <li>What is the probability that 15 draws are required until the first black ball is observed?</li>
+        <li>What is the probability that 15 draws are required until the fifth black ball is observed?</li>
+        </ol>
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the probability that 5 black balls are observed in 15 such draws?</dt>
+        <dd>
+        This question is asking for the binomial probability as all our trials are independent.<br>
+
+        From Example 2.3.3 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}}$$
+
+        n represents the number of trials<br>
+         $\theta$ represents the probability of a success<br>
+         y represents the desired number of successful outcomes<br><br>
+         
+         In this question the probability of success is the number of black balls divided by the total number of balls: $\theta=\frac{4}{9}$<br>
+         We have 15 independent trials. Therefore $n=15$<br>
+         $$Y ~ Binomial(15, 4/9)$$
+        $$P(Y=y)={n\choose y}\theta ^y(1-\theta)^{n-y}$$
+        $$P(Y=5)={15\choose 5}(\frac{4}{9}) ^5(1-\frac{4}{9})^{15-5}$$
+        $$P(Y=5)=3003*(\frac{4}{9}) ^5(\frac{5}{9})^{10}$$
+        $$P(Y=5)\approx .077*0.0028$$
+        $$P(Y=5)\approx 0.1459$$
+        </dd>
+        <dt>(b) What is the probability that 15 draws are required until the first black ball is observed?</dt>
+        <dd>
+        Since we are trying to calculate number of failures before the first success we have a geometric distribution<br>
+        From Example 2.3.4 in the book we know:
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)=(1-\theta )^x\theta}$$
+        $\theta$ is the probability of success per event<br>
+        x represents the number of failed events before a success.<br><br>
+        in this case we want 14 failures before a success so $x=14$<br>
+        In this question the probability of success is the number of black balls divided by the total number of balls: $\theta=\frac{4}{9}$<br>
+        $$P(X=x)=(1-\theta )^x\theta$$
+         $$P(X=14)=(1-\frac{4}{9} )^15(\frac{4}{9})$$
+        $$P(X=14)=(\frac{5}{9} )^15(\frac{4}{9}$$
+        $$P(X=14)\approx 0.000065876$$
+        </dd>
+        <dt>(c) What is the probability that 15 draws are required until the fifth black ball is observed?</dt>
+        <dd>
+        This is negative binomial distribution as our trials stop after a certain number of successful events. Since the desired number of successful events is greater than one this is negative-Binomial distribution instead of geometric.<br>
+        From Example 2.3.5 in the book we know:
+        $$p\scriptsize{K}\normalsize{(k)=P(K=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k}$$
+        r represents the desired number of successes<br>
+        k represents the number of failures<br>
+        $\theta$ represents the probability of a success.<br><br>
+         since we want five successes $r=5$<br>
+         since we want 15 total trials, trials-successes=failures: $k=15-5=10$
+        In this question the probability of success is the number of black balls divided by the total number of balls: $\theta=\frac{4}{9}$<br>
+          $$P(K=k)={{r-1+k}\choose k}\theta^r(1-\theta )^k$$
+          $$P(K=10)={{5-1+10}\choose 10}(\frac{4}{9})^5(1-\frac{4}{9} )^10$$
+          $$P(K=10)={14 \choose 10}(\frac{4}{9})^5(\frac{5}{9} )^10$$
+          $$P(K=10)=1001 * (\frac{1024}{59049})(\frac{9765625}{3486784401} )$$
+          $$P(k=10)\approx 0.0486179$$
         </dd>
 
         </dl>
