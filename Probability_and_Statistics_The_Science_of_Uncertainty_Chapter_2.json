@@ -1595,7 +1595,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_19",
         "question":"
-Suppose an urn contains 1000 balls — one of these is black, and the other 999 are white. Suppose that 100 balls are randomly drawn from the urn with replacement. Use the appropriate Poisson distribution to approximate the probability that five black balls are observed.
+        Suppose an urn contains 1000 balls — one of these is black, and the other 999 are white. Suppose that 100 balls are randomly drawn from the urn with replacement. Use the appropriate Poisson distribution to approximate the probability that five black balls are observed.
         ",
         "answer":"
         From Example 2.3.6 in the book we know:
@@ -1605,8 +1605,27 @@ Suppose an urn contains 1000 balls — one of these is black, and the other 999 
         $$P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}$$
         $$P(Y=5)=\frac{0.1^5}{5!}e^{-0.1}$$
         $$P(Y=5)\approx 0.0000000754031$$
-        </dd>
-        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 20",
+        "date":"Oct 19 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_20",
+        "question":"
+        Suppose that there is a loop in a computer program and that the test to exit
+the loop depends on the value of a random variable X. The program exits the loop whenever $X \in \mathbb{A}$, and this occurs with probability $1/3$. If the loop is executed at least once, what is the probability that the loop is executed five times before exiting?        ",
+        "answer":"
+        Since we are trying to calculate number of failures before the first success and all our trials are independent we have a geometric distribution<br>
+        From Example 2.3.4 in the book we know:
+        $$p\scriptsize{X}\normalsize{(x)=P(X=x)=(1-\theta )^x\theta}$$
+        $\theta$ is the probability of success per event in this case $\theta=\frac{1}{3}$<br>
+        x represents the number of failed events before a success. In this case we want 4 failures before a success so $x=4$<br>
+        $$P(X=x)=(1-\theta )^x\theta}$$
+         $$P(X=4)=(1-\frac{1}{3} )^4(\frac{1}{3})$$
+        $$P(X=4)=(\frac{2}{3})^4(\frac{1}{3})$$
+        $$P(X=4)\approx 0.0658$$
+
         "
     }
     ]
