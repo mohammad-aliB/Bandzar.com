@@ -1538,6 +1538,76 @@ Therefore no matter how we define our function $X$ we can always determine a set
         </dd>
         </dl>
         "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 18",
+        "date":"Oct 19 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_18",
+        "question":"
+        (Poisson processes and queues) Consider a situation involving a server, e.g., a cashier at a fast-food restaurant, an automatic bank teller machine, a telephone exchange, etc. Units typically arrive for service in a random fashion and form a queue when the server is busy. It is often the case that the number of arrivals at the server, for some specific unit of time t, can be modeled by a $Poisson(\lambda t)$ distribution and is such that the number of arrivals in nonoverlapping periods are independent. In Chapter 3, we will show that $\lambda t$ is the average number of arrivals during a time period of length $t$, and so $\lambda$ is the rate of arrivals per unit of time. Suppose telephone calls arrive at a help line at the rate of two per minute. A Poisson process provides a good model.
+        <ol type='a'>
+        <li>What is the probability that five calls arrive in the next 2 minutes?</li>
+        <li>What is the probability that five calls arrive in the next 2 minutes and then five more calls arrive in the following 2 minutes?</li>
+        <li>What is the probability that no calls will arrive during a 10-minute period?</li>
+        </ol>
+
+        ",
+        "answer":"
+        <dl>
+        <dt>(a) What is the probability that five calls arrive in the next 2 minutes?
+        </dt>
+        <dd>
+        From Example 2.3.6 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
+        $\lambda$ represents the mean number of occurrences in the given interval in this case it will be calls per minutes multiplied by number of minutes $\lambda=2*2=4$<br>
+        $y$ in this case will be the desired number of calls in this case $y=5$
+        $$P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}$$
+        $$P(Y=5)=\frac{4^5}{5!}e^{-4}$$
+        $$P(Y=5)=\frac{1024}{120}e^{-4}$$
+        $$P(Y=5)\approx 0.15629$$
+        </dd>
+        <dt>(b) What is the probability distribution of the number of white balls observed?</dt>
+        <dd>
+        This is the probability that part a occurs twice in succession. 
+        $$P(Y=5)^2$$
+        $$\approx (\frac{4^5}{5!}e^{-4})^2$$
+        $$\approx 0.02442$
+        </dd>
+        <dt>(c) What is the probability that no calls will arrive during a 10-minute period?
+        </dt>
+        <dd>
+        From Example 2.3.6 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
+        $\lambda$ represents the mean number of occurrences in the given interval in this case it will be calls per minutes multiplied by number of minutes $\lambda=2*10=20$<br>
+        $y$ in this case will be the desired number of calls in this case $y=0$
+        $$P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}$$
+        $$P(Y=0)=\frac{20^0}{0!}e^{-20}$$
+        $$P(Y=0)=}e^{-20}$$
+        $$P(Y=5)\approx 0.000000002061$$
+        </dd>
+        </dl>
+        "
+    },
+    {
+        "title":"Chapter 2 Section 3 Question 19",
+        "date":"Oct 19 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_19",
+        "question":"
+Suppose an urn contains 1000 balls — one of these is black, and the other 999 are white. Suppose that 100 balls are randomly drawn from the urn with replacement. Use the appropriate Poisson distribution to approximate the probability that five black balls are observed.
+        ",
+        "answer":"
+        From Example 2.3.6 in the book we know:
+        $$p\scriptsize{Y}\normalsize{(y)=P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}}$$
+        $\lambda$ represents the mean number of occurrences in the given interval in this case it will be the number of draws multiplied the probability of drawing a black ball $\lambda=100*\frac{1}{1000}=0.1$<br>
+        $y$ in this case will be the desired number of black balls drawn, in this case $y=5$
+        $$P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}$$
+        $$P(Y=5)=\frac{0.1^5}{5!}e^{-0.1}$$
+        $$P(Y=5)\approx 0.0000000754031$$
+        </dd>
+        </dl>
+        "
     }
     ]
 }
