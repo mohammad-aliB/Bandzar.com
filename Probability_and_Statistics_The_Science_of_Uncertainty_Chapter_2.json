@@ -1595,7 +1595,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_3_Question_19",
         "question":"
-        Suppose an urn contains 1000 balls — one of these is black, and the other 999 are white. Suppose that 100 balls are randomly drawn from the urn with replacement. Use the appropriate Poisson distribution to approximate the probability that five black balls are observed.
+        Suppose an urn contains 1000 balls - one of these is black, and the other 999 are white. Suppose that 100 balls are randomly drawn from the urn with replacement. Use the appropriate Poisson distribution to approximate the probability that five black balls are observed.
         ",
         "answer":"
         From Example 2.3.6 in the book we know:
@@ -1625,7 +1625,6 @@ the loop depends on the value of a random variable X. The program exits the loop
          $$P(X=4)=(1-\frac{1}{3} )^4(\frac{1}{3})$$
         $$P(X=4)=(\frac{2}{3})^4(\frac{1}{3})$$
         $$P(X=4)\approx 0.0658$$
-
         "
     }
     ]
