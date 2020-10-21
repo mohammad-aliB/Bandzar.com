@@ -1831,6 +1831,62 @@ the loop depends on the value of a random variable X. The program exits the loop
             </dd>
             </dl>
         "
+    },,
+    {
+        "title":"Chapter 2 Section 4 Question 4",
+        "date":"Oct 21 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_4",
+        "question":"
+            Establish for which constants c the following functions are densities.
+            <ol type='a'>
+            <li>$f(x) = cx$ on $(0, 1)$ and 0 otherwise.</li>
+            <li>$f(x) = cx^n$ on $(0, 1)$ and 0 otherwise, for n a nonnegative integer.</li>
+            <li>$f(x) = cx^{\frac{1}{2}}$ on $(0, 2)$ and 0 otherwise.</li>
+            <li>$f(x) =c*sin(x)$ on $(0, \frac{\pi}{2})$ and 0 otherwise.</li>
+            </ol>
+        ",
+        "answer":"
+            <dl>
+            <dt>(a) $f(x) = cx$ on $(0, 1)$ and 0 otherwise.</dt>
+            <dd>
+            This will be a right angle triangle, the area is 
+            $$A=\frac{1}{2}*base*height$$
+            $$1=\frac{1}{2}*1*height$$
+            $$\frac{1}{\frac{1}{2}}=height$$
+            $$height=2$$
+            Therefore c=2
+            </dd>
+            <dt>(b) $f(x) = cx^n$ on $(0, 1)$ and 0 otherwise, for n a nonnegative integer.</dt>
+            <dd>
+            $$\int cx^n dx=\frac{cx^{n+1}}{n+1} +c$$
+            $$\int_{0}^{1} cx^n dx=\frac{c*1^{n+1}}{n+1}-\frac{c*0^{n+1}}{n+1}$$
+            $$\int_{0}^{1} cx^n dx=\frac{c}{n+1}$$
+            $$1=\frac{c}{n+1}$$
+            $$c=n+1$$
+            </dd>
+            <dt>(c) $f(x) = cx^{\frac{1}{2}}$ on $(0, 2)$ and 0 otherwise.</dt>
+            <dd>
+            $$\int c\sqrt{x} dx=\frac{c*2x^\frac{3}{2}}{3}$$
+            $$\int_{0}^{2} c\sqrt{x} dx=\frac{c*2(2)^\frac{3}{2}}{3}-\frac{c*2(0)^\frac{3}{2}}{3}$$
+            $$\int_{0}^{2} c\sqrt{x} dx=\frac{c*2(2)^\frac{3}{2}}{3}$$
+            $$1=\frac{c*2(2)^\frac{3}{2}}{3}$$
+            $$3=c*2(2)^\frac{3}{2}$$
+            $$\frac{3}{2}=c(2)^\frac{3}{2}$$
+            $$c=\frac{3}{4\sqrt{2}}$$
+            </dd>
+            <dt>(d) $f(x) =c*sin(x)$ on $(0, \frac{\pi}{2})$ and 0 otherwise.</dt>
+            <dd>
+            $$f'(x)=-c*cos(x)$$
+            $$\int_{0}^{\frac{\pi}{2}} c*sin(x) dx = F(\frac{\pi}{2})-F(0)$$
+            $$F(\frac{\pi}{2})-F(0)=-c*cos(\frac{\pi}{2})-(-c*cos(0))$$
+            $$1=-c*cos(\frac{\pi}{2})+c*cos(0)$$
+            since $cos(0)=1$ and $cos(\frac{\pi}{2})=0$
+            $$1=c$$
+            $$c=1$$
+            </dd>
+            </dl>
+        "
     },
     {
         "title":"Chapter 2 Section 4 Question 6",
