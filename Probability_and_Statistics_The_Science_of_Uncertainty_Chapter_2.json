@@ -1572,7 +1572,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         This is the probability that part a occurs twice in succession. 
         $$P(Y=5)^2$$
         $$\approx (\frac{4^5}{5!}e^{-4})^2$$
-        $$\approx 0.02442$
+        $$\approx 0.02442$$
         </dd>
         <dt>(c) What is the probability that no calls will arrive during a 10-minute period?
         </dt>
@@ -1583,7 +1583,7 @@ Therefore no matter how we define our function $X$ we can always determine a set
         $y$ in this case will be the desired number of calls in this case $y=0$
         $$P(Y=y)=\frac{\lambda^y}{y!}e^{-\lambda}$$
         $$P(Y=0)=\frac{20^0}{0!}e^{-20}$$
-        $$P(Y=0)=}e^{-20}$$
+        $$P(Y=0)=e^{-20}$$
         $$P(Y=5)\approx 0.000000002061$$
         </dd>
         </dl>
