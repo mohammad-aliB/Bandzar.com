@@ -1745,6 +1745,92 @@ the loop depends on the value of a random variable X. The program exits the loop
             </dd>
             </dl>
         "
+    },,
+    {
+        "title":"Chapter 2 Section 4 Question 3",
+        "date":"Oct 21 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_3",
+        "question":"
+            Let Z ~ $Exponential(4)$. Compute each of the following.
+            <ol type='a'>
+            <li>$P(Z \geq 5)$</li>
+            <li>$P(Z \geq -5)$</li>
+            <li>$P(Z^2 \geq 9)$</li>
+            <li>$P(Z^4-17 \geq 9)$</li>
+            </ol>
+        ",
+        "answer":"
+            From example 2.4.5 in the book we know:
+            $$P(X\geq x)=\int_{x}^{\infty} \lambda e^{-\lambda z}dz=e^{-\lambda x}$$ 
+            In this case $\lambda =4$
+
+            <dl>
+            <dt>(a) $P(Z \geq 5)$</dt>
+            <dd>
+            $$P(Z \geq 5)=e^{-4*5}$$ 
+            $$P(Z \geq 5)=e^{-20}$$ 
+            $$P(Z \geq 5)\approx 0.00000000206$$
+            </dd>
+            <dt>(b) $P(Z \geq -5)$</dt>
+            <dd>
+            <dd>
+            $$P(Z \geq -5)=e^{-4*(-5)}$$ 
+            $$P(Z \geq -5)=e^{20}$$ 
+            $$P(Z \geq -5)\approx 485165195.40979$$
+            since probability cannot be greater than one we will round this to one
+            $$P(Z \geq -5)=1$$
+            </dd>
+            <dt>(c) $P(Z^2 \geq 9)$</dt>
+            <dd>
+            If $Z^2 \geq 9$ Then $Z \geq 3$ or $Z\leq -3$<br>
+            We will solve this as two separate probabilities then add them together.
+            $$P(Z \geq 3)=e^{-4*3}$$ 
+            $$P(Z \geq 3)=e^{-12}$$ 
+            $$P(Z \geq 3)\approx 0.000006144$$
+            For the other interval we first solve for $Z\geq 3$ then will do $1-P(Z\geq 3)$ to get $$P(Z\leq 3)$$
+            $$P(Z \geq -3)=e^{-4*(-3)}$$ 
+            $$P(Z \geq -3)=e^{12}$$ 
+            $$P(Z \geq -3)\approx 162754.79$$
+            since probability cannot be greater than one we will round this to one
+            $$P(Z \geq -3)=1$$
+            we will now do 1- this to flip the inequality
+            $$P(Z \leq -3)=1-P(Z \geq -3)$$
+            $$P(Z \leq -3)=1-1$$
+            $$P(Z \leq -3)=0$$
+            we will now add up the two probabilities:
+            $$P(Z \geq 3)+P(Z \leq -3)$$
+            $$=e^{-12}+0$$
+            $$P(Z \geq 3)+P(Z \leq -3)=e^{-12}$$
+            $$P(Z \geq 3)+P(Z \leq -3)\approx 0.000006144$$
+            </dd>
+            <dt>(d) $P(Z^4-17 \geq 9)$</dt>
+            <dd>
+            $$Z^4-17 \geq 9$$
+            $$Z^4 \geq 26$$
+            $$Z \geq \sqrt[4]{26}$$
+            $$Z \leq -\sqrt[4]{26}$$
+            we will solve for both probabilities separately then add them together
+            $$P(Z\geq \sqrt[4]{26})=e^{-4*(\sqrt[4]{26})}$$
+            $$P(Z\geq \sqrt[4]{26})\approx 0.00011947$$
+            For the other interval we first solve for $Z\geq -\sqrt[4]{26}$ then will do $1-P(Z\geq -\sqrt[4]{26})$ to get $$P(Z\leq -\sqrt[4]{26})$$
+            $$P(Z\geq -\sqrt[4]{26})=e^{-4*(-\sqrt[4]{26})}$$
+            $$P(Z\geq -\sqrt[4]{26})=e^{4*(\sqrt[4]{26})}$$
+            $$P(Z\geq -\sqrt[4]{26})\approx 8369.95$$
+            since probability cannot be greater than one we will round this to one
+            $$P(Z\geq -\sqrt[4]{26})=1$$
+            we will now do 1- this to flip the inequality
+            $$P(Z\leq -\sqrt[4]{26})=1-P(Z\geq -\sqrt[4]{26})$$
+            $$P(Z\leq -\sqrt[4]{26})=1-1$$
+            $$P(Z\leq -\sqrt[4]{26})=0$$
+            we will now add up the two probabilities:
+            $$P(Z\geq \sqrt[4]{26})+P(Z\leq -\sqrt[4]{26})$$
+            $$=e^{-4*(\sqrt[4]{26})}+0$$
+            $$=e^{-4*(\sqrt[4]{26})}$$
+            $$\approx 0.00011947$$
+            </dd>
+            </dl>
+        "
     },
     {
         "title":"Chapter 2 Section 4 Question 6",
