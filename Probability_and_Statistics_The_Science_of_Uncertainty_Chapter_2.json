@@ -1626,6 +1626,73 @@ the loop depends on the value of a random variable X. The program exits the loop
         $$P(X=4)=(\frac{2}{3})^4(\frac{1}{3})$$
         $$P(X=4)\approx 0.0658$$
         "
+    },
+    {
+        "title":"Chapter 2 Section 4 Question 1",
+        "date":"Oct 21 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_1",
+        "question":"
+            U ~ $Uniform[0, 1]$. Compute each of the following.
+            <ol type='a'>
+            <li>$P(U\leq 0)$</li>
+            <li>$P(U=\frac{1}{2})$</li>
+            <li>$P(U < -\frac{1}{3})$</li>
+            <li>$P(U\leq \frac{2}{3})$</li>
+            <li>$P(U < \frac{2}{3})$</li>
+            <li>$P(U < 1)$</li>
+            <li>$P(U\leq 17)$</li>
+            </ol>
+        ",
+        "answer":"
+            From example 2.4.3 in the book we know:
+            $$\textit{f}(x)=\begin{cases}\frac{1}{R-L}&L\leq x\leq R \\ 0& otherwise\end{cases} $$
+            In this case $R=1,L=0$
+
+            <dl>
+            <dt>(a) $P(U\leq 0)$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U\leq 0$. In this case our base will be $0-0=0$ therefore $P(U\leq 0)=0$
+            </dd>
+            <dt>(b) $P(U=\frac{1}{2})$</dt>
+            <dd>
+            By textbook definition 2.4.1: 'A random variable X is continuous if $P(X=x)=0$ for all $\x\in\mathbb{R}$'<br>
+            By this definition $P(U=\frac{1}{2})=0$ since uniform distribution is a form of continuous distribution
+            </dd>
+            <dt>(c) $P(U < -\frac{1}{3})$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U < -\frac{1}{3}$. In this case our height will be zero since $f(x)=0$ for all $x\in (-\infty ,-\frac{1}{3}]$ therefore $P(U < -\frac{1}{3})=0$
+            </dd>
+            <dt>(d) $P(U\leq \frac{2}{3})$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U\leq \frac{2}{3}$. In this case our base will be the intersection of $(-\infty ,\frac{2}{3}]\cap [0,1]=[0,\frac{2}{3}]$ the length of our base is therefore $\frac{2}{3}-0=\frac{2}{3}$. Our height will be $\frac{1}{1-0}=\frac{1}{1}$
+            $$area=base \times height$$
+            $$P(U\leq \frac{2}{3})=\frac{2}{3}*1$$
+            $$P(U\leq \frac{2}{3})=\frac{2}{3}$$
+            </dd>
+            <dt>(e) $P(U < \frac{2}{3})$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U < \frac{2}{3}$. In this case our base will be the intersection of $(-\infty ,\frac{2}{3})\cap [0,1]=[0,\frac{2}{3})$ the length of our base is therefore $\frac{2}{3}-0=\frac{2}{3}$. Our height will be $\frac{1}{1-0}=\frac{1}{1}$
+            $$area=base \times height$$
+            $$P(U < \frac{2}{3})=\frac{2}{3}*1$$
+            $$P(U < \frac{2}{3})=\frac{2}{3}$$
+            </dd>
+            <dt>(f) $P(U < 1)$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U < 1$. In this case our base will be the intersection of $(-\infty ,1)\cap [0,1]=[0,1]$ the length of our base is therefore $1-0=1$. Our height will be $\frac{1}{1-0}=\frac{1}{1}$
+            $$area=base \times height$$
+            $$P(U < 1)=1*1$$
+            $$P(U < 1)=1$$
+            </dd>
+            <dt>(g) $P(U\leq 17)$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $U \leq 17$. In this case our base will be the intersection of $(-\infty ,17]\cap [0,1]=[0,1]$ the length of our base is therefore $1-0=1$. Our height will be $\frac{1}{1-0}=\frac{1}{1}$
+            $$area=base \times height$$
+            $$P(U \leq 17)=1*1$$
+            $$P(U \leq 17)=1$$
+            </dd>
+            </dl>
+        "
     }
     ]
 }
