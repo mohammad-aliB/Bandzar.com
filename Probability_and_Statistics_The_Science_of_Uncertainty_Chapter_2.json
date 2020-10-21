@@ -1894,7 +1894,7 @@ the loop depends on the value of a random variable X. The program exits the loop
         "author":"Mohammad-Ali Bandzar",
         "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_5",
         "question":"
-            Is the function defined by $f (x) =\frac{x}{3}$ for $−1 < x < 2$ and 0 otherwise, a density? Why or why not?
+            Is the function defined by $f (x) =\frac{x}{3}$ for $-1 < x < 2$ and 0 otherwise, a density? Why or why not?
         ",
         "answer":"
             This forms a right angle triangle, the area(integral) of which will be:
