@@ -1693,6 +1693,58 @@ the loop depends on the value of a random variable X. The program exits the loop
             </dd>
             </dl>
         "
+    },
+    {
+        "title":"Chapter 2 Section 4 Question 2",
+        "date":"Oct 21 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_2",
+        "question":"
+            U ~ $Uniform[1, 4]$. Compute each of the following.
+            <ol type='a'>
+            <li>$P(W \geq 5)$</li>
+            <li>$P(W \geq 2)$</li>
+            <li>$P(W^2 \geq 9)$ (Hint: If $W^2 \leq 9$, what must W be?)</li>
+            <li>$P(W^2 \leq 2)$</li>
+            </ol>
+        ",
+        "answer":"
+            From example 2.4.3 in the book we know:
+            $$\textit{f}(x)=\begin{cases}\frac{1}{R-L}&L\leq x\leq R \\ 0& otherwise\end{cases} $$
+            In this case $R=4,L=1$
+
+            <dl>
+            <dt>(a) $P(W \geq 5)$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $W \geq 5$. In this case our base will be the intersection of $[5,\infty)\cap [1,4]=\emptyset$ since none of our functions domain intersects with the uniform distribution domain. We can conclude $P(W \geq 5)=0$
+            </dd>
+            <dt>(b) $P(W \geq 2)$</dt>
+            <dd>
+            since our probability will be equal to the area of a rectangle (base*height) where $W \geq 5$. In this case our base will be the intersection of $[2,\infty)\cap [1,4]=[2,4]$ The length of our base is therefore $4-2=2$. Our height is given by $\frac{1}{4-1}=\frac{1}{3}$
+            $$area=base \times height$$
+            $$P(W \geq 2)=2\times\frac{1}{3}$$
+            $$P(W \geq 2)=\frac{2}{3}$$
+            </dd>
+            <dt>(c) $P(W^2 \geq 9)$ (Hint: If $W^2 \leq 9$, what must W be?)</dt>
+            <dd>
+             If $W^2 \geq 9$ Then $W \geq 3$ or $W\leq -3$<br>
+             Since our probability will be equal to the area of a rectangle (base*height) where $W^2 \geq 9$. In this case our base will be the intersection of $((-\infty,-3]\cup [3,\infty))\cap[1,4]=[3,4]$ The length of our base is therefore $4-3=1$. Our height is given by $\frac{1}{4-1}=\frac{1}{3}$
+            $$area=base \times height$$
+            $$P(W^2 \geq 9)=1\times\frac{1}{3}$$
+            $$P(W^2 \geq 9)=\frac{1}{3}$$
+            </dd>
+            <dt>(d) $P(W^2 \leq 2)$</dt>
+             If $W^2 \leq 2$ Then $W \leq \sqrt{2}$ and $W\geq -\sqrt{2}$
+             $$W\in (-\infty,\sqrt{2}]\cap[-\sqrt{2},\infty)$$
+             $$W\in [-\sqrt{2},\sqrt{2}]$$
+             Since our probability will be equal to the area of a rectangle (base*height) where $W^2 \leq 2$. In this case our base will be the intersection of $[-\sqrt{2},\sqrt{2}]\cap[1,4]=[1,\sqrt{2}]$ The length of our base is therefore $\sqrt{2}-1\approx 0.4142$. Our height is given by $\frac{1}{4-1}=\frac{1}{3}$
+            $$area=base \times height$$
+            $$P(W^2 \leq 2)=0.4142 \times\frac{1}{3}$$
+            $$P(W^2 \leq 2)\approx 0.138$$
+            <dd>
+            </dd>
+            </dl>
+        "
     }
     ]
 }
