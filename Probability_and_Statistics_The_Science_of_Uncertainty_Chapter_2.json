@@ -1889,6 +1889,24 @@ the loop depends on the value of a random variable X. The program exits the loop
         "
     },
     {
+        "title":"Chapter 2 Section 4 Question 5",
+        "date":"Oct 21 2020",
+        "author":"Mohammad-Ali Bandzar",
+        "URL":"Probability_and_Statistics_The_Science_of_Uncertainty_Chapter_2_Section_4_Question_5",
+        "question":"
+            Is the function defined by $f (x) =\frac{x}{3}$ for $−1 < x < 2$ and 0 otherwise, a density? Why or why not?
+        ",
+        "answer":"
+            This forms a right angle triangle, the area(integral) of which will be:
+            $$Area=base*height$$
+            $$Area=(2--1)*f(2)$$
+            $$Area=(3)*\frac{2}{3}$$
+            $$Area=2$$
+            No this is not a density because the integral of the function is greater than one. This violates textbook definition 2.4.2 which states that for any density function $\int_{-\infty}^{\infty} f(x)dx=1$
+                    
+        "
+    },
+    {
         "title":"Chapter 2 Section 4 Question 6",
         "date":"Oct 21 2020",
         "author":"Mohammad-Ali Bandzar",
