@@ -1775,10 +1775,9 @@ the loop depends on the value of a random variable X. The program exits the loop
             <dt>(b) $P(Z \geq -5)$</dt>
             <dd>
             <dd>
-            $$P(Z \geq -5)=e^{-4*(-5)}$$ 
-            $$P(Z \geq -5)=e^{20}$$ 
-            $$P(Z \geq -5)\approx 485165195.40979$$
-            since probability cannot be greater than one we will round this to one
+            Since Example 2.4.5 says that f(x)=0 for any $x < 0$. We will instead take our integral for the domain $[0,\infty)$ and will solve for $P(Z \geq 0)$
+            $$P(Z \geq -5)=e^{-4*(0)}$$ 
+            $$P(Z \geq -5)=e^{0}$$ 
             $$P(Z \geq -5)=1$$
             </dd>
             <dt>(c) $P(Z^2 \geq 9)$</dt>
@@ -1788,11 +1787,10 @@ the loop depends on the value of a random variable X. The program exits the loop
             $$P(Z \geq 3)=e^{-4*3}$$ 
             $$P(Z \geq 3)=e^{-12}$$ 
             $$P(Z \geq 3)\approx 0.000006144$$
-            For the other interval we first solve for $Z\geq 3$ then will do $1-P(Z\geq 3)$ to get $$P(Z\leq 3)$$
-            $$P(Z \geq -3)=e^{-4*(-3)}$$ 
-            $$P(Z \geq -3)=e^{12}$$ 
-            $$P(Z \geq -3)\approx 162754.79$$
-            since probability cannot be greater than one we will round this to one
+            For the other interval we first solve for $Z\geq 3$ then will do $1-P(Z\geq 3)$ to get $P(Z\leq 3)$<br>
+            Since Example 2.4.5 says that f(x)=0 for any $x < 0$. We will instead take our integral for the domain $[0,\infty)$ and will solve for $P(Z \geq 0)$
+            $$P(Z \geq -3)=e^{-4*0}$$ 
+            $$P(Z \geq -3)=e^{0}$$ 
             $$P(Z \geq -3)=1$$
             we will now do 1- this to flip the inequality
             $$P(Z \leq -3)=1-P(Z \geq -3)$$
@@ -1813,11 +1811,9 @@ the loop depends on the value of a random variable X. The program exits the loop
             we will solve for both probabilities separately then add them together
             $$P(Z\geq \sqrt[4]{26})=e^{-4*(\sqrt[4]{26})}$$
             $$P(Z\geq \sqrt[4]{26})\approx 0.00011947$$
-            For the other interval we first solve for $Z\geq -\sqrt[4]{26}$ then will do $1-P(Z\geq -\sqrt[4]{26})$ to get $$P(Z\leq -\sqrt[4]{26})$$
-            $$P(Z\geq -\sqrt[4]{26})=e^{-4*(-\sqrt[4]{26})}$$
-            $$P(Z\geq -\sqrt[4]{26})=e^{4*(\sqrt[4]{26})}$$
-            $$P(Z\geq -\sqrt[4]{26})\approx 8369.95$$
-            since probability cannot be greater than one we will round this to one
+            For the other interval we first solve for $Z\geq -\sqrt[4]{26}$ then will do $1-P(Z\geq -\sqrt[4]{26})$ to get $P(Z\leq -\sqrt[4]{26})$
+            Since Example 2.4.5 says that f(x)=0 for any $x < 0$. We will instead take our integral for the domain $[0,\infty)$ and will solve for $P(Z \geq 0)$
+            $$P(Z\geq -\sqrt[4]{26})=e^{-4*0}$$
             $$P(Z\geq -\sqrt[4]{26})=1$$
             we will now do 1- this to flip the inequality
             $$P(Z\leq -\sqrt[4]{26})=1-P(Z\geq -\sqrt[4]{26})$$
